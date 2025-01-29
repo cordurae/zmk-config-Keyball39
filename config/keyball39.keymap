@@ -64,6 +64,13 @@
             bindings = <&kp LC(SPACE)>;
             label = "HIRAGANA";
         };
+
+        user: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp S &kp E &kp A &kp N &kp DOT &kp C &kp H &kp E &kp O &kp W &kp AT &kp R &kp C &kp I &kp DOT &kp R &kp O &kp G &kp E &kp R &kp S &kp DOT &kp C &kp A>;
+            label = "NEW_MACRO";
+        };
     };
 
     combos {
