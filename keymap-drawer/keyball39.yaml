@@ -34,8 +34,8 @@ layers:
   - Alt+$$mdi:keyboard-tab$$
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:keyboard-esc$$', h: MEDIA}
-  - {t: '$$mdi:keyboard-space$$', h: MOVE}
-  - {t: '$$mdi:keyboard-tab$$', h: SCROLL}
+  - {t: '$$mdi:keyboard-space$$', h: SCROLL}
+  - {t: '$$mdi:keyboard-tab$$', h: MOVE}
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
   - {t: '$$mdi:backspace$$', h: NUM}
   - {t: '$$mdi:backspace-reverse-outline$$', h: FUNCTION}
@@ -114,8 +114,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -234,8 +234,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-esc$$
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-tab$$', type: held}
+  - {t: '$$mdi:keyboard-space$$', type: held}
+  - $$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
