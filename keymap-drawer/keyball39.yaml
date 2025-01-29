@@ -12,7 +12,7 @@ layers:
   - P
   - A
   - S
-  - D
+  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
