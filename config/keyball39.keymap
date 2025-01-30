@@ -324,7 +324,7 @@
 &trans          &trans          &trans        &trans           &bootloader                        &trans           &trans     &kp LC(C)       &kp LA(GRAVE)  &trans
 &kp LEFT_GUI    &kp LEFT_ALT    &kp LCTRL     &kp LEFT_SHIFT   &trans                             &mkp MB4         &mkp LCLK  &mkp MCLK       &mkp RCLK      &mkp MB5
 &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans                             &trans           &trans     &msc SCRL_DOWN  &msc SCRL_UP   &to 0
-&trans          &trans          &trans        &kp ESCAPE       &mo 5        &trans  &kp CAPSLOCK  &kp PRINTSCREEN                                            &to 1
+&trans          &trans          &trans        &kp ESCAPE       &sl 5        &trans  &kp CAPSLOCK  &kp PRINTSCREEN                                            &to 1
             >;
         };
 
