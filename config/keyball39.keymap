@@ -170,7 +170,7 @@
                 <&macro_release>,
                 <&kp LSFT>,
                 <&macro_tap>,
-                <&kp ENTER>,
+                <&kp ENTER>;
             label = "clear";
         };
 
@@ -311,9 +311,9 @@
             label = "NUM";
             bindings = <
 &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET                           &kp KP_NUMLOCK  &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp STAR
-&kp LEFT_ALT      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                                   &kp LGUI        &kp KP_N4        &kp KP_N5  &kp KP_N6  &kp KP_N0
+&kp SEMICOLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                                   &kp LGUI        &kp KP_N4        &kp KP_N5  &kp KP_N6  &kp KP_N0
 &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH                               &kp LGUI        &kp KP_NUMBER_1  &kp KP_N2  &kp KP_N3  &kp MINUS
-&kp SEMICOLON     &kp SPACE     &kp FSLH      &kp DOT       &kp NUMBER_0       &kp MINUS  &kp KP_ENTER  &kp BSPC                                               &bootloader
+&kp LEFT_ALT      &kp SPACE     &kp FSLH      &kp DOT       &kp NUMBER_0       &kp MINUS  &kp KP_ENTER  &kp BSPC                                               &bootloader
             >;
         };
 
