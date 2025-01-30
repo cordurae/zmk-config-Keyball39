@@ -220,37 +220,37 @@
         jkclk {
             bindings = <&mkp LCLK>;
             key-positions = <16 17>;
-            layers = <0 7>;
+            layers = <0 6>;
         };
 
         llclk {
             bindings = <&mkp RCLK>;
             key-positions = <19 18>;
-            layers = <0 7>;
+            layers = <0 6>;
         };
 
         mmMCLK {
             bindings = <&mkp MCLK>;
             key-positions = <26 27>;
-            layers = <0 7>;
+            layers = <0 6>;
         };
 
         zvTasks {
             bindings = <&kp LC(LA(TAB))>;
             key-positions = <20 23>;
-            layers = <0>;
+            layers = <0 6>;
         };
 
         xvSwitch {
             bindings = <&kp LA(TAB)>;
             key-positions = <21 23>;
-            layers = <0>;
+            layers = <0 6>;
         };
 
         zcMenu {
             bindings = <&kp K_APPLICATION>;
             key-positions = <20 22>;
-            layers = <0>;
+            layers = <0 6>;
         };
     };
 
