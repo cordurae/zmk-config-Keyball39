@@ -158,8 +158,8 @@
         clear: clear {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings = 
                 <&macro_press>,
                 <&kp LGUI>,
@@ -170,7 +170,7 @@
                 <&macro_press>,
                 <&kp LSFT>,
                 <&macro_tap>,  
-                <&kp DOWN &kp DOWN>,
+                <&kp TAB &kp TAB>,
                 <&macro_release>,
                 <&kp LSFT>,
                 <&macro_tap>,
