@@ -72,6 +72,64 @@
             label = "HIRAGANA";
         };
 
+        trademark: trademark {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N5 &kp KP_N3>
+                , <&macro_release &kp LALT>
+                ;
+            label = "trademark";
+        };
+
+        bullet: bullet {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N9>
+                , <&macro_release &kp LALT>
+                ;
+            label = "bullet";
+        };
+
+        heart: heart {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N3>
+                , <&macro_release &kp LALT>
+                ;
+            label = "heart";
+        };
+
+        filter: filter {
+            compatible = "zmk,behavior-macro";
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp DOWN &kp E>
+                , <&macro_release &kp LSHFT>
+                ;
+            label = "filter";
+        };
+
+        highlight: highlight {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&kp LALT>
+                , <&kp N7 &kp W &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN>
+                , <&kp ENTER>
+                ;
+            label = "highlight";
+        };
+
         sen: sen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
