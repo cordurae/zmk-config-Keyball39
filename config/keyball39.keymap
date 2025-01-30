@@ -161,8 +161,12 @@
             wait-ms = <30>;
             tap-ms = <30>;
             bindings = 
-                <&macro_tap>,
-                <&kp LGUI &kp V>,
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,  
+                <&kp V>,
+                <&macro_release>,
+                <&kp LGUI>,
                 <&macro_press>,
                 <&kp LSFT>,
                 <&macro_tap>,  
