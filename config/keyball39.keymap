@@ -141,7 +141,7 @@
                 <&macro_tap>,
                 <&kp DOWN &kp E>,
                 <&macro_release>,
-                <&kp LSHFT>;
+                <&kp LALT>;
 
             label = "filter";
         };
