@@ -16,13 +16,16 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <240>;
@@ -69,11 +72,25 @@
             label = "HIRAGANA";
         };
 
-        user: new_macro {
+        sen: sen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp S &kp E &kp A &kp N &kp DOT &kp C &kp H &kp E &kp O &kp W &kp AT &kp R &kp C &kp I &kp DOT &kp R &kp O &kp G &kp E &kp R &kp S &kp DOT &kp C &kp A>;
-            label = "NEW_MACRO";
+            bindings = <&kp S &kp R &kp O &kp G &kp E &kp N2 &kp N2>;
+            label = "SEN";
+        };
+
+        sean: sean {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp E &kp A &kp N &kp DOT &kp C &kp H &kp E &kp O &kp W &kp AT &kp R &kp C &kp I &kp DOT &kp R &kp O &kp G &kp E &kp R &kp S &kp DOT &kp C &kp A>;
+            label = "SEAN";
+        };
+
+        victoria: victoria {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(I) &kp SPACE &kp L &kp O &kp V &kp E &kp SPACE &kp Y &kp O &kp U &kp SPACE &kp LS(V) &kp I &kp C &kp T &kp O &kp R &kp I &kp A &kp EXCL &kp EXCL &kp EXCL>;
+            label = "VICTORIA";
         };
     };
 
@@ -119,19 +136,19 @@
         jkclk {
             bindings = <&mkp LCLK>;
             key-positions = <16 17>;
-            layers = <0>;
+            layers = <0 6>;
         };
 
         llclk {
             bindings = <&mkp RCLK>;
             key-positions = <19 18>;
-            layers = <0>;
+            layers = <0 6>;
         };
 
-        uiMCLK {
+        mmMCLK {
             bindings = <&mkp MCLK>;
-            key-positions = <5 6>;
-            layers = <0>;
+            key-positions = <26 27>;
+            layers = <0 6>;
         };
 
         zvTasks {
@@ -200,7 +217,7 @@
         symbol_layer {
             label = "SYMBOL";
             bindings = <
-&kp LEFT_BRACE  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_BRACKET      &kp RIGHT_BRACE                                &user   &trans  &trans  &trans  &trans
+&kp LEFT_BRACE  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_BRACKET      &kp RIGHT_BRACE                                &sean   &sen    &trans  &trans  &victoria
 &kp COLON       &kp DOLLAR     &kp PERCENT   &kp CARET             &kp PLUS                                       &trans  &trans  &trans  &trans  &trans
 &kp TILDE       &kp EXCL       &kp AT        &kp HASH              &kp PIPE                                       &trans  &trans  &trans  &trans  &trans
 &trans          &trans         &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &trans  &trans                          &trans
@@ -221,19 +238,21 @@
             label = "SNIPE";
             bindings = <
 &trans          &trans          &trans        &trans           &bootloader                        &trans           &trans     &kp LC(C)       &kp LC(V)     &trans
-&kp LEFT_GUI    &kp LEFT_ALT    &kp LCTRL     &kp LEFT_SHIFT   &trans                             &mkp MB5         &mkp LCLK  &mkp MCLK       &mkp RCLK     &mkp MB4
+&kp LEFT_GUI    &kp LEFT_ALT    &kp LCTRL     &kp LEFT_SHIFT   &trans                             &mkp MB4         &mkp LCLK  &mkp MCLK       &mkp RCLK     &mkp MB5
 &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans                             &trans           &trans     &msc SCRL_DOWN  &msc SCRL_UP  &trans
 &trans          &trans          &trans        &kp ESCAPE       &kp SPACE    &trans  &kp CAPSLOCK  &kp PRINTSCREEN                                           &to 1
             >;
         };
 
-        FUNCTION {
+        function_layer {
             bindings = <
-&kp F12     &kp F7      &kp F8      &kp F9   &kp PRINTSCREEN                   &trans  &trans           &trans                &trans            &out OUT_TOG
-&kp F11     &kp F4      &kp F5      &kp F6   &kp SCROLLLOCK                    &trans  &kp RIGHT_SHIFT  &kp RCTRL             &kp RIGHT_ALT     &kp RIGHT_GUI
-&kp F10     &kp F1      &kp F2      &kp F3   &kp C_PAUSE                       &trans  &trans           &kp C_AL_MY_COMPUTER  &kp K_CALCULATOR  &kp C_AL_MAIL
-&bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &kp ESC  &kp SPACE        &kp TAB  &trans  &trans                                                           &trans
+&kp F12       &kp F7      &kp F8      &kp F9   &kp PRINTSCREEN                   &trans  &trans           &trans                &trans            &bt BT_CLR
+&kp F11       &kp F4      &kp F5      &kp F6   &kp SCROLLLOCK                    &trans  &kp RIGHT_SHIFT  &kp RCTRL             &kp RIGHT_ALT     &kp RIGHT_GUI
+&kp F10       &kp F1      &kp F2      &kp F3   &kp C_PAUSE                       &trans  &trans           &kp C_AL_MY_COMPUTER  &kp K_CALCULATOR  &kp C_AL_MAIL
+&out OUT_TOG  &bt BT_PRV  &bt BT_NXT  &kp ESC  &kp SPACE        &kp TAB  &trans  &trans                                                           &trans
             >;
+
+            label = "FUNCTION";
         };
     };
 };
