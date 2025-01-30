@@ -337,19 +337,19 @@ combos:
   l: [HOME]
 - p: [16, 17]
   k: $$mdi:mouse-left-click-outline$$
-  l: [HOME, FUNCTION]
+  l: [HOME, SNIPE]
 - p: [19, 18]
   k: $$mdi:mouse-right-click-outline$$
-  l: [HOME, FUNCTION]
+  l: [HOME, SNIPE]
 - p: [26, 27]
   k: $$mdi:mouse-scroll-wheel$$
-  l: [HOME, FUNCTION]
+  l: [HOME, SNIPE]
 - p: [20, 23]
   k: Ctl+Alt+$$mdi:keyboard-tab$$
-  l: [HOME]
+  l: [HOME, SNIPE]
 - p: [21, 23]
   k: Alt+$$mdi:keyboard-tab$$
-  l: [HOME]
+  l: [HOME, SNIPE]
 - p: [20, 22]
   k: APPLICATION
-  l: [HOME]
+  l: [HOME, SNIPE]
