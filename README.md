@@ -1,6 +1,6 @@
-This keeb created by a group of people who loves keyball.
+truly a keyball moment
 
-Special Thanks to: <br>
+Credits: <br>
 PCB: *[yangxing844](https://github.com/yangxing844)* <br>
 Case: *[delock](https://github.com/delock)* <br>
 Firmware: *[Amos698](https://github.com/Amos698)* <br>
