@@ -207,10 +207,10 @@
         number_layer {
             label = "NUM";
             bindings = <
-&kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET                      &kp KP_NUMLOCK  &kp N7  &kp N8  &kp N9  &kp STAR
-&kp SEMICOLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                              &kp LGUI        &kp N4  &kp N5  &kp N6  &kp NUMBER_0
-&kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH                          &kp LGUI        &kp N1  &kp N2  &kp N3  &kp MINUS
-&kp LEFT_ALT      &kp SPACE     &kp FSLH      &kp DOT       &kp NUMBER_0       &kp MINUS  &kp RET  &kp BSPC                                &bootloader
+&kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET                           &kp KP_NUMLOCK  &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp STAR
+&kp LEFT_ALT      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                                   &kp LGUI        &kp KP_N4        &kp KP_N5  &kp KP_N6  &kp KP_N0
+&kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH                               &kp LGUI        &kp KP_NUMBER_1  &kp KP_N2  &kp KP_N3  &kp MINUS
+&kp SEMICOLON     &kp SPACE     &kp FSLH      &kp DOT       &kp NUMBER_0       &kp MINUS  &kp KP_ENTER  &kp BSPC                                               &bootloader
             >;
         };
 
@@ -227,20 +227,20 @@
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&kp LC(PAGE_UP)  &kp LC(C)  &kp LC(V)  &kp LC(PAGE_DOWN)  &trans                         &trans    &kp LS(HOME)    &kp LC(C)       &kp LA(GRAVE)  &kp LS(END)
-&kp LEFT_GUI     &kp LALT   &kp LCTRL  &kp LSHFT          &trans                         &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW
-&kp LEFT         &kp DOWN   &kp UP     &kp RIGHT          &trans                         &trans    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP    &kp END
-&trans           &trans     &trans     &kp ESC            &kp SPACE  &kp TAB  &kp ENTER  &kp BSPC                                                 &trans
+&kp LC(PAGE_UP)  &kp LC(C)  &kp LC(V)  &kp LC(PAGE_DOWN)  &trans                         &trans    &kp LS(HOME)    &kp LC(C)       &kp LC(V)     &kp LS(END)
+&kp LEFT_GUI     &kp LALT   &kp LCTRL  &kp LSHFT          &trans                         &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
+&kp LEFT         &kp DOWN   &kp UP     &kp RIGHT          &trans                         &trans    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
+&trans           &trans     &trans     &kp ESC            &kp SPACE  &kp TAB  &kp ENTER  &kp BSPC                                                &trans
             >;
         };
 
         snipe_layer {
             label = "SNIPE";
             bindings = <
-&trans          &trans          &trans        &trans           &bootloader                        &trans           &trans     &kp LC(C)       &kp LC(V)     &trans
-&kp LEFT_GUI    &kp LEFT_ALT    &kp LCTRL     &kp LEFT_SHIFT   &trans                             &mkp MB4         &mkp LCLK  &mkp MCLK       &mkp RCLK     &mkp MB5
-&mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans                             &trans           &trans     &msc SCRL_DOWN  &msc SCRL_UP  &trans
-&trans          &trans          &trans        &kp ESCAPE       &kp SPACE    &trans  &kp CAPSLOCK  &kp PRINTSCREEN                                           &to 1
+&trans          &trans          &trans        &trans           &bootloader                        &trans           &trans     &kp LC(C)       &kp LA(GRAVE)  &trans
+&kp LEFT_GUI    &kp LEFT_ALT    &kp LCTRL     &kp LEFT_SHIFT   &trans                             &mkp MB4         &mkp LCLK  &mkp MCLK       &mkp RCLK      &mkp MB5
+&mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans                             &trans           &trans     &msc SCRL_DOWN  &msc SCRL_UP   &trans
+&trans          &trans          &trans        &kp ESCAPE       &kp SPACE    &trans  &kp CAPSLOCK  &kp PRINTSCREEN                                            &to 1
             >;
         };
 
