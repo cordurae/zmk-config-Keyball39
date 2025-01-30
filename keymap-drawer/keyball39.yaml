@@ -234,7 +234,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-esc$$
-  - {t: SCROLL, h: toggle, type: held}
+  - {t: SNIPE, h: toggle, type: held}
   - $$mdi:keyboard-tab$$
   - {t: SNIPE, h: toggle}
   - $$mdi:backspace-reverse-outline$$
