@@ -126,37 +126,37 @@ layers:
   - '9'
   - {t: ']', s: '}'}
   - KP NUMLOCK
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
+  - KP 7
+  - KP 8
+  - KP 9
   - '*'
-  - {t: ;, s: ':'}
+  - $$mdi:apple-keyboard-option$$
   - '4'
   - '5'
   - '6'
   - {t: '=', s: +}
   - LGUI
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
-  - '0'
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP 0
   - {t: '`', s: '~'}
   - '1'
   - '2'
   - '3'
   - {t: \, s: '|'}
   - LGUI
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
+  - KP 1
+  - KP 2
+  - KP 3
   - {t: '-', s: _}
-  - $$mdi:apple-keyboard-option$$
+  - {t: ;, s: ':'}
   - $$mdi:keyboard-space$$
   - {t: /, s: '?'}
   - {t: ., s: '>'}
   - '0'
   - {t: '-', s: _}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - KP ENTER
   - {t: '$$mdi:backspace$$', type: held}
   - $$mdi:progress-download$$
   SYMBOL:
@@ -208,7 +208,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft+HOME
   - Ctl+C
-  - {t: Alt+`, s: Alt+~}
+  - Ctl+V
   - Sft+END
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
@@ -248,7 +248,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+C
-  - Ctl+V
+  - {t: Alt+`, s: Alt+~}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
