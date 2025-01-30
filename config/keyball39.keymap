@@ -19,6 +19,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -228,7 +229,7 @@
 
         FUNCTION {
             bindings = <
-&kp F12     &kp F7      &kp F8      &kp F9   &kp PRINTSCREEN                   &trans  &trans           &trans                &trans            &trans
+&kp F12     &kp F7      &kp F8      &kp F9   &kp PRINTSCREEN                   &trans  &trans           &trans                &trans            &out OUT_TOG
 &kp F11     &kp F4      &kp F5      &kp F6   &kp SCROLLLOCK                    &trans  &kp RIGHT_SHIFT  &kp RCTRL             &kp RIGHT_ALT     &kp RIGHT_GUI
 &kp F10     &kp F1      &kp F2      &kp F3   &kp C_PAUSE                       &trans  &trans           &kp C_AL_MY_COMPUTER  &kp K_CALCULATOR  &kp C_AL_MAIL
 &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &kp ESC  &kp SPACE        &kp TAB  &trans  &trans                                                           &trans
