@@ -165,11 +165,11 @@ layers:
   - '*'
   - {t: '[', s: '{'}
   - '}'
-  - '&user'
+  - '&sean'
+  - '&sen'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&victoria'
   - ':'
   - $
   - '%'
@@ -255,11 +255,11 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&mkp MB5'
+  - '&mkp MB4'
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
-  - '&mkp MB4'
+  - '&mkp MB5'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
@@ -289,7 +289,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - $$mdi:bluetooth-off$$
   - F11
   - F4
   - F5
@@ -310,7 +310,7 @@ layers:
   - AL MY COMPUTER
   - CALCULATOR
   - AL MAIL
-  - $$mdi:bluetooth-off$$
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - {h: '$$mdi:arrow-up-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - $$mdi:keyboard-esc$$
@@ -340,13 +340,13 @@ combos:
   l: [HOME]
 - p: [16, 17]
   k: $$mdi:mouse-left-click-outline$$
-  l: [HOME]
+  l: [HOME, SNIPE]
 - p: [19, 18]
   k: $$mdi:mouse-right-click-outline$$
-  l: [HOME]
-- p: [5, 6]
+  l: [HOME, SNIPE]
+- p: [26, 27]
   k: $$mdi:mouse-scroll-wheel$$
-  l: [HOME]
+  l: [HOME, SNIPE]
 - p: [20, 23]
   k: Ctl+Alt+$$mdi:keyboard-tab$$
   l: [HOME]
