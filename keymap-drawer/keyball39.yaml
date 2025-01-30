@@ -208,7 +208,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft+HOME
   - Ctl+C
-  - Ctl+V
+  - {t: Alt+`, s: Alt+~}
   - Sft+END
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
