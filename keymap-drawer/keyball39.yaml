@@ -335,9 +335,6 @@ combos:
 - p: [23, 26]
   k: _
   l: [HOME]
-- p: [20, 23]
-  k: $$mdi:apple-keyboard-caps$$
-  l: [HOME]
 - p: [16, 17]
   k: $$mdi:mouse-left-click-outline$$
   l: [HOME, SNIPE]
