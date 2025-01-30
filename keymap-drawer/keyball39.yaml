@@ -199,46 +199,6 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  SCROLL:
-  - Ctl+PgUp
-  - Ctl+C
-  - Ctl+V
-  - Ctl+PgDn
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Sft+HOME
-  - Ctl+C
-  - Ctl+V
-  - Sft+END
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-right-bold$$
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - HOME
-  - PgDn
-  - PgUp
-  - END
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:keyboard-space$$', type: held}
-  - $$mdi:keyboard-tab$$
-  - {t: SNIPE, h: toggle}
-  - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
   SNIPE:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -279,6 +239,46 @@ layers:
   - $$mdi:apple-keyboard-caps$$
   - PRINTSCREEN
   - {t: SIMPLE, h: toggle}
+  SCROLL:
+  - Ctl+PgUp
+  - Ctl+C
+  - Ctl+V
+  - Ctl+PgDn
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+HOME
+  - Ctl+C
+  - Ctl+V
+  - Sft+END
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - HOME
+  - PgDn
+  - PgUp
+  - END
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-space$$', type: held}
+  - {t: '$$mdi:keyboard-tab$$', type: held alternate}
+  - {t: SNIPE, h: toggle}
+  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
   FUNCTION:
   - F12
   - F7
@@ -337,13 +337,13 @@ combos:
   l: [HOME]
 - p: [16, 17]
   k: $$mdi:mouse-left-click-outline$$
-  l: [HOME, SNIPE]
+  l: [HOME, FUNCTION]
 - p: [19, 18]
   k: $$mdi:mouse-right-click-outline$$
-  l: [HOME, SNIPE]
+  l: [HOME, FUNCTION]
 - p: [26, 27]
   k: $$mdi:mouse-scroll-wheel$$
-  l: [HOME, SNIPE]
+  l: [HOME, FUNCTION]
 - p: [20, 23]
   k: Ctl+Alt+$$mdi:keyboard-tab$$
   l: [HOME]
