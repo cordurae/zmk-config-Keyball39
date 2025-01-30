@@ -31,8 +31,8 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - APPLICATION
-  - Alt+Ctl+$$mdi:keyboard-tab$$
+  - Gui+$$mdi:keyboard-tab$$
+  - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:keyboard-esc$$', h: MEDIA}
   - {t: '$$mdi:keyboard-space$$', h: SCROLL}
   - {t: '$$mdi:keyboard-tab$$', h: SNIPE}
@@ -165,11 +165,11 @@ layers:
   - '*'
   - {t: '[', s: '{'}
   - '}'
-  - '&sean'
+  - '&user'
   - '&sen'
   - '&Estar'
   - '&heart'
-  - '&victoria'
+  - '&wife'
   - ':'
   - $
   - '%'
@@ -185,7 +185,7 @@ layers:
   - '@'
   - '#'
   - '|'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&clear'
   - {t: '$$mdi:transfer$$', type: trans}
   - '&trademark'
   - '&bullet'
