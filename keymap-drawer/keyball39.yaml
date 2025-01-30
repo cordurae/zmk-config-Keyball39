@@ -167,15 +167,15 @@ layers:
   - '}'
   - '&sean'
   - '&sen'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&Estar'
+  - '&heart'
   - '&victoria'
   - ':'
   - $
   - '%'
   - ^
   - +
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&highlight'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -187,9 +187,9 @@ layers:
   - '|'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&trademark'
+  - '&bullet'
+  - '&filter'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -236,8 +236,8 @@ layers:
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:keyboard-space$$', type: held}
   - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: SNIPE, h: toggle}
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   SNIPE:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -269,12 +269,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-down$$
   - $$mdi:pan-up$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: HOME, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-esc$$
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: SCROLL}
   - {type: held}
   - $$mdi:apple-keyboard-caps$$
   - PRINTSCREEN
