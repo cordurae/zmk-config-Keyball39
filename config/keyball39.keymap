@@ -74,6 +74,7 @@
 
         trademark: trademark {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
             bindings
@@ -86,6 +87,7 @@
 
         bullet: bullet {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
             bindings
@@ -98,6 +100,7 @@
 
         heart: heart {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
             bindings
@@ -110,6 +113,7 @@
 
         filter: filter {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LALT>
                 , <&macro_tap &kp DOWN &kp E>
@@ -120,6 +124,7 @@
 
         highlight: highlight {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
             bindings
