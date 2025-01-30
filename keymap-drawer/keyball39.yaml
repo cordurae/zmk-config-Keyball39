@@ -206,10 +206,10 @@ layers:
   - Ctl+PgDn
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Sft+HOME
+  - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+C
   - Ctl+V
-  - Sft+END
+  - {t: HOME, h: toggle}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
