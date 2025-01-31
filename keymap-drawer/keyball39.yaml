@@ -329,6 +329,9 @@ combos:
 - p: [27, 28]
   k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [HOME]
+- p: [21, 22]
+  k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  l: [HOME]
 - p: [24, 25]
   k: {t: '-', s: _}
   l: [HOME]
