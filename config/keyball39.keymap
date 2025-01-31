@@ -272,6 +272,12 @@
             layers = <0 6>;
         };
 
+        mmSCROLL {
+            bindings = <&to 5>;
+            key-positions = <26 29>;
+            layers = <0 6>;
+        };
+
         zcMenu {
             bindings = <&kp K_APPLICATION>;
             key-positions = <20 22>;
