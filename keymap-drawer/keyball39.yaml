@@ -26,10 +26,10 @@ layers:
   - V
   - B
   - N
-  - M
+  - {t: M, h: SCROLL}
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: /, h: SCROLL, s: '?'}
+  - {t: /, s: '?'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - Gui+$$mdi:keyboard-tab$$
   - GLOBE
@@ -226,10 +226,10 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - HOME
+  - {t: HOME, type: held}
   - PgDn
   - PgUp
-  - {t: END, type: held}
+  - END
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
