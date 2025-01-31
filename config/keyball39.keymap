@@ -176,14 +176,16 @@
                 <&macro_release>,
                 <&kp LSFT>,
                 <&macro_tap>,
-                <&kp ENTER>;
+                <&kp ENTER>,
+                <&macro_tap>,
+                <&kp ESCAPE>;
             label = "clear";
         };
 
         sen: sen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp S &kp R &kp O &kp G &kp E &kp N2 &kp N2>;
+            bindings = <&kp S &kp R &kp O &kp G &kp E &kp N2 &kp N2 &kp LS(B) &kp RET>;
             label = "SEN";
         };
 
@@ -348,8 +350,8 @@
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&kp LC(PAGE_UP)  &kp LC(C)  &kp LC(V)  &kp LC(PAGE_DOWN)  &trans                     &trans      &trans          &kp LC(C)       &kp LC(V)     &to 0
-&kp LEFT_GUI     &kp LALT   &kp LCTRL  &kp LSHFT          &trans                     &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
+&kp LC(PAGE_UP)  &kp LC(C)  &kp LC(V)  &kp LC(PAGE_DOWN)  &kp LC(HOME)               &trans      &trans          &kp LC(C)       &kp LC(V)     &to 0
+&kp LEFT_GUI     &kp LALT   &kp LCTRL  &kp LSHFT          &kp LC(END)                &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
 &kp LEFT         &kp DOWN   &kp UP     &kp RIGHT          &trans                     &trans      &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
 &trans           &trans     &trans     &kp ESC            &to 6  &kp TAB  &to 6  &kp DELETE                                                &trans
             >;
