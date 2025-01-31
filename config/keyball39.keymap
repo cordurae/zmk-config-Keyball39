@@ -230,6 +230,12 @@
             layers = <0>;
         };
 
+        xcLSFT {
+            bindings = <&sk LSHIFT>;
+            key-positions = <21 22>;
+            layers = <0>;
+        };
+
         bnDASH {
             bindings = <&kp MINUS>;
             key-positions = <24 25>;
