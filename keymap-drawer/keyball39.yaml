@@ -29,7 +29,7 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: /, s: '?'}
+  - {t: /, h: SCROLL, s: '?'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - Gui+$$mdi:keyboard-tab$$
   - GLOBE
@@ -229,12 +229,12 @@ layers:
   - HOME
   - PgDn
   - PgUp
-  - END
+  - {t: END, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-esc$$
-  - {t: SNIPE, h: toggle, type: held}
+  - {t: SNIPE, h: toggle, type: held alternate}
   - $$mdi:keyboard-tab$$
   - {t: SNIPE, h: toggle}
   - $$mdi:backspace-reverse-outline$$
