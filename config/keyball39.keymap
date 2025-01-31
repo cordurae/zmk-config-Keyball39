@@ -212,20 +212,20 @@
     combos {
         compatible = "zmk,combos";
 
-        zxENTER {
+        zxENT {
             bindings = <&kp ENTER>;
             key-positions = <20 21>;
             layers = <0>;
         };
 
-        cvSLSFT {
-            bindings = <&sk LEFT_SHIFT>;
-            key-positions = <22 23>;
+        mdotDEL {
+            bindings = <&kp DELETE>;
+            key-positions = <26 28>;
             layers = <0>;
         };
 
-        puncDEL {
-            bindings = <&kp DELETE>;
+        puncLSFT {
+            bindings = <&sk LEFT_SHIFT>;
             key-positions = <27 28>;
             layers = <0>;
         };
@@ -242,13 +242,13 @@
             layers = <0>;
         };
 
-        jkclk {
+        jkLCLK {
             bindings = <&mkp LCLK>;
             key-positions = <16 17>;
             layers = <0 6>;
         };
 
-        llclk {
+        llRCLK {
             bindings = <&mkp RCLK>;
             key-positions = <19 18>;
             layers = <0 6>;
@@ -260,25 +260,25 @@
             layers = <0 6>;
         };
 
-        zvTasks {
+        zvTASKS {
             bindings = <&kp LC(LA(TAB))>;
             key-positions = <20 23>;
             layers = <0 6>;
         };
 
-        xvSwitch {
+        xvSWITCH {
             bindings = <&kp LA(TAB)>;
             key-positions = <21 23>;
             layers = <0 6>;
         };
 
-        mmSCROLL {
+        mmSCROLLTOG {
             bindings = <&to 5>;
             key-positions = <26 29>;
             layers = <0 6>;
         };
 
-        zcMenu {
+        zcMENU {
             bindings = <&kp K_APPLICATION>;
             key-positions = <20 22>;
             layers = <0 6>;
