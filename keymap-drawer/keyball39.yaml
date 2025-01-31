@@ -350,6 +350,9 @@ combos:
 - p: [21, 23]
   k: Alt+$$mdi:keyboard-tab$$
   l: [HOME, SNIPE]
+- p: [26, 29]
+  k: {t: SCROLL, h: toggle}
+  l: [HOME, SNIPE]
 - p: [20, 22]
   k: APPLICATION
   l: [HOME, SNIPE]
