@@ -224,9 +224,9 @@
             layers = <0>;
         };
 
-        vbDEL {
+        puncDEL {
             bindings = <&kp DELETE>;
-            key-positions = <24 23>;
+            key-positions = <27 28>;
             layers = <0>;
         };
 
