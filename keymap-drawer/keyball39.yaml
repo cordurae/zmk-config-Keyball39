@@ -29,7 +29,7 @@ layers:
   - {t: M, h: SCROLL}
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: /, s: '?'}
+  - {t: /, h: FUNCTION, s: '?'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - Gui+$$mdi:keyboard-tab$$
   - GLOBE
@@ -309,7 +309,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - AL MY COMPUTER
   - CALCULATOR
-  - AL MAIL
+  - {t: AL MAIL, type: held}
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - {h: '$$mdi:arrow-up-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
@@ -318,11 +318,11 @@ layers:
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {type: held alternate}
 combos:
 - p: [20, 21]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-  l: [HOME]
+  l: [HOME, SNIPE]
 - p: [26, 28]
   k: $$mdi:backspace-reverse-outline$$
   l: [HOME]
