@@ -323,11 +323,11 @@ combos:
 - p: [20, 21]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [HOME]
-- p: [22, 23]
-  k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+- p: [26, 28]
+  k: $$mdi:backspace-reverse-outline$$
   l: [HOME]
 - p: [27, 28]
-  k: $$mdi:backspace-reverse-outline$$
+  k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [HOME]
 - p: [24, 25]
   k: {t: '-', s: _}
