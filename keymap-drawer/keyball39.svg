@@ -548,9 +548,10 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="42" y="141" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="47" y="145" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
 </g>
-<g class="combo backspace combopos-1">
-<rect rx="6" ry="6" x="154" y="131" width="28" height="26" class="combo backspace"/>
-<use href="#mdi:backspace" xlink:href="#mdi:backspace" x="159" y="135" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="154" y="131" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="159" y="135" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-shift"/>
+<use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="160" y="140" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="210" y="138" width="28" height="26" class="combo"/>
