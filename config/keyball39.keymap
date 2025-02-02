@@ -371,7 +371,7 @@
 &kp F12     &kp F7        &kp F8      &kp F9   &kp INS                          &trans  &trans           &trans                &trans            &trans
 &kp F11     &kp F4        &kp F5      &kp F6   &kp SCROLLLOCK                   &trans  &kp RIGHT_SHIFT  &kp RCTRL             &kp RIGHT_ALT     &kp RIGHT_GUI
 &kp F10     &kp F1        &kp F2      &kp F3   &kp PAUSE_BREAK                  &trans  &trans           &kp C_AL_MY_COMPUTER  &kp K_CALCULATOR  &kp C_AL_MAIL
-&bt BT_CLR  &out OUT_BLE  &kp LA(F4)  &kp ESC  &kp SPACE        &kp TAB  &trans  &trans                                                           &trans
+&bt BT_CLR  &trans        &kp LA(F4)  &kp ESC  &kp SPACE        &kp TAB  &trans  &trans                                                           &trans
             >;
 
             label = "FNCT";
