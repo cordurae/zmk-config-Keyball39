@@ -484,8 +484,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">/</text>
-<a href="#FUNCTION">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 75%">FUNCTION</tspan></text>
+<a href="#FUNC">
+<text x="0" y="24" class="key hold layer-activator">FUNC</text>
 </a><text x="0" y="-24" class="key shifted">?</text>
 </g>
 <g transform="translate(28, 217)" class="key keypos-30">
@@ -1947,8 +1947,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 2406)" class="layer-FUNCTION">
-<text x="0" y="28" class="label" id="FUNCTION">FUNCTION:</text>
+<g transform="translate(40, 2406)" class="layer-FUNC">
+<text x="0" y="28" class="label" id="FUNC">FUNC:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -2075,7 +2075,9 @@ rect.held, rect.combo.held {
 <g transform="translate(252, 154)" class="key keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">PAUSE</text>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.6em">PAUSE</tspan><tspan x="0" dy="1.2em">BREAK</tspan>
+</text>
 </g>
 <g transform="translate(504, 154)" class="key trans keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>

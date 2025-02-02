@@ -29,7 +29,7 @@ layers:
   - {t: M, h: SCROLL}
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: /, h: FUNCTION, s: '?'}
+  - {t: /, h: FUNC, s: '?'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:mouse-left-click-outline$$
   - '&td_rclk'
@@ -279,7 +279,7 @@ layers:
   - $$mdi:apple-keyboard-caps$$
   - PRINTSCREEN
   - {t: SIMPLE, h: toggle}
-  FUNCTION:
+  FUNC:
   - F12
   - F7
   - F8
@@ -304,7 +304,7 @@ layers:
   - F1
   - F2
   - F3
-  - PAUSE
+  - PAUSE BREAK
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - AL MY COMPUTER
