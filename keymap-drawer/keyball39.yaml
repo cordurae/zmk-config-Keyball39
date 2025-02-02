@@ -29,7 +29,7 @@ layers:
   - {t: M, h: SCROLL}
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: /, h: FNCT, s: '?'}
+  - {t: /, h: FUNCTION, s: '?'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:mouse-left-click-outline$$
   - '&td_rclk'
@@ -100,7 +100,7 @@ layers:
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
   - $$mdi:skip-next$$
-  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {h: '$$mdi:arrow-up-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -279,7 +279,7 @@ layers:
   - $$mdi:apple-keyboard-caps$$
   - PRINTSCREEN
   - {t: SIMPLE, h: toggle}
-  FNCT:
+  FUNCTION:
   - F12
   - F7
   - F8
@@ -311,7 +311,7 @@ layers:
   - CALCULATOR
   - {t: AL MAIL, type: held}
   - $$mdi:bluetooth-off$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - Alt+F4
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-space$$
