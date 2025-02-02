@@ -311,7 +311,7 @@ layers:
   - CALCULATOR
   - {t: AL MAIL, type: held}
   - $$mdi:bluetooth-off$$
-  - OUT BLE
+  - {t: '$$mdi:transfer$$', type: trans}
   - Alt+F4
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-space$$
