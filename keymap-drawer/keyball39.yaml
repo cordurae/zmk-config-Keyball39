@@ -31,14 +31,14 @@ layers:
   - {t: ., s: '>'}
   - {t: /, h: FUNCTION, s: '?'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - Gui+$$mdi:keyboard-tab$$
-  - GLOBE
+  - $$mdi:mouse-left-click-outline$$
+  - '&td_rclk'
   - {t: '$$mdi:keyboard-esc$$', h: MEDIA}
   - {t: '$$mdi:keyboard-space$$', h: SCROLL}
   - {t: '$$mdi:keyboard-tab$$', h: SNIPE}
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
   - {t: '$$mdi:backspace$$', h: NUM}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: FUNCTION}
+  - {t: SCROLL, h: toggle}
   SIMPLE:
   - Q
   - W
@@ -201,14 +201,14 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   SCROLL:
   - Ctl+PgUp
-  - Ctl+C
-  - Ctl+V
+  - '&td_cc'
+  - '&td_paste'
   - Ctl+PgDn
   - Ctl+HOME
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+C
-  - Ctl+V
+  - '&td_cc'
+  - '&td_paste'
   - {t: HOME, h: toggle}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
@@ -231,24 +231,24 @@ layers:
   - PgUp
   - END
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
+  - {type: held alternate}
   - $$mdi:keyboard-esc$$
   - {t: SNIPE, h: toggle, type: held alternate}
   - $$mdi:keyboard-tab$$
   - {t: SNIPE, h: toggle}
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: HOME, h: toggle}
   SNIPE:
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+C
-  - Ctl+V
+  - '&td_cc'
+  - '&td_paste'
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+C
-  - Gui+Sft+V
+  - '&td_cc'
+  - '&td_paste'
   - {t: HOME, h: toggle}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
@@ -318,7 +318,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [20, 21]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
@@ -353,9 +353,9 @@ combos:
 - p: [21, 23]
   k: Alt+$$mdi:keyboard-tab$$
   l: [HOME, SNIPE]
-- p: [26, 29]
-  k: {t: SCROLL, h: toggle}
-  l: [HOME, SNIPE]
+- p: [31, 32]
+  k: SCROLL
+  l: [HOME]
 - p: [20, 22]
   k: APPLICATION
   l: [HOME, SNIPE]
