@@ -71,6 +71,7 @@
         
         td_rclk: tap_dance_RCLK {
             compatible = "zmk,behavior-tap-dance";
+            label = "TD_RCLK"
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp GLOBE>, <&mkp RCLk>;
@@ -78,6 +79,7 @@
 
         td_paste: tap_dance_paste {
             compatible = "zmk,behavior-tap-dance";
+            label = "TD_PASTE"
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LC(V)>, <&kp LG(LS(V))>;
@@ -85,6 +87,7 @@
 
         td_cc: tap_dance_cut_copy {
             compatible = "zmk,behavior-tap-dance";
+            label = "TD_CUTCOPY"
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LC(C)>, <&kp LC(X)>;
