@@ -68,7 +68,28 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        
+        td_rclk: tap_dance_RCLK {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp GLOBE>, <&mkp RCLk>;
+        };    
 
+        td_paste: tap_dance_paste {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LC(V)>, <&kp LG(LS(V))>;
+        };  
+
+        td_cc: tap_dance_cut_copy {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LC(C)>, <&kp LC(X)>;
+        }; 
+    
         dtsmi: dot_semi {
             compatible = "zmk,behavior-mod-morph";
             label = "DOT_SEMI";
@@ -284,10 +305,10 @@
             layers = <0 6>;
         };
 
-        mmSCROLLTOG {
-            bindings = <&to 5>;
-            key-positions = <26 29>;
-            layers = <0 6>;
+        tempSCROLL {
+            bindings = <&mo 5>;
+            key-positions = <31 32>;
+            layers = <0>;
         };
 
         zcMENU {
@@ -306,7 +327,7 @@
 &kp Q           &kp W           &kp E        &kp R             &kp T                                &kp Y            &kp U        &kp I        &kp O            &kp P
 &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G                                &kp H            &mt RSHFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SQT
 &kp Z           &kp X           &kp C        &kp V             &kp B                                &kp N            &lt 5 M      &kp COMMA    &kp DOT          &lt 7 SLASH
-&sk LEFT_SHIFT  &kp LG(TAB)     &kp GLOBE    &lt 2 ESCAPE      &lt 5 SPACE  &lt 6 TAB  &lt 4 ENTER  &lt 3 BACKSPACE                                             &lt 7 DELETE
+&sk LEFT_SHIFT  &mkp LCLK       &td_rclk     &lt 2 ESCAPE      &lt 5 SPACE  &lt 6 TAB  &lt 4 ENTER  &lt 3 BACKSPACE                                             &to 5
             >;
         };
 
@@ -354,17 +375,17 @@
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&kp LC(PAGE_UP)  &kp LC(C)  &kp LC(V)  &kp LC(PAGE_DOWN)  &kp LC(HOME)                  &trans      &trans          &kp LC(C)       &kp LC(V)     &to 0
+&kp LC(PAGE_UP)  &td_cc     &td_paste  &kp LC(PAGE_DOWN)  &kp LC(HOME)                  &trans      &trans          &td_cc          &td_paste     &to 0
 &kp LEFT_GUI     &kp LALT   &kp LCTRL  &kp LSHFT          &kp LC(END)                   &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
 &kp LEFT         &kp DOWN   &kp UP     &kp RIGHT          &trans                        &trans      &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
-&trans           &trans     &trans     &kp ESC            &to 6         &kp TAB  &to 6  &kp DELETE                                                &trans
+&trans           &trans     &trans     &kp ESC            &to 6         &kp TAB  &to 6  &kp DELETE                                                &to 0
             >;
         };
 
         snipe_layer {
             label = "SNIPE";
             bindings = <
-&trans          &kp LC(C)       &kp LC(V)     &trans           &bootloader                        &trans           &trans     &kp LC(C)       &kp LG(LS(V))  &to 0
+&trans          &td_cc          &td_paste     &trans           &bootloader                        &trans           &trans     &td_cc          &td_paste      &to 0
 &kp LEFT_GUI    &kp LEFT_ALT    &kp LCTRL     &kp LEFT_SHIFT   &trans                             &mkp MB4         &mkp LCLK  &mkp MCLK       &mkp RCLK      &mkp MB5
 &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans                             &trans           &trans     &msc SCRL_DOWN  &msc SCRL_UP   &trans
 &trans          &trans          &trans        &kp ESCAPE       &to 5        &trans  &kp CAPSLOCK  &kp PRINTSCREEN                                            &to 1
