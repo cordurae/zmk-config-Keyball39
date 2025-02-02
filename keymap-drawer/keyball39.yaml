@@ -29,7 +29,7 @@ layers:
   - {t: M, h: SCROLL}
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: /, h: FUNC, s: '?'}
+  - {t: /, h: FNCT, s: '?'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:mouse-left-click-outline$$
   - '&td_rclk'
@@ -279,7 +279,7 @@ layers:
   - $$mdi:apple-keyboard-caps$$
   - PRINTSCREEN
   - {t: SIMPLE, h: toggle}
-  FUNC:
+  FNCT:
   - F12
   - F7
   - F8
@@ -311,7 +311,7 @@ layers:
   - CALCULATOR
   - {t: AL MAIL, type: held}
   - $$mdi:bluetooth-off$$
-  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - OUT BLE
   - Alt+F4
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-space$$
