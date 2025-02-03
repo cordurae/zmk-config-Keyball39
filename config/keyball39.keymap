@@ -54,7 +54,7 @@
             label = "TD_PASTE";
             #binding-cells = <0>;
             tapping-term-ms = <240>;
-            bindings = <&kp LC(V)>, <&kp LS(LC(GRAVE))>, <&kp LG(LS(V))>;
+            bindings = <&kp LC(V)>, <&kp LG(LS(V))>;
         };  
 
         td_cc: tap_dance_cut_copy {
@@ -79,6 +79,14 @@
             #binding-cells = <0>;
             tapping-term-ms = <240>;
             bindings = <&parenthesis>, <&bracket>, <&brace>;
+        }; 
+
+        td_clear: tap_dance_clear {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_CLEAR";
+            #binding-cells = <0>;
+            tapping-term-ms = <240>;
+            bindings = <&clear>, <&clear2>;
         }; 
 
         td_quotes: tap_dance_quotes {
@@ -204,6 +212,34 @@
                 <&kp ESCAPE>;
 
             label = "clear";
+        };
+
+        clear2: clear2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <60>;
+            tap-ms = <60>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_tap>,
+                <&kp DOWN,
+                <&macro_tap>,
+                <&kp DOWN,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_tap>,
+                <&kp ESCAPE>;
+
+            label = "clear2";
         };
 
         parenthesis: parenthesis {
@@ -427,7 +463,7 @@
             bindings = <
 &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_BRACKET      &kp RIGHT_BRACE                                &user       &sen    &Estar      &heart   &wife
 &kp COLON       &kp DOLLAR     &kp PERCENT   &kp CARET             &kp PLUS                                       &highlight  &td_brackets  &td_quotes   &trans   &trans
-&kp TILDE       &kp EXCL       &kp AT        &kp HASH              &kp PIPE                                       &clear      &trans  &trademark  &bullet  &filter
+&kp TILDE       &kp EXCL       &kp AT        &kp HASH              &kp PIPE                                       &td_clear      &trans  &trademark  &bullet  &filter
 &trans          &trans         &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &trans  &trans                                   &mapdoc
             >;
         };
