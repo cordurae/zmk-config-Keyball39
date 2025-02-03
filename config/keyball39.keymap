@@ -46,7 +46,7 @@
             label = "TD_RCLK";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp GLOBE>, <&mkp RCLK>;
+            bindings = <&kp GLOBE>, <&mkp RCLK>, <&kp (LG)TAB>, <&kp (LG)X> ;
         };    
 
         td_paste: tap_dance_paste {
@@ -54,7 +54,7 @@
             label = "TD_PASTE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LC(V)>, <&kp LG(LS(V))>;
+            bindings = <&kp LC(V)>, <&kp LG(LS(V))>, <&kp (LA)GRAVE>;
         };  
 
         td_cc: tap_dance_cut_copy {
@@ -63,6 +63,14 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LC(C)>, <&kp LC(X)>;
+        }; 
+
+        td_scroll: tap_dance_scroll {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SCROLL";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 5>, <&to 5>;
         }; 
     
         dtsmi: dot_semi {
@@ -281,7 +289,7 @@
         };
 
         tempSCROLL {
-            bindings = <&mo 5>;
+            bindings = <&td_scroll>;
             key-positions = <31 32>;
             layers = <0>;
         };
