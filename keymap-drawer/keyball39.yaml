@@ -198,7 +198,7 @@ layers:
   - _
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mapdoc'
   SCROLL:
   - Ctl+PgUp
   - '&td_cc'
