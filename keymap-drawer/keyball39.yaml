@@ -362,6 +362,6 @@ combos:
 - p: [30, 32]
   k: $$mdi:mouse-scroll-wheel$$
   l: [HOME]
-- p: [20, 22]
+- p: [22, 23]
   k: APPLICATION
   l: [HOME, SNIPE]
