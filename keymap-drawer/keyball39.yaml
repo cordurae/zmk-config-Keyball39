@@ -237,7 +237,7 @@ layers:
   - {t: SNIPE, h: toggle, type: held alternate}
   - $$mdi:keyboard-tab$$
   - {t: SNIPE, h: toggle}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: HOME, h: toggle}
   SNIPE:
   - {t: '$$mdi:transfer$$', type: trans}
