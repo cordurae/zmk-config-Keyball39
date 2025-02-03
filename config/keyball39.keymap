@@ -72,6 +72,22 @@
             tapping-term-ms = <400>;
             bindings = <&mo 5>, <&to 5>, <&to 6>;
         }; 
+
+        td_brackets: tap_dance_bracket {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_BRACKET";
+            #binding-cells = <0>;
+            tapping-term-ms = <240>;
+            bindings = <&parenthesis>, <&bracket>, <&brace>, <&lessgreaterthan>;
+        }; 
+
+        td_quotes: tap_dance_quotes {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_QUOTES";
+            #binding-cells = <0>;
+            tapping-term-ms = <240>;
+            bindings = <&squote>, <&dquotes>;
+        }; 
     
         dtsmi: dot_semi {
             compatible = "zmk,behavior-mod-morph";
@@ -188,6 +204,48 @@
                 <&kp ESCAPE>;
 
             label = "clear";
+        };
+
+        parenthesis: parenthesis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+            label = "parenthesis";
+        };
+
+        bracket: bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            label = "bracket";
+        };
+
+        brace: brace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
+            label = "brace";
+        };
+
+        lessgreaterthan: lessgreaterthan {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = &kp LESS_THAN &kp GREATER_THAN &kp LEFT>;
+            label = "lessgreaterthan";
+        };
+
+        squote: squote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = &kp SINGLE_QUOTE &kp SINGLE_QUOTE &kp LEFT>;
+            label = "squote";
+        };
+
+        dquote: dquote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = &kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT>;
+            label = "dquote";
         };
 
         sen: sen {
@@ -368,7 +426,7 @@
             label = "SYMBOL";
             bindings = <
 &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_BRACKET      &kp RIGHT_BRACE                                &user       &sen    &Estar      &heart   &wife
-&kp COLON       &kp DOLLAR     &kp PERCENT   &kp CARET             &kp PLUS                                       &highlight  &trans  &trans      &trans   &trans
+&kp COLON       &kp DOLLAR     &kp PERCENT   &kp CARET             &kp PLUS                                       &highlight  &td_brackets  &td_quotes   &trans   &trans
 &kp TILDE       &kp EXCL       &kp AT        &kp HASH              &kp PIPE                                       &clear      &trans  &trademark  &bullet  &filter
 &trans          &trans         &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &trans  &trans                                   &mapdoc
             >;
