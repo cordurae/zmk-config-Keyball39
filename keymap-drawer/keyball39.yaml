@@ -206,7 +206,7 @@ layers:
   - Ctl+PgDn
   - Ctl+HOME
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&key_repeat'
   - '&td_cc'
   - '&td_paste'
   - {t: HOME, h: toggle}
@@ -225,7 +225,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backspace-reverse-outline$$
   - HOME
   - {t: PgDn, type: held}
   - PgUp
