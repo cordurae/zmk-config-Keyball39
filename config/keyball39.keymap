@@ -46,7 +46,7 @@
             label = "TD_RCLK";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp GLOBE>, <&mkp RCLK>, <&kp (LG)TAB>, <&kp (LG)X>;
+            bindings = <&kp GLOBE>, <&mkp RCLK>, <&kp LG(TAB)>, <&kp LG(X)>;
         };    
 
         td_paste: tap_dance_paste {
@@ -54,7 +54,7 @@
             label = "TD_PASTE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LC(V)>, <&kp LG(LS(V))>, <&kp (LA)GRAVE>;
+            bindings = <&kp LC(V)>, <&kp LG(LS(V))>, <&kp LA(GRAVE)>;
         };  
 
         td_cc: tap_dance_cut_copy {
