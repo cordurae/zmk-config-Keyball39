@@ -241,11 +241,11 @@
             label = "squote";
         };
 
-        dquote: dquote {
+        dquotes: dquotes {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT>;
-            label = "dquote";
+            label = "dquotes";
         };
 
         sen: sen {
