@@ -26,8 +26,8 @@ layers:
   - V
   - B
   - N
-  - {t: M, h: SCROLL}
-  - {t: ',', s: <}
+  - M
+  - {t: ',', h: SCROLL, s: <}
   - {t: ., s: '>'}
   - {t: /, h: FUNCTION, s: '?'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
@@ -226,8 +226,8 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: HOME, type: held}
-  - PgDn
+  - HOME
+  - {t: PgDn, type: held}
   - PgUp
   - END
   - {t: '$$mdi:transfer$$', type: trans}
