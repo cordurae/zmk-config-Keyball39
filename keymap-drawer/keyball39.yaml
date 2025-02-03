@@ -215,7 +215,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - Ctl+END
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:alpha-w-box$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
