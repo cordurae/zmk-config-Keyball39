@@ -176,8 +176,8 @@ layers:
   - ^
   - +
   - '&highlight'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&td_brackets'
+  - '&td_quotes'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
