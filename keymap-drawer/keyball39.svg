@@ -502,7 +502,7 @@ rect.held, rect.combo.held {
 <g transform="translate(140, 196)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap"><tspan style="font-size: 75%">&amp;td_rclk</tspan></text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 67%">&amp;td_globe</tspan></text>
 </g>
 <g transform="translate(210, 224)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -608,6 +608,16 @@ rect.held, rect.combo.held {
 <text x="112" y="200" class="combo tap"><tspan style="font-size: 60%">&amp;td_scroll</tspan></text>
 </g>
 <g class="combo combopos-12">
+<rect rx="6" ry="6" x="42" y="197" width="28" height="26" class="combo"/>
+<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="47" y="201" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
+</g>
+<g class="combo combopos-13">
+<path d="M84,207 l-38,7" class="combo"/>
+<path d="M84,207 l38,-7" class="combo"/>
+<rect rx="6" ry="6" x="70" y="194" width="28" height="26" class="combo"/>
+<use href="#mdi:mouse-scroll-wheel" xlink:href="#mdi:mouse-scroll-wheel" x="75" y="198" height="18" width="18.0" class="combo tap glyph mdi:mouse-scroll-wheel"/>
+</g>
+<g class="combo combopos-14">
 <path d="M84,151 l-38,7" class="combo"/>
 <path d="M84,151 l38,-7" class="combo"/>
 <rect rx="6" ry="6" x="70" y="138" width="28" height="26" class="combo"/>

@@ -32,7 +32,7 @@ layers:
   - {t: /, h: FUNCTION, s: '?'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:mouse-left-click-outline$$
-  - '&td_rclk'
+  - '&td_globe'
   - {t: '$$mdi:keyboard-esc$$', h: MEDIA}
   - {t: '$$mdi:keyboard-space$$', h: SCROLL}
   - {t: '$$mdi:keyboard-tab$$', h: SNIPE}
@@ -355,6 +355,12 @@ combos:
   l: [HOME, SNIPE]
 - p: [31, 32]
   k: '&td_scroll'
+  l: [HOME]
+- p: [30, 31]
+  k: $$mdi:mouse-right-click-outline$$
+  l: [HOME]
+- p: [30, 32]
+  k: $$mdi:mouse-scroll-wheel$$
   l: [HOME]
 - p: [20, 22]
   k: APPLICATION
