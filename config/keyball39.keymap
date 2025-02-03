@@ -209,42 +209,42 @@
         parenthesis: parenthesis {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
             label = "parenthesis";
         };
 
         bracket: bracket {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
             label = "bracket";
         };
 
         brace: brace {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
             label = "brace";
         };
 
         lessgreaterthan: lessgreaterthan {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = &kp LESS_THAN &kp GREATER_THAN &kp LEFT>;
+            bindings = <&kp LESS_THAN &kp GREATER_THAN &kp LEFT>;
             label = "lessgreaterthan";
         };
 
         squote: squote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = &kp SINGLE_QUOTE &kp SINGLE_QUOTE &kp LEFT>;
+            bindings = <&kp SINGLE_QUOTE &kp SINGLE_QUOTE &kp LEFT>;
             label = "squote";
         };
 
         dquote: dquote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = &kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT>;
+            bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT>;
             label = "dquote";
         };
 
