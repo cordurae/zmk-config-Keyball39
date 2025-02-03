@@ -41,12 +41,12 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         
-        td_rclk: tap_dance_RCLK {
+        td_globe: tap_dance_globe {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_RCLK";
+            label = "TD_GLOBE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp GLOBE>, <&mkp RCLK>, <&kp LG(TAB)>, <&kp LG(X)>;
+            bindings = <&kp GLOBE>, <&kp LG(H)>, <&kp LG(TAB)>, <&kp LG(X)>;
         };    
 
         td_paste: tap_dance_paste {
@@ -301,6 +301,18 @@
             layers = <0>;
         };
 
+        extraRCLK {
+            bindings = <&mkp RCLK>;
+            key-positions = <30 31>;
+            layers = <0>;
+        };
+
+        extraMCLK {
+            bindings = <&mkp MCLK>;
+            key-positions = <30 32>;
+            layers = <0>;
+        };
+
         zcMENU {
             bindings = <&kp K_APPLICATION>;
             key-positions = <20 22>;
@@ -317,7 +329,7 @@
 &kp Q           &kp W           &kp E        &kp R             &kp T                                &kp Y            &kp U        &kp I        &kp O            &kp P
 &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G                                &kp H            &mt RSHFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SQT
 &kp Z           &kp X           &kp C        &kp V             &kp B                                &kp N            &lt 5 M      &kp COMMA    &kp DOT          &lt 7 SLASH
-&sk LEFT_SHIFT  &mkp LCLK       &td_rclk     &lt 2 ESCAPE      &lt 5 SPACE  &lt 6 TAB  &lt 4 ENTER  &lt 3 BACKSPACE                                             &to 5
+&sk LEFT_SHIFT  &mkp LCLK       &td_globe    &lt 2 ESCAPE      &lt 5 SPACE  &lt 6 TAB  &lt 4 ENTER  &lt 3 BACKSPACE                                             &to 5
             >;
         };
 
