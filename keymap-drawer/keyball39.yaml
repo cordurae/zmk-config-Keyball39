@@ -185,7 +185,7 @@ layers:
   - '@'
   - '#'
   - '|'
-  - '&clear'
+  - '&td_clear'
   - {t: '$$mdi:transfer$$', type: trans}
   - '&trademark'
   - '&bullet'
