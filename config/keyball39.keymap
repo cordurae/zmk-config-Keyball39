@@ -70,7 +70,7 @@
             label = "TD_SCROLL";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo 5>, <&to 5>;
+            bindings = <&mo 5>, <&to 5>, <&to 6>;
         }; 
     
         dtsmi: dot_semi {
