@@ -322,7 +322,7 @@
         mapdoc: mapdoc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp H &kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp I &kp S &kp DOT &kp G &kp D &kp FSLH &kp LS(M) &kp N1 &kp L &kp N5 &kp W &kp U>;
+            bindings = <&kp R &kp B &kp DOT &kp G &kp Y &kp FSLH &kp X &kp D &kp G &kp V &kp R &kp N9>;
             label = "MAPDOC";
         };
 
@@ -417,12 +417,14 @@
 
         mmCAPSWORD {
             bindings = <&caps_word>;
-            key-positions = <22 27>;
+            key-positions = <14 15>;
+            layers = <0>;
         };
 
         mmCAPSLOCK {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <21 28>;
+            key-positions = <21 28 22 27>;
+            layers = <0>;
         };
 
         cvMENU {
