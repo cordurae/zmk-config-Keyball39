@@ -251,8 +251,8 @@
             #binding-cells = <0>;
             bindings 
                 = <&kp LG(LS(V))>
-                , <&macro_wait_time 100>
-                , <&kp LC(1)>;
+                , <&macro_wait_time 200>
+                , <&kp LC(N1)>;
             label = "spaste";
         };
 
