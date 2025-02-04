@@ -30,7 +30,7 @@ layers:
   - {t: ',', h: SCROLL, s: <}
   - {t: ., s: '>'}
   - {t: /, h: FUNCTION, s: '?'}
-  - '&td_rclk'
+  - SCROLL
   - $$mdi:mouse-left-click-outline$$
   - '&td_globe'
   - {t: '$$mdi:keyboard-esc$$', h: MEDIA}
@@ -230,7 +230,7 @@ layers:
   - {t: PgDn, type: held}
   - PgUp
   - END
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-esc$$
@@ -354,7 +354,10 @@ combos:
   k: Alt+$$mdi:keyboard-tab$$
   l: [HOME, SNIPE]
 - p: [30, 31]
-  k: '&td_scroll'
+  k: $$mdi:mouse-right-click-outline$$
+  l: [HOME]
+- p: [30, 32]
+  k: $$mdi:mouse-scroll-wheel$$
   l: [HOME]
 - p: [22, 23]
   k: APPLICATION
