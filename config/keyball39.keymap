@@ -100,14 +100,6 @@
             tapping-term-ms = <240>;
             bindings = <&squote>, <&dquotes>, <&lessgreaterthan>;
         }; 
-
-        td_rclk: tap_dance_rightclick {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_RIGHTCLICK";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo 5>, <&mkp RCLK>, <&mkp MCLK>;
-        }; 
     
         dtsmi: dot_semi {
             compatible = "zmk,behavior-mod-morph";
@@ -257,7 +249,10 @@
         spaste: spaste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LS(V)) &kp LC(1)>;
+            bindings 
+                = <&kp LG(LS(V))>
+                , <&macro_wait_time 100>
+                , <&kp LC(1)>;
             label = "spaste";
         };
 
@@ -408,9 +403,15 @@
             layers = <0 6>;
         };
 
-        tempSCROLL {
-            bindings = <&td_scroll>;
+        extraRCLK {
+            bindings = <&mkp RCLK>;
             key-positions = <30 31>;
+            layers = <0>;
+        };
+
+        extraMCLK {
+            bindings = <&mkp MCLK>;
+            key-positions = <30 32>;
             layers = <0>;
         };
 
@@ -430,7 +431,7 @@
 &kp Q           &kp W           &kp E        &kp R             &kp T                                &kp Y            &kp U        &kp I        &kp O            &kp P
 &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G                                &kp H            &mt RSHFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SQT
 &kp Z           &kp X           &kp C        &kp V             &kp B                                &kp N            &kp M        &lt 5 COMMA  &kp DOT          &lt 7 SLASH
-&td_rclk        &mkp LCLK       &td_globe    &lt 2 ESCAPE      &lt 5 SPACE  &lt 6 TAB  &lt 4 ENTER  &lt 3 BACKSPACE                                             &td_scroll
+&mo 5           &mkp LCLK       &td_globe    &lt 2 ESCAPE      &lt 5 SPACE  &lt 6 TAB  &lt 4 ENTER  &lt 3 BACKSPACE                                             &td_scroll
             >;
         };
 
