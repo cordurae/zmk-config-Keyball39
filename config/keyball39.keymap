@@ -415,6 +415,16 @@
             layers = <0>;
         };
 
+        mmCAPSWORD {
+            bindings = <&caps_word>;
+            key-positions = <22 27>;
+        };
+
+        mmCAPSLOCK {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <21 28>;
+        };
+
         cvMENU {
             bindings = <&kp K_APPLICATION>;
             key-positions = <22 23>;
