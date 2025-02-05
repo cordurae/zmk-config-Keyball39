@@ -236,9 +236,9 @@ layers:
   - $$mdi:keyboard-esc$$
   - {t: SNIPE, h: toggle, type: held alternate}
   - $$mdi:keyboard-tab$$
-  - {t: SNIPE, h: toggle}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: HOME, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   SNIPE:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&td_cc'
@@ -278,7 +278,7 @@ layers:
   - {type: held}
   - $$mdi:apple-keyboard-caps$$
   - PRINTSCREEN
-  - {t: SIMPLE, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   FUNCTION:
   - F12
   - F7
