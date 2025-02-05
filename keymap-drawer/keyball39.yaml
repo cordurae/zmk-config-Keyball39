@@ -135,7 +135,7 @@ layers:
   - '5'
   - '6'
   - {t: '=', s: +}
-  - LGUI
+  - {t: SNIPE, h: toggle}
   - KP 4
   - KP 5
   - KP 6
@@ -145,7 +145,7 @@ layers:
   - '2'
   - '3'
   - {t: \, s: '|'}
-  - LGUI
+  - {t: SCROLL, h: toggle}
   - KP 1
   - KP 2
   - KP 3
@@ -230,9 +230,9 @@ layers:
   - {t: PgDn, type: held}
   - PgUp
   - END
-  - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:mouse-right-click-outline$$', type: held alternate}
+  - $$mdi:mouse-left-click-outline$$
+  - $$mdi:mouse-scroll-wheel$$
   - $$mdi:keyboard-esc$$
   - {t: SNIPE, h: toggle, type: held alternate}
   - $$mdi:keyboard-tab$$
@@ -270,9 +270,9 @@ layers:
   - $$mdi:pan-down$$
   - $$mdi:pan-up$$
   - $$mdi:pan-right$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:mouse-right-click-outline$$
+  - $$mdi:mouse-left-click-outline$$
+  - $$mdi:mouse-scroll-wheel$$
   - $$mdi:keyboard-esc$$
   - {t: SCROLL, h: toggle}
   - {type: held}
