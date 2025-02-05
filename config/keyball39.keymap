@@ -472,8 +472,8 @@
             label = "NUM";
             bindings = <
 &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET                           &kp KP_NUMLOCK  &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp STAR
-&kp SEMICOLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                                   &kp LGUI        &kp KP_N4        &kp KP_N5  &kp KP_N6  &kp KP_N0
-&kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH                               &kp LGUI        &kp KP_NUMBER_1  &kp KP_N2  &kp KP_N3  &kp MINUS
+&kp SEMICOLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                                   &to 6           &kp KP_N4        &kp KP_N5  &kp KP_N6  &kp KP_N0
+&kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH                               &to 5           &kp KP_NUMBER_1  &kp KP_N2  &kp KP_N3  &kp MINUS
 &kp LEFT_ALT      &kp SPACE     &kp FSLH      &kp DOT       &kp NUMBER_0       &kp MINUS  &kp KP_ENTER  &kp BSPC                                               &bootloader
             >;
         };
@@ -494,7 +494,7 @@
 &kp LC(PAGE_UP)  &td_cc     &td_paste  &kp LC(PAGE_DOWN)  &kp LC(HOME)                  &trans      &key_repeat     &td_cc          &td_paste     &to 0
 &kp LEFT_GUI     &kp LALT   &kp LCTRL  &kp LSHFT          &kp LC(END)                   &caps_word  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
 &kp LEFT         &kp UP     &kp DOWN   &kp RIGHT          &trans                        &kp DELETE  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
-&trans           &trans     &trans     &kp ESC            &to 6         &kp TAB  &kp ENTER  &kp BACKSPACE                                         &trans
+&mkp RCLK        &mkp LCLK  &mkp MCLK  &kp ESC            &to 6         &kp TAB  &kp ENTER  &kp BACKSPACE                                         &trans
             >;
         };
 
@@ -503,8 +503,8 @@
             bindings = <
 &trans          &td_cc          &td_paste     &trans           &trans                             &trans           &trans     &td_cc          &td_paste      &to 0
 &kp LEFT_GUI    &kp LEFT_ALT    &kp LCTRL     &kp LEFT_SHIFT   &trans                             &mkp MB4         &mkp LCLK  &mkp MCLK       &mkp RCLK      &mkp MB5
-&mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_DOWN &mmv MOVE_RIGHT  &trans                            &trans           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
-&trans          &trans          &trans        &kp ESCAPE       &to 5        &trans  &kp CAPSLOCK  &kp PRINTSCREEN                                            &trans
+&mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans                             &trans           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
+&mkp RCLK       &mkp LCLK       &mkp MCLK     &kp ESCAPE       &to 5        &trans  &kp CAPSLOCK  &kp PRINTSCREEN                                            &trans
             >;
         };
 
