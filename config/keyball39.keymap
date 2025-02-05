@@ -74,7 +74,7 @@
             label = "TD_SCROLL";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&mo 5>, <&to 5>, <&to 6>;
+            bindings = <&mo 5>, <&to 5>, <&to 6>, <&to 1>;
         }; 
 
         td_brackets: tap_dance_bracket {
@@ -494,7 +494,7 @@
 &kp LC(PAGE_UP)  &td_cc     &td_paste  &kp LC(PAGE_DOWN)  &kp LC(HOME)                  &trans      &key_repeat     &td_cc          &td_paste     &to 0
 &kp LEFT_GUI     &kp LALT   &kp LCTRL  &kp LSHFT          &kp LC(END)                   &caps_word  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
 &kp LEFT         &kp UP     &kp DOWN   &kp RIGHT          &trans                        &kp DELETE  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
-&trans           &trans     &trans     &kp ESC            &to 6         &kp TAB  &to 6  &kp BACKSPACE                                                &to 0
+&trans           &trans     &trans     &kp ESC            &to 6         &kp TAB  &kp ENTER  &kp BACKSPACE                                         &trans
             >;
         };
 
@@ -504,7 +504,7 @@
 &trans          &td_cc          &td_paste     &trans           &trans                             &trans           &trans     &td_cc          &td_paste      &to 0
 &kp LEFT_GUI    &kp LEFT_ALT    &kp LCTRL     &kp LEFT_SHIFT   &trans                             &mkp MB4         &mkp LCLK  &mkp MCLK       &mkp RCLK      &mkp MB5
 &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_DOWN &mmv MOVE_RIGHT  &trans                            &trans           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
-&trans          &trans          &trans        &kp ESCAPE       &to 5        &trans  &kp CAPSLOCK  &kp PRINTSCREEN                                            &to 1
+&trans          &trans          &trans        &kp ESCAPE       &to 5        &trans  &kp CAPSLOCK  &kp PRINTSCREEN                                            &trans
             >;
         };
 
@@ -513,7 +513,7 @@
 &kp F12     &kp F7        &kp F8      &kp F9   &kp INS                          &trans  &trans           &trans                &trans            &trans
 &kp F11     &kp F4        &kp F5      &kp F6   &kp SCROLLLOCK                   &trans  &kp RIGHT_SHIFT  &kp RCTRL             &kp RIGHT_ALT     &kp RIGHT_GUI
 &kp F10     &kp F1        &kp F2      &kp F3   &kp PAUSE_BREAK                  &trans  &trans           &kp C_AL_MY_COMPUTER  &kp K_CALCULATOR  &kp C_AL_MAIL
-&bt BT_CLR  &out OUT_TOG  &kp LA(F4)  &kp ESC  &kp SPACE        &kp TAB  &trans  &trans                                                           &trans
+&bt BT_CLR  &out OUT_TOG  &kp LA(F4)  &kp ESC  &kp SPACE        &kp TAB  &trans  &trans                                                          &trans
             >;
 
             label = "FUNCTION";
