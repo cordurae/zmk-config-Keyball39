@@ -110,8 +110,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
-};
-    };
 
     macros {
         Hiragana: Hiragana {
