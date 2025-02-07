@@ -30,9 +30,9 @@ layers:
   - {t: ',', h: SCROLL, s: <}
   - {t: ., s: '>'}
   - {t: /, h: FUNCTION, s: '?'}
+  - '&td_globe'
   - SCROLL
   - $$mdi:mouse-left-click-outline$$
-  - '&td_globe'
   - {t: '$$mdi:keyboard-esc$$', h: MEDIA}
   - {t: '$$mdi:keyboard-space$$', h: SCROLL}
   - {t: '$$mdi:keyboard-tab$$', h: SNIPE}
@@ -230,8 +230,8 @@ layers:
   - {t: PgDn, type: held}
   - PgUp
   - END
-  - {t: '$$mdi:mouse-right-click-outline$$', type: held alternate}
-  - $$mdi:mouse-left-click-outline$$
+  - $$mdi:mouse-right-click-outline$$
+  - {t: '$$mdi:mouse-left-click-outline$$', type: held alternate}
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:keyboard-esc$$
   - {t: SNIPE, h: toggle, type: held alternate}
@@ -353,7 +353,7 @@ combos:
 - p: [21, 23]
   k: Alt+$$mdi:keyboard-tab$$
   l: [HOME, SNIPE]
-- p: [30, 31]
+- p: [31, 32]
   k: $$mdi:mouse-right-click-outline$$
   l: [HOME]
 - p: [30, 32]
