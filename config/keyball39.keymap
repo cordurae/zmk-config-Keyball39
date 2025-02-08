@@ -27,7 +27,8 @@
 };
 
 &sk {
-    quick-release;
+    quick-release;    
+    release-after-ms = <2000>;
 };
 
 &caps_word { continue-list = <UNDERSCORE MINUS>; };
@@ -98,7 +99,7 @@
             label = "TD_QUOTES";
             #binding-cells = <0>;
             tapping-term-ms = <240>;
-            bindings = <&squote>, <&dquotes>, <&lessgreaterthan>;
+            bindings = <&dquotes>, <&squote>, <&lessgreaterthan>;
         }; 
     
         dtsmi: dot_semi {
@@ -488,7 +489,7 @@
             bindings = <
 &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_BRACKET      &kp RIGHT_BRACE                                &user       &sen    &Estar      &heart   &wife
 &kp COLON       &kp DOLLAR     &kp PERCENT   &kp CARET             &kp PLUS                                       &highlight  &td_brackets  &td_quotes   &trans   &trans
-&kp TILDE       &kp EXCL       &kp AT        &kp HASH              &kp PIPE                                       &td_clear      &trans  &trademark  &bullet  &filter
+&kp TILDE       &kp EXCL       &kp AT        &kp HASH              &kp PIPE                                       &td_clear   &trans  &trademark  &bullet  &filter
 &trans          &trans         &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &trans  &trans                                   &mapdoc
             >;
         };
@@ -499,7 +500,7 @@
 &kp LC(PAGE_UP)  &td_cc     &td_paste  &kp LC(PAGE_DOWN)  &kp LC(HOME)                  &trans      &key_repeat     &td_cc          &td_paste     &to 0
 &kp LEFT_GUI     &kp LALT   &kp LCTRL  &kp LSHFT          &kp LC(END)                   &caps_word  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
 &kp LEFT         &kp UP     &kp DOWN   &kp RIGHT          &trans                        &kp DELETE  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
-&mkp RCLK        &mkp LCLK  &mkp MCLK  &kp ESC            &to 6         &kp TAB  &kp ENTER  &kp BACKSPACE                                         &trans
+&mkp RCLK        &mkp MCLK  &mkp LCLK  &kp ESC            &to 6         &kp TAB  &kp ENTER  &kp BACKSPACE                                         &trans
             >;
         };
 
@@ -509,7 +510,7 @@
 &trans          &td_cc          &td_paste     &trans           &trans                             &trans           &trans     &td_cc          &td_paste      &to 0
 &kp LEFT_GUI    &kp LEFT_ALT    &kp LCTRL     &kp LEFT_SHIFT   &trans                             &mkp MB4         &mkp LCLK  &mkp MCLK       &mkp RCLK      &mkp MB5
 &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans                             &trans           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
-&mkp RCLK       &mkp LCLK       &mkp MCLK     &kp ESCAPE       &to 5        &trans  &kp CAPSLOCK  &kp PRINTSCREEN                                            &trans
+&mkp RCLK       &mkp MCLK       &mkp LCLK     &kp ESCAPE       &to 5        &trans  &kp CAPSLOCK  &kp PRINTSCREEN                                            &trans
             >;
         };
 
