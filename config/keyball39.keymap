@@ -379,11 +379,11 @@
             tap-ms = <30>;
             bindings =
                 <&macro_press>,
-                <&kp LS(GLOBE)>,
+                <&kp LSHIFT &kp GLOBE>,
                 <&macro_tap>,
                 <&kp A>,
                 <&macro_release>,
-                <&kp LS(GLOBE)>;
+                <&kp LSHIFT &kp GLOBE>;
 
             label = "ipad_library";
         };
@@ -441,7 +441,7 @@
                 <&macro_press>,
                 <&kp GLOBE>,
                 <&macro_tap>,
-                <&kp LEFT>,
+                <&kp RIGHT>,
                 <&macro_release>,
                 <&kp GLOBE>;
 
@@ -456,7 +456,7 @@
                 <&macro_press>,
                 <&kp GLOBE>,
                 <&macro_tap>,
-                <&kp RIGHT>,
+                <&kp LEFT>,
                 <&macro_release>,
                 <&kp GLOBE>;
 
