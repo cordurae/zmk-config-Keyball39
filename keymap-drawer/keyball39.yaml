@@ -31,8 +31,8 @@ layers:
   - {t: ., s: '>'}
   - {t: /, h: FUNCTION, s: '?'}
   - '&td_globe'
-  - $$mdi:mouse-left-click-outline$$
   - SCROLL
+  - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-esc$$', h: MEDIA}
   - {t: '$$mdi:keyboard-space$$', h: SCROLL}
   - {t: '$$mdi:keyboard-tab$$', h: SNIPE}
@@ -231,8 +231,8 @@ layers:
   - PgUp
   - END
   - $$mdi:mouse-right-click-outline$$
-  - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:mouse-scroll-wheel$$', type: held alternate}
+  - $$mdi:mouse-left-click-outline$$
   - $$mdi:keyboard-esc$$
   - {t: SNIPE, h: toggle, type: held alternate}
   - $$mdi:keyboard-tab$$
@@ -271,8 +271,8 @@ layers:
   - $$mdi:pan-up$$
   - $$mdi:pan-right$$
   - $$mdi:mouse-right-click-outline$$
-  - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:mouse-left-click-outline$$
   - $$mdi:keyboard-esc$$
   - {t: SCROLL, h: toggle}
   - {type: held}
