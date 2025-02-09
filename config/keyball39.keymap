@@ -106,7 +106,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_IPAD_LEFT";
             #binding-cells = <0>;
-            tapping-term-ms = <400>;
+            tapping-term-ms = <240>;
             bindings = <&ipad_prevapp>, <&ipad_svtileleft>, <&ipad_slidemoveleft>;
         }; 
 
@@ -114,7 +114,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_IPAD_RIGHT";
             #binding-cells = <0>;
-            tapping-term-ms = <400>;
+            tapping-term-ms = <240>;
             bindings = <&ipad_nextapp>, <&ipad_svtileright>, <&ipad_slidemoveright>;
         }; 
 
@@ -131,7 +131,7 @@
             label = "TD_IPAD_TOOLS";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&ipad_home>, <&ipad_switcher>, <&ipad_library>, <&ipad_dock>, <&ipad_control>, <&ipad_siri>;
+            bindings = <&ipad_home>, <&ipad_switcher>, <&ipad_library>, <&ipad_control>, <&ipad_siri>, <&ipad_dock>;
         }; 
     
         dtsmi: dot_semi {
@@ -155,7 +155,6 @@
         trademark: trademark {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
             tap-ms = <30>;
             bindings =
                 <&macro_press>,
@@ -171,7 +170,6 @@
         bullet: bullet {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
             tap-ms = <30>;
             bindings =
                 <&macro_press>,
@@ -187,7 +185,6 @@
         heart: heart {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
             tap-ms = <30>;
             bindings =
                 <&macro_press>,
@@ -217,7 +214,6 @@
         highlight: highlight {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
             tap-ms = <30>;
             bindings = <&kp LALT &kp N7 &kp W &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp ENTER>;
             label = "highlight";
@@ -484,11 +480,11 @@
             tap-ms = <30>;
             bindings =
                 <&macro_press>,
-                <&kp LC(GLOBE)>,
+                <&kp LCTRL &kp GLOBE>,
                 <&macro_tap>,
                 <&kp LEFT>,
                 <&macro_release>,
-                <&kp LC(GLOBE)>;
+                <&kp LCTRL &kp GLOBE>;
 
             label = "ipad_svtileleft";
         };
@@ -499,11 +495,11 @@
             tap-ms = <30>;
             bindings =
                 <&macro_press>,
-                <&kp LC(GLOBE)>,
+                <&kp LCTRL &kp GLOBE>,
                 <&macro_tap>,
                 <&kp RIGHT>,
                 <&macro_release>,
-                <&kp LC(GLOBE)>;
+                <&kp LCTRL &kp GLOBE>;
 
             label = "ipad_svtileright";
         };
@@ -514,11 +510,11 @@
             tap-ms = <30>;
             bindings =
                 <&macro_press>,
-                <&kp LC(GLOBE)>,
+                <&kp LCTRL &kp GLOBE>,
                 <&macro_tap>,
                 <&kp DOWN>,
                 <&macro_release>,
-                <&kp LC(GLOBE)>;
+                <&kp LCTRL &kp GLOBE>;
 
             label = "ipad_svreplace";
         };
@@ -544,11 +540,11 @@
             tap-ms = <30>;
             bindings =
                 <&macro_press>,
-                <&kp GLOBE>,
+                <&kp LALT &kp GLOBE>,
                 <&macro_tap>,
                 <&kp BSLH>,
                 <&macro_release>,
-                <&kp GLOBE>;
+                <&kp LALT &kp GLOBE>;
 
             label = "ipad_slidemove";
         };
@@ -559,11 +555,11 @@
             tap-ms = <30>;
             bindings =
                 <&macro_press>,
-                <&kp GLOBE>,
+                <&kp LALT &kp GLOBE>,
                 <&macro_tap>,
                 <&kp LEFT>,
                 <&macro_release>,
-                <&kp GLOBE>;
+                <&kp LALT &kp GLOBE>;
 
             label = "ipad_slidemoveleft";
         };
@@ -574,11 +570,11 @@
             tap-ms = <30>;
             bindings =
                 <&macro_press>,
-                <&kp GLOBE>,
+                <&kp LALT &kp GLOBE>,
                 <&macro_tap>,
                 <&kp RIGHT>,
                 <&macro_release>,
-                <&kp GLOBE>;
+                <&kp LALT &kp GLOBE>;
 
             label = "ipad_slidemoveright";
         };
@@ -589,11 +585,11 @@
             tap-ms = <30>;
             bindings =
                 <&macro_press>,
-                <&kp LG(GLOBE)>,
+                <&kp LGUI &kp GLOBE>,
                 <&macro_tap>,
                 <&kp BSLH>,
                 <&macro_release>,
-                <&kp LG(GLOBE)>;
+                <&kp LGUI &kp GLOBE>;
 
             label = "ipad_slidenextwindow";
         };
