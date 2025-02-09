@@ -107,7 +107,7 @@
             label = "TD_IPAD_LEFT";
             #binding-cells = <0>;
             tapping-term-ms = <240>;
-            bindings = <&ipad_prevapp>, <&ipad_svtileleft>, <&ipad_slidemoveleft>;
+            bindings = <&ipad_prevapp>, <&ipad_tileleft>, <&ipad_slidemoveleft>;
         }; 
 
         td_ipad_right: tap_dance_ipad_right {
@@ -115,7 +115,7 @@
             label = "TD_IPAD_RIGHT";
             #binding-cells = <0>;
             tapping-term-ms = <240>;
-            bindings = <&ipad_nextapp>, <&ipad_svtileright>, <&ipad_slidemoveright>;
+            bindings = <&ipad_nextapp>, <&ipad_tileright>, <&ipad_slidemoveright>;
         }; 
 
         td_ipad_slide_over: tap_dance_ipad_slide_over {
@@ -123,7 +123,7 @@
             label = "TD_IPAD_SLIDE_OVER";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&ipad_slide>, <&ipad_slidemove>, <&ipad_slidenextwindow>, <&ipad_svfull>, <&ipad_svreplace>;
+            bindings = <&ipad_slide>, <&ipad_slidenextwindow>, <&ipad_full>, <&ipad_replace>;
         }; 
 
         td_ipad_tools: tap_dance_ipad_tools {
@@ -131,7 +131,7 @@
             label = "TD_IPAD_TOOLS";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&ipad_home>, <&ipad_switcher>, <&ipad_library>, <&ipad_control>, <&ipad_siri>, <&ipad_dock>;
+            bindings = <&ipad_home>, <&ipad_switcher>, <&ipad_library>, <&ipad_control>, <&ipad_siri>, <&ipad_dock>, <&kp LG(SPACE)>;
         }; 
     
         dtsmi: dot_semi {
@@ -459,7 +459,7 @@
             label = "ipad_prevapp";
         };
 
-        ipad_svfull: ipad_svfull {
+        ipad_full: ipad_full {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <30>;
@@ -471,10 +471,10 @@
                 <&macro_release>,
                 <&kp GLOBE>;
 
-            label = "ipad_svfull";
+            label = "ipad_full";
         };
 
-        ipad_svtileleft: ipad_svtileleft {
+        ipad_tileleft: ipad_tileleft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <30>;
@@ -486,10 +486,10 @@
                 <&macro_release>,
                 <&kp LCTRL &kp GLOBE>;
 
-            label = "ipad_svtileleft";
+            label = "ipad_tileleft";
         };
 
-        ipad_svtileright: ipad_svtileright {
+        ipad_tileright: ipad_tileright {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <30>;
@@ -501,10 +501,10 @@
                 <&macro_release>,
                 <&kp LCTRL &kp GLOBE>;
 
-            label = "ipad_svtileright";
+            label = "ipad_tileright";
         };
 
-        ipad_svreplace: ipad_svreplace {
+        ipad_replace: ipad_replace {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <30>;
@@ -516,7 +516,7 @@
                 <&macro_release>,
                 <&kp LCTRL &kp GLOBE>;
 
-            label = "ipad_svreplace";
+            label = "ipad_replace";
         };
 
         ipad_slide: ipad_slide {
@@ -532,21 +532,6 @@
                 <&kp GLOBE>;
 
             label = "ipad_slide";
-        };
-
-        ipad_slidemove: ipad_slidemove {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            tap-ms = <30>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT &kp GLOBE>,
-                <&macro_tap>,
-                <&kp BSLH>,
-                <&macro_release>,
-                <&kp LALT &kp GLOBE>;
-
-            label = "ipad_slidemove";
         };
 
         ipad_slidemoveleft: ipad_slidemoveleft {
