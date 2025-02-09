@@ -715,6 +715,12 @@
             layers = <0>;
         };
 
+        extraMB4 {
+            bindings = <&mkp MB4>;
+            key-positions = <30 31>;
+            layers = <0>;
+        };
+
         mmCAPSWORD {
             bindings = <&caps_word>;
             key-positions = <14 15>;
