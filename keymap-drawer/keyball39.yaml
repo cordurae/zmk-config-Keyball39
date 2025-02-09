@@ -359,6 +359,9 @@ combos:
 - p: [30, 32]
   k: $$mdi:mouse-scroll-wheel$$
   l: [HOME]
+- p: [30, 31]
+  k: '&mkp MB4'
+  l: [HOME]
 - p: [14, 15]
   k: $$mdi:alpha-w-box$$
   l: [HOME]
