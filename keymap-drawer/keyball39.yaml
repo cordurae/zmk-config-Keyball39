@@ -111,8 +111,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft+END
   - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&ipad_home'
+  - '&ipad_test'
   - {t: '$$mdi:keyboard-esc$$', type: held}
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-tab$$
