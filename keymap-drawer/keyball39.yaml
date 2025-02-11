@@ -305,7 +305,7 @@ layers:
   - F2
   - F3
   - PAUSE BREAK
-  - '&C_AL_WWW'
+  - AL WWW
   - AL MAIL
   - AL MY COMPUTER
   - AL CALC
@@ -318,7 +318,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&C_AL_CONTROL_PANEL'
+  - AL CONTROL PANEL
 combos:
 - p: [20, 21]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
