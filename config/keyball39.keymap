@@ -86,20 +86,20 @@
             bindings = <&parenthesis>, <&bracket>, <&brace>;
         }; 
 
-        td_clear: tap_dance_clear {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_CLEAR";
-            #binding-cells = <0>;
-            tapping-term-ms = <240>;
-            bindings = <&clear>, <&clear2>;
-        }; 
-
         td_quotes: tap_dance_quotes {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_QUOTES";
             #binding-cells = <0>;
             tapping-term-ms = <240>;
             bindings = <&squote>, <&dquotes>, <&lessgreaterthan>;
+        }; 
+
+        td_clear: tap_dance_clear {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_CLEAR";
+            #binding-cells = <0>;
+            tapping-term-ms = <240>;
+            bindings = <&clear>, <&clear2>;
         }; 
 
         td_ipad_left: tap_dance_ipad_left {
