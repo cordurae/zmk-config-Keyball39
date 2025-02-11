@@ -118,7 +118,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - $$mdi:volume-off$$
   - PLAY PAUSE
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: HOME, h: toggle}
   NUM:
   - {t: '[', s: '{'}
   - '7'
