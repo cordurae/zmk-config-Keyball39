@@ -95,7 +95,7 @@ layers:
   - SCROLL
   - $$mdi:mouse-left-click-outline$$
   - '&mkp MB5'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&key_repeat'
   - PREVIOUS
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
@@ -206,7 +206,7 @@ layers:
   - Ctl+PgDn
   - Ctl+HOME
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&key_repeat'
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&td_cc'
   - '&td_paste'
   - {t: HOME, h: toggle}
@@ -215,7 +215,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-control$$', type: held alternate}
   - $$mdi:apple-keyboard-shift$$
   - Ctl+END
-  - $$mdi:alpha-w-box$$
+  - '&key_repeat'
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
