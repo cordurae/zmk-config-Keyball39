@@ -97,7 +97,7 @@
             label = "TD_CUTCOPY";
             #binding-cells = <0>;
             tapping-term-ms = <240>;
-            bindings = <&xcopy LC(C) LC(X);
+            bindings = <&xcopy LC(C) LC(X)>;
         }; 
 
         td_scroll: tap_dance_scroll {
