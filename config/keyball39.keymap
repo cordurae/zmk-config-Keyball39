@@ -46,6 +46,16 @@
             bindings = <&kp>, <&caps_word>;
         };   
 
+        sdash: special_dash {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SDASH";
+            #binding-cells = <2>;
+	    flavor = "tap-preferred";
+            tapping-term-ms = <100>;
+	    quick-tap-ms = <150>;
+            bindings = <&kp>, <&kp>;
+        };   
+
         td_globe: tap_dance_globe {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_GLOBE";
@@ -655,7 +665,7 @@
         };
 
         vmUNDERSCORE_DASH {
-            bindings = <&mt UNDERSCORE MINUS>;
+            bindings = <&sdash UNDERSCORE MINUS>;
             key-positions = <23 26>;
             layers = <0>;
         };
