@@ -186,7 +186,7 @@ layers:
   - '#'
   - '|'
   - '&td_clear'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&emdash'
   - '&trademark'
   - '&bullet'
   - '&filter'
