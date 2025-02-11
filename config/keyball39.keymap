@@ -645,14 +645,8 @@
             layers = <0>;
         };
 
-        bnDASH {
-            bindings = <&kp MINUS>;
-            key-positions = <14 15>;
-            layers = <0>;
-        };
-
         vmUNDERSCORE {
-            bindings = <&kp UNDERSCORE>;
+            bindings = <&mt UNDERSCORE MINUS>;
             key-positions = <23 26>;
             layers = <0>;
         };
