@@ -204,7 +204,7 @@ layers:
   - '&td_cc'
   - '&td_paste'
   - Ctl+PgDn
-  - Ctl+HOME
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&td_cc'
@@ -214,7 +214,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:apple-keyboard-control$$', type: held alternate}
   - $$mdi:apple-keyboard-shift$$
-  - Ctl+END
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&key_repeat'
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -244,7 +244,7 @@ layers:
   - '&td_cc'
   - '&td_paste'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+HOME
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&td_cc'
@@ -254,7 +254,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+END
   - '&mkp MB4'
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
