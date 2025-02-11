@@ -36,6 +36,16 @@
 / {
 
     behaviors {
+        scaps: special_caps {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SCAPS";
+            #binding-cells = <2>;
+	    flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+	    quick-tap-ms = <150>;
+            bindings = <&kp>, <&caps_word>;
+        };   
+
         td_globe: tap_dance_globe {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_GLOBE";
@@ -704,14 +714,8 @@
             layers = <2>;
         };
 
-        mmCAPSWORD {
-            bindings = <&caps_word>;
-            key-positions = <21 28>;
-            layers = <0>;
-        };
-
-        mmCAPSLOCK {
-            bindings = <&kp CAPSLOCK>;
+        mmSCAPS {
+            bindings = <&scaps CAPS 0>;
             key-positions = <22 27>;
             layers = <0>;
         };
