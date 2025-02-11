@@ -157,6 +157,21 @@
             label = "bullet";
         };
 
+        emdash: emdash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <30>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N5 &kp KP_N1>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "emdash";
+        };
+
         heart: heart {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -756,7 +771,7 @@
             bindings = <
 &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_BRACKET      &kp RIGHT_BRACE                                &user       &sen    &Estar      &heart   &wife
 &kp COLON       &kp DOLLAR     &kp PERCENT   &kp CARET             &kp PLUS                                       &highlight  &td_brackets  &td_quotes   &trans   &trans
-&kp TILDE       &kp EXCL       &kp AT        &kp HASH              &kp PIPE                                       &td_clear   &trans  &trademark  &bullet  &filter
+&kp TILDE       &kp EXCL       &kp AT        &kp HASH              &kp PIPE                                       &td_clear   &emdash  &trademark  &bullet  &filter
 &trans          &td_ipad_left  &td_ipad_right &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &trans  &trans                                   &mapdoc
             >;
         };
