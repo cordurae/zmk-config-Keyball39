@@ -38,7 +38,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: SNIPE}
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
   - {t: '$$mdi:backspace$$', h: NUM}
-  - '&td_scroll'
+  - '&td_nav'
   SIMPLE:
   - Q
   - W
