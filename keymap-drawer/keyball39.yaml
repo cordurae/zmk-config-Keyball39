@@ -111,8 +111,8 @@ layers:
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
   - $$mdi:progress-download$$
-  - '&td_ipad_slide_over'
-  - '&td_ipad_tools'
+  - '&ipad_slide_over'
+  - '&ipad_tools'
   - {t: '$$mdi:keyboard-esc$$', type: held}
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-tab$$
@@ -191,8 +191,8 @@ layers:
   - '&bullet'
   - '&filter'
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&td_ipad_left'
-  - '&td_ipad_right'
+  - '&ipad_left'
+  - '&ipad_right'
   - (
   - )
   - _
