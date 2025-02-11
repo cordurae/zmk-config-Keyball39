@@ -332,11 +332,8 @@ combos:
 - p: [21, 22]
   k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [HOME]
-- p: [14, 15]
-  k: {t: '-', s: _}
-  l: [HOME]
 - p: [23, 26]
-  k: _
+  k: {t: '-', h: _, s: _}
   l: [HOME]
 - p: [16, 17]
   k: $$mdi:mouse-left-click-outline$$
