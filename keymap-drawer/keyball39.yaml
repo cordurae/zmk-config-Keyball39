@@ -87,7 +87,7 @@ layers:
   - {t: BT DISC, h: '4'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:brightness-7$$
-  - '&scc'
+  - '&td_cc'
   - '&td_paste'
   - BRI INC
   - '&mkp MB4'
@@ -201,13 +201,13 @@ layers:
   - '&mapdoc'
   SCROLL:
   - Alt+$$mdi:keyboard-esc$$
-  - '&scc'
+  - '&td_cc'
   - '&td_paste'
   - Sft+Alt+$$mdi:keyboard-esc$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&scc'
+  - '&td_cc'
   - '&td_paste'
   - {t: HOME, h: toggle}
   - $$mdi:apple-keyboard-command$$
@@ -241,13 +241,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   SNIPE:
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&scc'
+  - '&td_cc'
   - '&td_paste'
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+HOME
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&scc'
+  - '&td_cc'
   - '&td_paste'
   - {t: HOME, h: toggle}
   - $$mdi:apple-keyboard-command$$
