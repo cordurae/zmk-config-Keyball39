@@ -71,7 +71,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <180>;
 	    quick-tap-ms = <150>;
-            bindings = <&kp>, <&spaste>;
+            bindings = <&spaste>, <&kp>;
         }; 
 
         xcopy: special_copy {
@@ -89,7 +89,7 @@
             label = "TD_PASTE";
             #binding-cells = <0>;
             tapping-term-ms = <240>;
-            bindings = <&kp LC(V)>, <&xpaste LG(LS(V)) 0>;
+	    bindings = <&xpaste 0 LC(V)>, <&kp LG(LS(V))>;
         };  
 
         td_cc: tap_dance_cut_copy {
