@@ -96,8 +96,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_CUTCOPY";
             #binding-cells = <0>;
-            tapping-term-ms = <240>;
-            bindings = <&xcopy LC(C) LC(X)>;
+            tapping-term-ms = <20>;
+            bindings = <&xcopy LC(X) LC(C)>;
         }; 
 
         td_scroll: tap_dance_scroll {
@@ -132,7 +132,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_BRACKET";
             #binding-cells = <0>;
-            tapping-term-ms = <240>;
+            tapping-term-ms = <180>;
             bindings = <&xbrackets 0 0>, <&brace>;
         }; 
 
@@ -140,7 +140,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_QUOTES";
             #binding-cells = <0>;
-            tapping-term-ms = <240>;
+            tapping-term-ms = <180>;
             bindings = <&xquotes 0 0>, <&lessgreaterthan>;
         }; 
 
