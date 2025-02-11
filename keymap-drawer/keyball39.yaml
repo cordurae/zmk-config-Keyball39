@@ -91,7 +91,7 @@ layers:
   - BRI INC
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB4'
-  - '&td scroll_mini'
+  - '&td_scroll_mini'
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-left-click-outline$$
   - '&mkp MB5'
