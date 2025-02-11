@@ -308,7 +308,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - AL MY COMPUTER
-  - CALCULATOR
+  - AL CALC
   - {t: AL MAIL, type: held}
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
