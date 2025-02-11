@@ -305,11 +305,11 @@ layers:
   - F2
   - F3
   - PAUSE BREAK
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&C_AL_WWW'
+  - AL MAIL
   - AL MY COMPUTER
   - AL CALC
-  - {t: AL MAIL, type: held}
+  - {type: held}
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - Alt+F4
@@ -318,7 +318,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&C_AL_CONTROL_PANEL'
 combos:
 - p: [20, 21]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
