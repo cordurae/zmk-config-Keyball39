@@ -41,7 +41,7 @@
             label = "SCAPS";
             #binding-cells = <2>;
 	    flavor = "tap-preferred";
-            tapping-term-ms = <100>;
+            tapping-term-ms = <120>;
 	    quick-tap-ms = <150>;
             bindings = <&kp>, <&caps_word>;
         };   
@@ -51,7 +51,7 @@
             label = "SDASH";
             #binding-cells = <2>;
 	    flavor = "tap-preferred";
-            tapping-term-ms = <100>;
+            tapping-term-ms = <120>;
 	    quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
         };   
