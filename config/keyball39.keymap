@@ -75,7 +75,7 @@
             label = "TD_SCROLL";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&mo 1>, <&to 1>, <&to 5>, <&to 6>;
+            bindings = <&to 1>, <&to 2>, <&to 5>, <&to 6>;
         }; 
 
         td_brackets: tap_dance_bracket {
