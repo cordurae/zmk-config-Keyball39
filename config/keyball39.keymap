@@ -82,6 +82,14 @@
             bindings = <&kp LC(X)>, <&kp LC(C)>;
         }; 
 
+        tcc: special_cut_copy_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "S_CUTCOPY2";
+            #binding-cells = <0>;
+            tapping-term-ms = <10>;
+            bindings = <&scc>;
+        }; 
+
         td_scroll: tap_dance_scroll {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SCROLL";
