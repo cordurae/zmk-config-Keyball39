@@ -37,15 +37,6 @@
     // custom shift using mod-morph 
 
     behaviors {
-        cmqus: comma_question {
-            compatible = "zmk,behavior-mod-morph";
-            label = "COMMA_QUESTION";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp QUESTION>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        
         td_globe: tap_dance_globe {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_GLOBE";
@@ -133,25 +124,9 @@
             tapping-term-ms = <400>;
             bindings = <&ipad_home>, <&ipad_switcher>, <&ipad_library>, <&ipad_control>, <&ipad_siri>, <&ipad_dock>, <&kp LG(SPACE)>;
         }; 
-
-        dtsmi: dot_semi {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DOT_SEMI";
-            #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp SEMI>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
     };
 
     macros {
-        Hiragana: Hiragana {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(SPACE)>;
-            label = "HIRAGANA";
-        };
-
         trademark: trademark {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
