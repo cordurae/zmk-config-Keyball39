@@ -178,8 +178,8 @@ layers:
   - '&highlight'
   - '&td_brackets'
   - '&td_quotes'
-  - Alt+$$mdi:keyboard-esc$$
-  - Sft+Alt+$$mdi:keyboard-esc$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '~'
   - '!'
   - '@'
@@ -200,10 +200,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mapdoc'
   SCROLL:
-  - Ctl+PgUp
+  - Alt+$$mdi:keyboard-esc$$
   - '&td_cc'
   - '&td_paste'
-  - Ctl+PgDn
+  - Sft+Alt+$$mdi:keyboard-esc$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
