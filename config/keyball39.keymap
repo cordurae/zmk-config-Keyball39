@@ -152,12 +152,32 @@
             bindings = <&clear>, <&clear2>;
         }; 
 
+        x_ipl: special_ipad_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "X_IPAD_LEFT";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <180>;
+	    quick-tap-ms = <150>;
+            bindings = <&ipad_slidemoveleft>, <&ipad_tileleft>;
+        }; 
+
+        x_ipr: special_ipad_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "X_IPAD_RIGHT";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <180>;
+	    quick-tap-ms = <150>;
+            bindings = <&ipad_slidemoveright>, <&ipad_tileright>;
+        }; 
+
         td_ipad_left: tap_dance_ipad_left {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_IPAD_LEFT";
             #binding-cells = <0>;
             tapping-term-ms = <240>;
-            bindings = <&ipad_prevapp>, <&ipad_tileleft>, <&ipad_slidemoveleft>;
+            bindings = <&ipad_prevapp>, <&x_ipl 0 0>;
         }; 
 
         td_ipad_right: tap_dance_ipad_right {
@@ -165,7 +185,7 @@
             label = "TD_IPAD_RIGHT";
             #binding-cells = <0>;
             tapping-term-ms = <240>;
-            bindings = <&ipad_nextapp>, <&ipad_tileright>, <&ipad_slidemoveright>;
+            bindings = <&ipad_nextapp>, <&x_ipr 0 0>;
         }; 
 
         td_ipad_slide_over: tap_dance_ipad_slide_over {
