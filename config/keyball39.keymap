@@ -644,7 +644,7 @@
             layers = <0>;
         };
 
-        vmUNDERSCORE {
+        vmUNDERSCORE_DASH {
             bindings = <&mt UNDERSCORE MINUS>;
             key-positions = <23 26>;
             layers = <0>;
