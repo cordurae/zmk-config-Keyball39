@@ -74,6 +74,16 @@
             bindings = <&kp>, <&spaste>;
         }; 
 
+        xcopy: special_copy {
+            compatible = "zmk,behavior-hold-tap";
+            label = "X_COPY";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <180>;
+	    quick-tap-ms = <150>;
+            bindings = <&kp>, <&kp>;
+        }; 
+
         td_paste: tap_dance_paste {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_PASTE";
@@ -87,7 +97,7 @@
             label = "TD_CUTCOPY";
             #binding-cells = <0>;
             tapping-term-ms = <240>;
-            bindings = <&kp LC(C)>, <&kp LC(X)>;
+            bindings = <&xcopy LC(C) LC(X);
         }; 
 
         td_scroll: tap_dance_scroll {
@@ -98,12 +108,32 @@
             bindings = <&to 1>, <&to 2>, <&to 5>, <&to 6>;
         }; 
 
+        xquotes: special_quotes {
+            compatible = "zmk,behavior-hold-tap";
+            label = "X_QUOTES";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <120>;
+	    quick-tap-ms = <150>;
+            bindings = <&dquotes>, <&squote>;
+        }; 
+
+        xbrackets: special_brackets {
+            compatible = "zmk,behavior-hold-tap";
+            label = "X_BRACKETS";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <120>;
+	    quick-tap-ms = <150>;
+            bindings = <&bracket>, <&parenthesis>;
+        }; 
+
         td_brackets: tap_dance_bracket {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_BRACKET";
             #binding-cells = <0>;
             tapping-term-ms = <240>;
-            bindings = <&parenthesis>, <&bracket>, <&brace>;
+            bindings = <&xbrackets 0 0>, <&brace>;
         }; 
 
         td_quotes: tap_dance_quotes {
@@ -111,7 +141,7 @@
             label = "TD_QUOTES";
             #binding-cells = <0>;
             tapping-term-ms = <240>;
-            bindings = <&squote>, <&dquotes>, <&lessgreaterthan>;
+            bindings = <&xquotes 0 0>, <&lessgreaterthan>;
         }; 
 
         td_clear: tap_dance_clear {
