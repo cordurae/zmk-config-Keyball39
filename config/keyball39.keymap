@@ -34,7 +34,6 @@
 &caps_word { continue-list = <UNDERSCORE MINUS>; };
 
 / {
-    // custom shift using mod-morph 
 
     behaviors {
         td_globe: tap_dance_globe {
