@@ -214,7 +214,11 @@
             #binding-cells = <0>;
             tap-ms = <30>;
             bindings =
+                <&macro_press>,
+                <&kp LGUI>,
                 <&macro_tap>,
+                <&kp R>,
+                <&macro_release>,
                 <&kp LGUI>,
                 <&macro_wait_time 200>,
                 <&macro_press>,
@@ -247,7 +251,11 @@
             #binding-cells = <0>;
             tap-ms = <30>;
             bindings =
+                <&macro_press>,
+                <&kp LGUI>,
                 <&macro_tap>,
+                <&kp R>,
+                <&macro_release>,
                 <&kp LGUI>,
                 <&macro_wait_time 200>,
                 <&macro_press>,
@@ -280,7 +288,7 @@
             #binding-cells = <0>;
             bindings 
                 = <&kp LG(LS(V))>
-                , <&macro_wait_time 200>
+                , <&macro_wait_time 400>
                 , <&kp LC(N1)>;
             label = "spaste";
         };
