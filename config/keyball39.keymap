@@ -54,12 +54,22 @@
             bindings = <&kp GLOBE>, <&kp LG(H)>, <&kp LG(TAB)>, <&kp LG(X)>;
         };    
 
+        xpaste: special_paste {
+            compatible = "zmk,behavior-hold-tap";
+            label = "S_PASTE";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <180>;
+	    quick-tap-ms = <150>;
+            bindings = <&spaste>, <&kp LG(LS(V))>;
+        }; 
+
         td_paste: tap_dance_paste {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_PASTE";
             #binding-cells = <0>;
             tapping-term-ms = <240>;
-            bindings = <&kp LC(V)>, <&kp LG(LS(V))>, <&spaste>;
+            bindings = <&kp LC(V)>, <&xpaste>;
         };  
 
         scc: special_cut_copy {
