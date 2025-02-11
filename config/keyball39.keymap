@@ -755,7 +755,7 @@
             label = "SYMBOL";
             bindings = <
 &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_BRACKET      &kp RIGHT_BRACE                                &user       &sen    &Estar      &heart   &wife
-&kp COLON       &kp DOLLAR     &kp PERCENT   &kp CARET             &kp PLUS                                       &highlight  &td_brackets  &td_quotes   &kp LA(ESC)   &kp LS(LA(ESC))
+&kp COLON       &kp DOLLAR     &kp PERCENT   &kp CARET             &kp PLUS                                       &highlight  &td_brackets  &td_quotes   &trans   &trans
 &kp TILDE       &kp EXCL       &kp AT        &kp HASH              &kp PIPE                                       &td_clear   &trans  &trademark  &bullet  &filter
 &trans          &td_ipad_left  &td_ipad_right &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &trans  &trans                                   &mapdoc
             >;
@@ -764,7 +764,7 @@
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&kp LC(PAGE_UP)  &td_cc     &td_paste  &kp LC(PAGE_DOWN)  &trans                        &trans      &trans          &td_cc          &td_paste     &to 0
+&kp LA(ESC)      &td_cc     &td_paste  &kp LS(LA(ESC))    &trans                        &trans      &trans          &td_cc          &td_paste     &to 0
 &kp LEFT_GUI     &kp LALT   &kp LCTRL  &kp LSHFT          &trans                        &key_repeat &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
 &kp LEFT         &kp UP     &kp DOWN   &kp RIGHT          &trans                        &kp DELETE  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
 &mkp RCLK        &mkp MCLK  &mkp LCLK  &kp ESC            &to 6         &kp TAB  &kp ENTER  &kp BACKSPACE                                         &trans
