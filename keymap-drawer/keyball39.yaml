@@ -105,7 +105,7 @@ layers:
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
   - {h: '5', s: '$$mdi:bluetooth-connect$$'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '5'}
+  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
@@ -157,7 +157,7 @@ layers:
   - '0'
   - {t: '-', s: _}
   - KP ENTER
-  - {t: '$$mdi:backspace$$', type: held}
+  - {type: held}
   - $$mdi:progress-download$$
   SYMBOL:
   - '{'
@@ -178,8 +178,8 @@ layers:
   - '&highlight'
   - '&td_brackets'
   - '&td_quotes'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Alt+$$mdi:keyboard-esc$$
+  - Sft+Alt+$$mdi:keyboard-esc$$
   - '~'
   - '!'
   - '@'
