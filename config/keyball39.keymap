@@ -88,7 +88,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_PASTE";
             #binding-cells = <0>;
-            tapping-term-ms = <240>;
+            tapping-term-ms = <180>;
 	    bindings = <&xpaste 0 LC(V)>, <&kp LG(LS(V))>;
         };  
 
@@ -96,16 +96,16 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_CUTCOPY";
             #binding-cells = <0>;
-            tapping-term-ms = <20>;
+            tapping-term-ms = <10>;
             bindings = <&xcopy LC(X) LC(C)>;
         }; 
 
-        td_scroll: tap_dance_scroll {
+        td_nav: tap_dance_navigate {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_SCROLL";
+            label = "TD_NAV";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&to 1>, <&to 2>, <&to 5>, <&to 6>;
+            bindings = <&to 1>, <&to 2>, <&to 3>, <&to 4>, <&to 5>, <&to 6>, <&to 7>, <&to 0>;
         }; 
 
         xquotes: special_quotes {
@@ -148,7 +148,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_CLEAR";
             #binding-cells = <0>;
-            tapping-term-ms = <240>;
+            tapping-term-ms = <180>;
             bindings = <&clear>, <&clear2>;
         }; 
 
@@ -172,33 +172,33 @@
             bindings = <&ipad_slidemoveright>, <&ipad_tileright>;
         }; 
 
-        td_ipad_left: tap_dance_ipad_left {
+        ipad_left: tap_dance_ipad_left {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_IPAD_LEFT";
+            label = "ipad_left";
             #binding-cells = <0>;
-            tapping-term-ms = <240>;
+            tapping-term-ms = <180>;
             bindings = <&ipad_prevapp>, <&x_ipl 0 0>;
         }; 
 
-        td_ipad_right: tap_dance_ipad_right {
+        ipad_right: tap_dance_ipad_right {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_IPAD_RIGHT";
+            label = "ipad_right";
             #binding-cells = <0>;
-            tapping-term-ms = <240>;
+            tapping-term-ms = <180>;
             bindings = <&ipad_nextapp>, <&x_ipr 0 0>;
         }; 
 
-        td_ipad_slide_over: tap_dance_ipad_slide_over {
+        ipad_slide_over: tap_dance_ipad_slide_over {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_IPAD_SLIDE_OVER";
+            label = "ipad_slide_over";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings = <&ipad_slide>, <&ipad_slidenextwindow>, <&ipad_full>, <&ipad_replace>;
         }; 
 
-        td_ipad_tools: tap_dance_ipad_tools {
+        ipad_tools: tap_dance_ipad_tools {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_IPAD_TOOLS";
+            label = "ipad_tools";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings = <&ipad_home>, <&ipad_switcher>, <&ipad_library>, <&ipad_control>, <&ipad_siri>, <&ipad_dock>, <&kp LG(SPACE)>;
@@ -700,97 +700,97 @@
     combos {
         compatible = "zmk,combos";
 
-        zxENT {
+        zx_ENT {
             bindings = <&kp ENTER>;
             key-positions = <20 21>;
             layers = <0 6>;
         };
 
-        mdotDEL {
+        mdot_DEL {
             bindings = <&kp DELETE>;
             key-positions = <26 28>;
             layers = <0>;
         };
 
-        puncLSFT {
+        punc_LSFT {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <27 28>;
             layers = <0>;
         };
 
-        xcLSFT {
+        xc_LSFT {
             bindings = <&sk LSHIFT>;
             key-positions = <21 22>;
             layers = <0>;
         };
 
-        vmUNDERSCORE_DASH {
+        vm_UNDERSCORE_DASH {
             bindings = <&sdash UNDERSCORE MINUS>;
             key-positions = <23 26>;
             layers = <0>;
         };
 
-        jkLCLK {
+        jk_LCLK {
             bindings = <&mkp LCLK>;
             key-positions = <16 17>;
             layers = <0 6>;
         };
 
-        llRCLK {
+        ll_RCLK {
             bindings = <&mkp RCLK>;
             key-positions = <19 18>;
             layers = <0 6>;
         };
 
-        mmMCLK {
+        mm_MCLK {
             bindings = <&mkp MCLK>;
             key-positions = <26 27>;
             layers = <0 6>;
         };
 
-        zvTASKS {
+        zv_TASKS {
             bindings = <&kp LC(LA(TAB))>;
             key-positions = <20 23>;
             layers = <0 6>;
         };
 
-        xvSWITCH {
+        xv_SWITCH {
             bindings = <&kp LA(TAB)>;
             key-positions = <21 23>;
             layers = <0 6>;
         };
 
-        extraRCLK {
+        extra_RCLK {
             bindings = <&mkp RCLK>;
             key-positions = <31 32>;
             layers = <0>;
         };
 
-        extraMCLK {
+        extra_MCLK {
             bindings = <&mkp MCLK>;
             key-positions = <30 32>;
             layers = <0>;
         };
 
-        extraMB4 {
+        extra_MB4 {
             bindings = <&mkp MB4>;
             key-positions = <30 31>;
             layers = <0>;
         };
 
-        mediaMCLK {
+        media_MCLK {
             bindings = <&mkp MCLK>;
             key-positions = <13 11>;
             layers = <2>;
         };
 
-        mmSCAPS {
+        mm_SCAPS {
             bindings = <&scaps CAPS 0>;
             key-positions = <22 27>;
             layers = <0>;
         };
 
-        cvMENU {
+        cv_MENU {
             bindings = <&kp K_APPLICATION>;
             key-positions = <22 23>;
             layers = <0 6>;
@@ -827,7 +827,7 @@
 &bt BT_DISC 0  &bt BT_DISC 1        &bt BT_DISC 2   &bt BT_DISC 3  &bt BT_DISC 4                       &trans            &kp C_BRI_DEC   &td_cc                &td_paste        &kp C_BRI_INC
 &mkp MB4       &mkp RCLK            &mo 5           &mkp LCLK      &mkp MB5                            &key_repeat       &kp C_PREVIOUS  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP  &kp C_NEXT
 &bt BT_SEL 0   &bt BT_SEL 1         &bt BT_SEL 2    &bt BT_SEL 3   &bt BT_SEL 4                        &bt BT_SEL 4      &bt BT_SEL 0    &bt BT_SEL 1          &bt BT_SEL 2     &bt BT_SEL 3
-&bootloader    &td_ipad_slide_over  &td_ipad_tools  &kp ESCAPE     &kp SPACE      &kp TAB  &kp C_MUTE  &kp C_PLAY_PAUSE                                                         &to 0
+&bootloader    &ipad_slide_over  &ipad_tools  &kp ESCAPE     &kp SPACE      &kp TAB  &kp C_MUTE  &kp C_PLAY_PAUSE                                                         &to 0
             >;
         };
 
@@ -847,7 +847,7 @@
 &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_BRACKET      &kp RIGHT_BRACE                                &user       &sen    &Estar      &heart   &wife
 &kp COLON       &kp DOLLAR     &kp PERCENT   &kp CARET             &kp PLUS                                       &highlight  &td_brackets  &td_quotes   &trans   &trans
 &kp TILDE       &kp EXCL       &kp AT        &kp HASH              &kp PIPE                                       &td_clear   &emdash  &trademark  &bullet  &filter
-&trans          &td_ipad_left  &td_ipad_right &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &trans  &trans                                   &mapdoc
+&trans          &ipad_left  &ipad_right &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &trans  &trans                                   &mapdoc
             >;
         };
 
