@@ -41,7 +41,7 @@
             label = "SCAPS";
             #binding-cells = <2>;
 	    flavor = "tap-preferred";
-            tapping-term-ms = <120>;
+            tapping-term-ms = <100>;
 	    quick-tap-ms = <150>;
             bindings = <&kp>, <&caps_word>;
         };   
@@ -54,22 +54,12 @@
             bindings = <&kp GLOBE>, <&kp LG(H)>, <&kp LG(TAB)>, <&kp LG(X)>;
         };    
 
-        xpaste: special_paste {
-            compatible = "zmk,behavior-hold-tap";
-            label = "S_PASTE";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <180>;
-	    quick-tap-ms = <150>;
-            bindings = <&spaste>, <&kp>;
-        }; 
-
         td_paste: tap_dance_paste {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_PASTE";
             #binding-cells = <0>;
             tapping-term-ms = <240>;
-            bindings = <&kp LC(V)>, <&xpaste LG(LS(V)) 0>;
+            bindings = <&kp LC(V)>, <&kp LG(LS(V))>, <&spaste>;
         };  
 
         td_cc: tap_dance_cut_copy {
@@ -88,32 +78,12 @@
             bindings = <&to 1>, <&to 2>, <&to 5>, <&to 6>;
         }; 
 
-        xquotes: special_quotes {
-            compatible = "zmk,behavior-hold-tap";
-            label = "S_QUOTES";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <180>;
-	    quick-tap-ms = <150>;
-            bindings = <&dquotes>, <&squote>;
-        }; 
-
-        xbrackets: special_brackets {
-            compatible = "zmk,behavior-hold-tap";
-            label = "S_BRACKETS";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <180>;
-	    quick-tap-ms = <150>;
-            bindings = <&bracket>, <&parenthesis>;
-        }; 
-
         td_brackets: tap_dance_bracket {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_BRACKET";
             #binding-cells = <0>;
             tapping-term-ms = <240>;
-            bindings = <&xbrackets>, <&brace>;
+            bindings = <&parenthesis>, <&bracket>, <&brace>;
         }; 
 
         td_quotes: tap_dance_quotes {
@@ -121,7 +91,7 @@
             label = "TD_QUOTES";
             #binding-cells = <0>;
             tapping-term-ms = <240>;
-            bindings = <&xquotes>, <&lessgreaterthan>;
+            bindings = <&squote>, <&dquotes>, <&lessgreaterthan>;
         }; 
 
         td_clear: tap_dance_clear {
@@ -814,7 +784,7 @@
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&kp LA(ESC)      &td_cc       &td_paste  &kp LS(LA(ESC))    &trans                        &trans      &trans          &td_cc            &td_paste     &to 0
+&kp LA(ESC)      &td_cc     &td_paste  &kp LS(LA(ESC))    &trans                        &trans      &trans          &td_cc          &td_paste     &to 0
 &kp LEFT_GUI     &kp LALT   &kp LCTRL  &kp LSHFT          &trans                        &key_repeat &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
 &kp LEFT         &kp UP     &kp DOWN   &kp RIGHT          &trans                        &kp DELETE  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
 &mkp RCLK        &mkp MCLK  &mkp LCLK  &kp ESC            &to 6         &kp TAB  &kp ENTER  &kp BACKSPACE                                         &trans
@@ -824,7 +794,7 @@
         snipe_layer {
             label = "SNIPE";
             bindings = <
-&trans          &td_cc            &td_paste     &trans           &kp LC(HOME)                       &trans           &trans     &td_cc            &td_paste      &to 0
+&trans          &td_cc          &td_paste     &trans           &kp LC(HOME)                       &trans           &trans     &td_cc          &td_paste      &to 0
 &kp LEFT_GUI    &kp LEFT_ALT    &kp LCTRL     &kp LEFT_SHIFT   &kp LC(END)                        &mkp MB4         &mkp LCLK  &mkp MCLK       &mkp RCLK      &mkp MB5
 &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans                             &trans           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
 &mkp RCLK       &mkp MCLK       &mkp LCLK     &kp ESCAPE       &to 5        &trans  &kp CAPSLOCK  &kp PRINTSCREEN                                            &trans
