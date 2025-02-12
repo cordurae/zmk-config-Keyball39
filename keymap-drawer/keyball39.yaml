@@ -359,9 +359,6 @@ combos:
 - p: [30, 31]
   k: '&mkp MB4'
   l: [HOME]
-- p: [16, 18]
-  k: $$mdi:mouse-scroll-wheel$$
-  l: [SNIPE]
 - p: [21, 28]
   k: {t: '$$mdi:alpha-w-box$$', h: '$$mdi:apple-keyboard-caps$$'}
   l: [HOME]
