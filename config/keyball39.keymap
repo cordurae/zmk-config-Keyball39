@@ -704,12 +704,14 @@
             bindings = <&kp ENTER>;
             key-positions = <20 21>;
             layers = <0 6>;
+	    timeout-ms = <60>;
         };
 
         mdot_DEL {
             bindings = <&kp DELETE>;
             key-positions = <26 28>;
             layers = <0>;
+            timeout-ms = <60>;
         };
 
         punc_LSFT {
@@ -730,20 +732,21 @@
             bindings = <&sdash UNDERSCORE MINUS>;
             key-positions = <23 26>;
             layers = <0>;
+	    timeout-ms = <60>;
         };
 
         jk_LCLK {
             bindings = <&mkp LCLK>;
             key-positions = <16 17>;
             layers = <0 6>;
-            timeout-ms = <60>;
+            timeout-ms = <70>;
         };
 
         ll_RCLK {
             bindings = <&mkp RCLK>;
             key-positions = <19 18>;
             layers = <0 6>;
-            timeout-ms = <60>;
+            timeout-ms = <70>;
         };
 
         mm_MCLK {
@@ -757,12 +760,14 @@
             bindings = <&kp LC(LA(TAB))>;
             key-positions = <20 23>;
             layers = <0 6>;
+	    timeout-ms = <70>;
         };
 
         xv_SWITCH {
             bindings = <&kp LA(TAB)>;
             key-positions = <21 23>;
             layers = <0 6>;
+	    timeout-ms = <70>;
         };
 
         extra_RCLK {
@@ -783,22 +788,18 @@
             layers = <0>;
         };
 
-        snipe_MCLK {
-            bindings = <&mkp MCLK>;
-            key-positions = <16 18>;
-            layers = <6>;
-        };
-
         mm_SCAPS {
             bindings = <&scaps CAPS 0>;
             key-positions = <21 28>;
             layers = <0>;
+	    timeout-ms = <70>;
         };
 
         cv_MENU {
             bindings = <&kp K_APPLICATION>;
             key-positions = <22 23>;
             layers = <0 6>;
+	    timeout-ms = <60>;
         };
     };
 
