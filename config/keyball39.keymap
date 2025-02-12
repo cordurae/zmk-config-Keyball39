@@ -17,13 +17,13 @@
 &lt {
     tapping-term-ms = <120>;
     flavor = "balanced";
-    quick-tap-ms = <150>;
+    quick-tap-ms = <180>;
 };
 
 &mt {
     tapping-term-ms = <200>;
     flavor = "tap-preferred";
-    quick-tap-ms = <150>;
+    quick-tap-ms = <180>;
 };
 
 &sk {
@@ -105,7 +105,7 @@
             label = "TD_NAV";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&to 1>, <&to 2>, <&to 3>, <&to 4>, <&to 5>, <&to 6>, <&to 7>, <&to 0>;
+            bindings = <&mo 1>, <&to 1>, <&to 2>, <&to 3>, <&to 4>, <&to 5>, <&to 6>, <&to 7>, <&to 0>;
         }; 
 
         xquotes: special_quotes {
