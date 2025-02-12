@@ -734,16 +734,14 @@
             bindings = <&mkp LCLK>;
             key-positions = <16 17>;
             layers = <0 6>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <50>;
+            timeout-ms = <70>;
         };
 
         ll_RCLK {
             bindings = <&mkp RCLK>;
             key-positions = <19 18>;
             layers = <0 6>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <50>;
+            timeout-ms = <70>;
         };
 
         mm_MCLK {
@@ -884,15 +882,6 @@
             >;
 
             label = "FUNCTION";
-        };
-    };
-
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        SCROLL {
-            if-layers = <6 1>;
-            then-layer = <5>;
         };
     };
 };
