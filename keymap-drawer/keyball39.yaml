@@ -257,7 +257,7 @@ layers:
   - Ctl+END
   - '&mkp MB4'
   - $$mdi:mouse-left-click-outline$$
-  - SIMPLE
+  - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
   - '&mkp MB5'
   - {t: '$$mdi:transfer$$', type: trans}
