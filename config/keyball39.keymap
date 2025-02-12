@@ -291,7 +291,7 @@
         clear: clear {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            tap-ms = <30>;
+            tap-ms = <60>;
             bindings =
                 <&macro_press>,
                 <&kp LGUI>,
@@ -299,14 +299,14 @@
                 <&kp R>,
                 <&macro_release>,
                 <&kp LGUI>,
-                <&macro_wait_time 200>,
+                <&macro_wait_time 400>,
                 <&macro_press>,
                 <&kp LGUI>,
                 <&macro_tap>,
                 <&kp V>,
                 <&macro_release>,
                 <&kp LGUI>,
-                <&macro_wait_time 200>,
+                <&macro_wait_time 400>,
                 <&macro_press>,
                 <&kp LSFT>,
                 <&macro_tap>,
@@ -328,7 +328,7 @@
         clear2: clear2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            tap-ms = <30>;
+            tap-ms = <60>;
             bindings =
                 <&macro_press>,
                 <&kp LGUI>,
@@ -336,14 +336,14 @@
                 <&kp R>,
                 <&macro_release>,
                 <&kp LGUI>,
-                <&macro_wait_time 200>,
+                <&macro_wait_time 400>,
                 <&macro_press>,
                 <&kp LGUI>,
                 <&macro_tap>,
                 <&kp V>,
                 <&macro_release>,
                 <&kp LGUI>,
-                <&macro_wait_time 200>,
+                <&macro_wait_time 400>,
                 <&macro_tap>,
                 <&kp TAB>,
                 <&macro_tap>,
