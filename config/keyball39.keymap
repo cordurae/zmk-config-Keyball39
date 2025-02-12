@@ -748,6 +748,7 @@
             bindings = <&mkp MCLK>;
             key-positions = <26 27>;
             layers = <0 6>;
+	    timeout-ms = <60>;
         };
 
         zv_TASKS {
