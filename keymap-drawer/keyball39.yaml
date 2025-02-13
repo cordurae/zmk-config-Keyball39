@@ -135,7 +135,7 @@ layers:
   - '5'
   - '6'
   - {t: '=', s: +}
-  - {t: SNIPE, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - KP 4
   - KP 5
   - KP 6
@@ -145,7 +145,7 @@ layers:
   - '2'
   - '3'
   - {t: \, s: '|'}
-  - {t: SCROLL, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - KP 1
   - KP 2
   - KP 3
@@ -178,8 +178,8 @@ layers:
   - '&highlight'
   - '&td_brackets'
   - '&td_quotes'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: SCROLL, h: toggle}
+  - {t: SNIPE, h: toggle}
   - '~'
   - '!'
   - '@'
@@ -276,7 +276,7 @@ layers:
   - $$mdi:keyboard-esc$$
   - {t: SCROLL, h: toggle}
   - {type: held}
-  - $$mdi:apple-keyboard-caps$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - PRINTSCREEN
   - {t: '$$mdi:transfer$$', type: trans}
   FUNCTION:
@@ -316,7 +316,7 @@ layers:
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:transfer$$', type: trans}
   - AL CONTROL PANEL
 combos:
@@ -360,7 +360,7 @@ combos:
   k: '&mkp MB4'
   l: [HOME]
 - p: [21, 28]
-  k: {t: '$$mdi:alpha-w-box$$', h: '$$mdi:apple-keyboard-caps$$'}
+  k: '&td_caps'
   l: [HOME]
 - p: [22, 23]
   k: APPLICATION
