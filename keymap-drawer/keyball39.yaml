@@ -31,7 +31,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, h: FUNCTION, s: '?'}
   - '&td_globe'
-  - SCROLL
+  - SNIPE
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-esc$$', h: MEDIA}
   - {t: '$$mdi:keyboard-space$$', h: SCROLL}
@@ -199,46 +199,6 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mapdoc'
-  SCROLL:
-  - Alt+$$mdi:keyboard-esc$$
-  - '&td_cc'
-  - '&td_paste'
-  - Sft+Alt+$$mdi:keyboard-esc$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&td_cc'
-  - '&td_paste'
-  - {t: HOME, h: toggle}
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&key_repeat'
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-right-bold$$
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - HOME
-  - {t: PgDn, type: held}
-  - PgUp
-  - END
-  - $$mdi:mouse-right-click-outline$$
-  - {t: '$$mdi:mouse-scroll-wheel$$', type: held alternate}
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:keyboard-esc$$
-  - {t: SNIPE, h: toggle, type: held alternate}
-  - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:transfer$$', type: trans}
   SNIPE:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
@@ -257,7 +217,7 @@ layers:
   - Ctl+END
   - '&mkp MB4'
   - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
+  - SCROLL
   - $$mdi:mouse-right-click-outline$$
   - '&mkp MB5'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -271,13 +231,53 @@ layers:
   - $$mdi:pan-up$$
   - $$mdi:pan-right$$
   - $$mdi:mouse-right-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
+  - {t: '$$mdi:mouse-scroll-wheel$$', type: held}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:keyboard-esc$$
-  - {t: SCROLL, h: toggle}
-  - {type: held}
+  - $$mdi:keyboard-space$$
+  - {type: held alternate}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - PRINTSCREEN
+  - {t: '$$mdi:transfer$$', type: trans}
+  SCROLL:
+  - Alt+$$mdi:keyboard-esc$$
+  - '&td_cc'
+  - '&td_paste'
+  - Sft+Alt+$$mdi:keyboard-esc$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&td_cc'
+  - '&td_paste'
+  - {t: HOME, h: toggle}
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&key_repeat'
+  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:arrow-down-bold$$', type: held alternate}
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - HOME
+  - {t: PgDn, type: held}
+  - PgUp
+  - END
+  - $$mdi:mouse-right-click-outline$$
+  - {t: '$$mdi:mouse-scroll-wheel$$', type: held alternate}
+  - $$mdi:mouse-left-click-outline$$
+  - $$mdi:keyboard-esc$$
+  - {type: held alternate}
+  - {t: '$$mdi:keyboard-tab$$', type: held alternate}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   FUNCTION:
   - F12
@@ -344,6 +344,9 @@ combos:
 - p: [26, 27]
   k: $$mdi:mouse-scroll-wheel$$
   l: [HOME, SNIPE]
+- p: [16, 18]
+  k: $$mdi:mouse-scroll-wheel$$
+  l: [SNIPE]
 - p: [20, 23]
   k: Ctl+Alt+$$mdi:keyboard-tab$$
   l: [HOME, SNIPE]
