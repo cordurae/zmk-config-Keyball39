@@ -3,8 +3,8 @@
 #define MEDIA   2
 #define NUMBER  3
 #define SYMBOL  4
-#define SCROLL  5
-#define SNIPE   6
+#define SNIPE   5
+#define SCROLL  6
 #define FNCT    7
 
 #include <behaviors/mouse_keys.dtsi>
@@ -711,7 +711,7 @@
         zx_ENT {
             bindings = <&kp ENTER>;
             key-positions = <20 21>;
-            layers = <0 6>;
+            layers = <0 5>;
 	    timeout-ms = <60>;
         };
 
@@ -746,35 +746,42 @@
         jk_LCLK {
             bindings = <&mkp LCLK>;
             key-positions = <16 17>;
-            layers = <0 6>;
+            layers = <0 5>;
             timeout-ms = <70>;
         };
 
         ll_RCLK {
             bindings = <&mkp RCLK>;
             key-positions = <19 18>;
-            layers = <0 6>;
+            layers = <0 5>;
             timeout-ms = <70>;
         };
 
         mm_MCLK {
             bindings = <&mkp MCLK>;
             key-positions = <26 27>;
-            layers = <0 6>;
+            layers = <0 5>;
 	    timeout-ms = <60>;
+        };
+
+        snipe_MCLK {
+            bindings = <&mkp MCLK>;
+            key-positions = <16 18>;
+            layers = <5>;
+	    timeout-ms = <70>;
         };
 
         zv_TASKS {
             bindings = <&kp LC(LA(TAB))>;
             key-positions = <20 23>;
-            layers = <0 6>;
+            layers = <0 5>;
 	    timeout-ms = <70>;
         };
 
         xv_SWITCH {
             bindings = <&kp LA(TAB)>;
             key-positions = <21 23>;
-            layers = <0 6>;
+            layers = <0 5>;
 	    timeout-ms = <70>;
         };
 
@@ -806,7 +813,7 @@
         cv_MENU {
             bindings = <&kp K_APPLICATION>;
             key-positions = <22 23>;
-            layers = <0 6>;
+            layers = <0 5>;
 	    timeout-ms = <60>;
         };
     };
@@ -819,8 +826,8 @@
             bindings = <
 &kp Q           &kp W           &kp E        &kp R             &kp T                                &kp Y            &kp U        &kp I        &kp O            &kp P
 &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G                                &kp H            &mt RSHFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SQT
-&kp Z           &kp X           &kp C        &kp V             &kp B                                &kp N            &kp M        &xlt 5 COMMA &kp DOT          &xlt 7 SLASH
-&td_globe       &mo 5           &mkp LCLK    &lt 2 ESCAPE      &lt 5 SPACE  &lt 6 TAB  &lt 4 ENTER  &lt 3 BACKSPACE                                             &td_nav
+&kp Z           &kp X           &kp C        &kp V             &kp B                                &kp N            &kp M        &xlt 6 COMMA &kp DOT          &xlt 7 SLASH
+&td_globe       &mo 5           &mkp LCLK    &lt 2 ESCAPE      &lt 6 SPACE  &lt 5 TAB  &lt 4 ENTER  &lt 3 BACKSPACE                                             &td_nav
             >;
         };
 
@@ -859,9 +866,19 @@
             label = "SYMBOL";
             bindings = <
 &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_BRACKET      &kp RIGHT_BRACE                                &user       &sen    &Estar      &heart   &wife
-&kp COLON       &kp DOLLAR     &kp PERCENT   &kp CARET             &kp PLUS                                       &highlight  &td_brackets  &td_quotes   &to 5   &to 6
+&kp COLON       &kp DOLLAR     &kp PERCENT   &kp CARET             &kp PLUS                                       &highlight  &td_brackets  &td_quotes   &to 6   &to 5
 &kp TILDE       &kp EXCL       &kp AT        &kp HASH              &kp PIPE                                       &td_clear   &emdash  &trademark  &bullet  &filter
 &trans          &ipad_left  &ipad_right &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &trans  &trans                                   &mapdoc
+            >;
+        };
+
+        snipe_layer {
+            label = "SNIPE";
+            bindings = <
+&mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp LC(HOME)                       &trans           &trans     &td_cc          &td_paste      &to 0
+&kp LEFT_GUI    &kp LEFT_ALT    &kp LCTRL     &kp LEFT_SHIFT   &kp LC(END)                        &mkp MB4         &mkp LCLK  &mo 6           &mkp RCLK      &mkp MB5
+&trans          &trans          &trans        &trans           &trans                             &trans           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
+&mkp RCLK       &mkp MCLK       &mkp LCLK     &kp ESCAPE       &kp SPACE        &trans  &kp ENTER  &kp PRINTSCREEN                                            &trans
             >;
         };
 
@@ -871,17 +888,7 @@
 &kp LA(ESC)      &td_cc     &td_paste  &kp LS(LA(ESC))    &trans                        &trans      &trans          &td_cc          &td_paste     &to 0
 &kp LEFT_GUI     &kp LALT   &kp LCTRL  &kp LSHFT          &trans                        &key_repeat &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
 &kp LEFT         &kp UP     &kp DOWN   &kp RIGHT          &trans                        &trans      &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
-&mkp RCLK        &mkp MCLK  &mkp LCLK  &kp ESC            &to 6         &kp TAB  &kp ENTER  &kp BACKSPACE                                         &trans
-            >;
-        };
-
-        snipe_layer {
-            label = "SNIPE";
-            bindings = <
-&mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp LC(HOME)                       &trans           &trans     &td_cc          &td_paste      &to 0
-&kp LEFT_GUI    &kp LEFT_ALT    &kp LCTRL     &kp LEFT_SHIFT   &kp LC(END)                        &mkp MB4         &mkp LCLK  &mkp MCLK       &mkp RCLK      &mkp MB5
-&trans          &trans          &trans        &trans           &trans                             &trans           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
-&mkp RCLK       &mkp MCLK       &mkp LCLK     &kp ESCAPE       &to 5        &trans  &kp ENTER  &kp PRINTSCREEN                                            &trans
+&mkp RCLK        &mkp MCLK  &mkp LCLK  &kp ESC            &trans         &kp TAB  &kp ENTER  &kp BACKSPACE                                         &trans
             >;
         };
 
