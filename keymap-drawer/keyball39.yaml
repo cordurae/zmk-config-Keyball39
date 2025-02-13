@@ -152,7 +152,7 @@ layers:
   - {t: '-', s: _}
   - $$mdi:apple-keyboard-option$$
   - {t: /, s: '?'}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-space$$
   - {t: ., s: '>'}
   - '0'
   - {t: '-', s: _}
