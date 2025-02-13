@@ -850,8 +850,8 @@
             bindings = <
 &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET                           &kp KP_NUMLOCK  &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp STAR
 &kp SEMICOLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                                   &trans          &kp KP_N4        &kp KP_N5  &kp KP_N6  &kp KP_N0
-&kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH                               &trans           &kp KP_NUMBER_1  &kp KP_N2  &kp KP_N3  &kp MINUS
-&kp LEFT_ALT      &kp SPACE     &kp FSLH      &kp DOT       &kp NUMBER_0       &kp MINUS  &kp KP_ENTER  &trans                                                 &bootloader
+&kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH                               &trans           &kp KP_NUMBER_1  &kp KP_N2  &kp KP_N3 &kp MINUS
+&kp LEFT_ALT      &kp FSLH      &kp BACKSPACE &kp DOT       &kp NUMBER_0       &kp MINUS  &kp KP_ENTER  &trans                                                 &bootloader
             >;
         };
 
@@ -870,7 +870,7 @@
             bindings = <
 &kp LA(ESC)      &td_cc     &td_paste  &kp LS(LA(ESC))    &trans                        &trans      &trans          &td_cc          &td_paste     &to 0
 &kp LEFT_GUI     &kp LALT   &kp LCTRL  &kp LSHFT          &trans                        &key_repeat &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
-&kp LEFT         &kp UP     &kp DOWN   &kp RIGHT          &trans                        &kp DELETE  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
+&kp LEFT         &kp UP     &kp DOWN   &kp RIGHT          &trans                        &trans      &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
 &mkp RCLK        &mkp MCLK  &mkp LCLK  &kp ESC            &to 6         &kp TAB  &kp ENTER  &kp BACKSPACE                                         &trans
             >;
         };
@@ -890,7 +890,7 @@
 &kp F12     &kp F7        &kp F8      &kp F9   &kp INS                          &trans  &trans           &trans                &trans            &trans
 &kp F11     &kp F4        &kp F5      &kp F6   &kp SCROLLLOCK                   &trans  &kp RIGHT_SHIFT  &kp RCTRL             &kp RIGHT_ALT     &kp RIGHT_GUI
 &kp F10     &kp F1        &kp F2      &kp F3   &kp PAUSE_BREAK                  &kp C_AL_WWW  &kp C_AL_MAIL    &kp C_AL_MY_COMPUTER  &kp C_AL_CALC  &trans
-&bt BT_CLR  &out OUT_TOG  &kp LA(F4)  &kp ESC  &kp SPACE        &kp TAB  &kp CAPSLOCK  &trans                                                          &kp C_AL_CONTROL_PANEL
+&bt BT_CLR  &out OUT_TOG  &kp LA(F4)  &kp ESC  &kp SPACE        &kp TAB  &kp CAPSLOCK  &kp DELETE                                                &kp C_AL_CONTROL_PANEL
             >;
 
             label = "FUNCTION";
