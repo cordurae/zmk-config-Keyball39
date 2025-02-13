@@ -31,7 +31,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, h: FUNCTION, s: '?'}
   - '&td_globe'
-  - SNIPE
+  - SCROLL
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-esc$$', h: MEDIA}
   - {t: '$$mdi:keyboard-space$$', h: SCROLL}
@@ -231,11 +231,11 @@ layers:
   - $$mdi:pan-up$$
   - $$mdi:pan-right$$
   - $$mdi:mouse-right-click-outline$$
-  - {t: '$$mdi:mouse-scroll-wheel$$', type: held}
+  - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-space$$
-  - {type: held alternate}
+  - {type: held}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - PRINTSCREEN
   - {t: '$$mdi:transfer$$', type: trans}
