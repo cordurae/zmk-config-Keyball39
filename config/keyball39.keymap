@@ -46,7 +46,7 @@
             bindings = <&kp>, <&kp>;
         };   
 
-        td_caps: tap_dance_paste {
+        td_caps: tap_dance_caps {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_CAPS";
             #binding-cells = <0>;
