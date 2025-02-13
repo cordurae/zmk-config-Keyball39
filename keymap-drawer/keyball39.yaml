@@ -151,8 +151,8 @@ layers:
   - KP 3
   - {t: '-', s: _}
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:keyboard-space$$
   - {t: /, s: '?'}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: ., s: '>'}
   - '0'
   - {t: '-', s: _}
@@ -225,7 +225,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - HOME
   - {t: PgDn, type: held}
   - PgUp
@@ -317,7 +317,7 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-tab$$
   - $$mdi:apple-keyboard-caps$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backspace-reverse-outline$$
   - AL CONTROL PANEL
 combos:
 - p: [20, 21]
