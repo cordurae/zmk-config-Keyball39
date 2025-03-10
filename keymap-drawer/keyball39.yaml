@@ -71,9 +71,9 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:apple-keyboard-shift$$', type: held}
   - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:apple-keyboard-control$$', type: held}
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-tab$$
@@ -261,7 +261,7 @@ layers:
   - SCROLL
   - $$mdi:mouse-right-click-outline$$
   - '&mkp MB5'
-  - {t: SIMPLE, h: toggle}
+  - {t: GAME, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -403,6 +403,15 @@ combos:
 - p: [30, 31]
   k: '&mkp MB4'
   l: [HOME]
+- p: [31, 32]
+  k: {t: HOME, h: toggle}
+  l: [GAME]
+- p: [30, 32]
+  k: {t: SIMPLE, h: '$$mdi:gesture-tap-hold$$'}
+  l: [GAME]
+- p: [30, 31]
+  k: {t: SIMPLE, h: toggle}
+  l: [GAME]
 - p: [21, 28]
   k: $$mdi:alpha-w-box$$
   l: [HOME]
