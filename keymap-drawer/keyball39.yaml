@@ -116,10 +116,10 @@ layers:
   - {t: '$$mdi:apple-keyboard-control$$', type: held alternate}
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', h: SNIPE}
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
   - {t: '$$mdi:backspace$$', h: NUM}
-  - {t: HOME, h: toggle, type: held alternate}
+  - {t: HOME, h: '$$mdi:apple-keyboard-shift$$', type: held alternate}
   MEDIA:
   - {t: BT DISC, h: '0'}
   - {t: BT DISC, h: '1'}
@@ -262,7 +262,7 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - '&mkp MB5'
   - {t: GAME, h: toggle}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: SIMPLE, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -272,14 +272,14 @@ layers:
   - $$mdi:pan-up$$
   - $$mdi:pan-right$$
   - $$mdi:mouse-right-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
+  - {t: '$$mdi:mouse-scroll-wheel$$', type: held alternate}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-space$$
   - {type: held}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - PRINTSCREEN
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   SCROLL:
   - Alt+$$mdi:keyboard-esc$$
   - '&td_cc'
@@ -319,7 +319,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', type: held alternate}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   FUNCTION:
   - F12
   - F7
@@ -409,6 +409,9 @@ combos:
 - p: [30, 31]
   k: {t: SIMPLE, h: toggle}
   l: [GAME]
+- p: [30, 31]
+  k: {t: GAME, h: toggle}
+  l: [SIMPLE]
 - p: [21, 28]
   k: $$mdi:alpha-w-box$$
   l: [HOME]
