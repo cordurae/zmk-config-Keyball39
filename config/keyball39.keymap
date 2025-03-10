@@ -46,14 +46,6 @@
             bindings = <&kp>, <&kp>;
         };   
 
-        td_caps: tap_dance_caps {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_CAPS";
-            #binding-cells = <0>;
-            tapping-term-ms = <400>;
-	    bindings = <&caps_word>, <&kp CAPSLOCK>;
-        };   
-
         td_globe: tap_dance_globe {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_GLOBE";
@@ -803,9 +795,16 @@
             layers = <0>;
         };
 
-        mm_SCAPS {
-            bindings = <&td_caps>;
+        mm_CAPSWORD {
+            bindings = <&caps_word>;
             key-positions = <21 28>;
+            layers = <0>;
+	    timeout-ms = <70>;
+        };
+
+        mm_CAPS {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <22 27>;
             layers = <0>;
 	    timeout-ms = <70>;
         };
@@ -877,7 +876,7 @@
             bindings = <
 &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp LC(HOME)                       &trans           &trans     &td_cc          &td_paste      &to 0
 &kp LEFT_GUI    &kp LEFT_ALT    &kp LCTRL     &kp LEFT_SHIFT   &kp LC(END)                        &mkp MB4         &mkp LCLK  &mo 6           &mkp RCLK      &mkp MB5
-&trans          &trans          &trans        &trans           &trans                             &trans           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
+&to 1           &trans          &trans        &trans           &trans                             &trans           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
 &mkp RCLK       &mkp MCLK       &mkp LCLK     &kp ESCAPE       &kp SPACE        &trans  &kp ENTER  &kp PRINTSCREEN                                            &trans
             >;
         };
