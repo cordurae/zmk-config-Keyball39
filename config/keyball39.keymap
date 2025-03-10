@@ -223,6 +223,16 @@
                 <&ipad_dock>,
                 <&kp LG(SPACE)>;
         };
+
+        xgame: special_game {
+            compatible = "zmk,behavior-hold-tap";
+            label = "X_GAME";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <180>;
+            quick-tap-ms = <180>;
+            bindings = <&mo>, <&to>;
+        };
     };
 
     macros {
@@ -718,13 +728,6 @@
     combos {
         compatible = "zmk,combos";
 
-        zx_ENT {
-            bindings = <&kp ENTER>;
-            key-positions = <20 21>;
-            layers = <0 6>;
-            timeout-ms = <60>;
-        };
-
         mdot_DEL {
             bindings = <&kp DELETE>;
             key-positions = <26 28>;
@@ -756,21 +759,21 @@
         jk_LCLK {
             bindings = <&mkp LCLK>;
             key-positions = <16 17>;
-            layers = <0 6>;
+            layers = <0 2 6>;
             timeout-ms = <70>;
         };
 
         ll_RCLK {
             bindings = <&mkp RCLK>;
             key-positions = <19 18>;
-            layers = <0 6>;
+            layers = <0 2 6>;
             timeout-ms = <70>;
         };
 
         mm_MCLK {
             bindings = <&mkp MCLK>;
             key-positions = <26 27>;
-            layers = <0 6>;
+            layers = <0 2 6>;
             timeout-ms = <60>;
         };
 
@@ -816,13 +819,7 @@
         game_exit {
             bindings = <&to 0>;
             key-positions = <31 32>;
-            layers = <2>;
-        };
-
-        game_sticky {
-            bindings = <&sl 1>;
-            key-positions = <30 32>;
-            layers = <2>;
+            layers = <1 2>;
         };
 
         game_temp {
@@ -882,7 +879,7 @@
 &kp NUMBER_1    &kp Q       &kp W    &kp E         &kp R                                 &kp Y            &kp U  &kp I      &kp O    &kp P
 &kp LEFT_SHIFT  &kp A       &kp S    &kp D         &kp F                                 &kp H            &kp J  &kp K      &kp L    &kp APOS
 &kp NUMBER_2    &kp Z       &kp X    &kp C         &kp V                                 &kp N            &kp M  &kp COMMA  &kp DOT  &xlt 8 SLASH
-&to 0           &kp ESCAPE  &kp TAB  &kp NUMBER_3  &kp SPACE  &kp NUMBER_4  &lt 5 ENTER  &lt 4 BACKSPACE                             &mo 1
+&xgame 4 0      &xlt 1 ESCAPE  &kp TAB  &kp NUMBER_3  &kp SPACE  &kp NUMBER_4  &lt 5 ENTER  &lt 4 BACKSPACE                             &xgame 1 0
             >;
 
             label = "GAME";
