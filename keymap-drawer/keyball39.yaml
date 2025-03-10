@@ -80,6 +80,46 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
   - {t: '$$mdi:backspace$$', h: NUM}
   - {t: HOME, h: toggle}
+  GAME:
+  - '1'
+  - Q
+  - W
+  - E
+  - R
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - $$mdi:apple-keyboard-shift$$
+  - A
+  - S
+  - D
+  - F
+  - H
+  - J
+  - K
+  - L
+  - .
+  - '2'
+  - Z
+  - X
+  - C
+  - V
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, h: FUNCTION, s: '?'}
+  - {t: HOME, h: toggle}
+  - $$mdi:keyboard-esc$$
+  - $$mdi:keyboard-tab$$
+  - '3'
+  - $$mdi:keyboard-space$$
+  - '4'
+  - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
+  - {t: '$$mdi:backspace$$', h: NUM}
+  - SIMPLE
   MEDIA:
   - {t: BT DISC, h: '0'}
   - {t: BT DISC, h: '1'}
