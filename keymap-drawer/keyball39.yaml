@@ -71,9 +71,9 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '$$mdi:apple-keyboard-shift$$', type: held}
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:apple-keyboard-control$$', type: held}
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-tab$$
@@ -111,15 +111,15 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, h: FUNCTION, s: '?'}
-  - {t: HOME, h: toggle}
-  - $$mdi:keyboard-esc$$
+  - {t: HOME, h: NUM}
+  - {t: '$$mdi:keyboard-esc$$', h: SIMPLE}
   - $$mdi:keyboard-tab$$
   - '3'
   - $$mdi:keyboard-space$$
   - '4'
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
   - {t: '$$mdi:backspace$$', h: NUM}
-  - SIMPLE
+  - {t: HOME, h: SIMPLE}
   MEDIA:
   - {t: BT DISC, h: '0'}
   - {t: BT DISC, h: '1'}
@@ -191,7 +191,7 @@ layers:
   - KP 2
   - KP 3
   - {t: '-', s: _}
-  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:apple-keyboard-option$$', type: held alternate}
   - {t: /, s: '?'}
   - $$mdi:keyboard-space$$
   - {t: ., s: '>'}
@@ -361,9 +361,6 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - AL CONTROL PANEL
 combos:
-- p: [20, 21]
-  k: {t: '$$mdi:keyboard-return$$', type: enter}
-  l: [HOME, SNIPE]
 - p: [26, 28]
   k: $$mdi:backspace-reverse-outline$$
   l: [HOME]
@@ -378,13 +375,13 @@ combos:
   l: [HOME]
 - p: [16, 17]
   k: $$mdi:mouse-left-click-outline$$
-  l: [HOME, SNIPE]
+  l: [HOME, GAME, SNIPE]
 - p: [19, 18]
   k: $$mdi:mouse-right-click-outline$$
-  l: [HOME, SNIPE]
+  l: [HOME, GAME, SNIPE]
 - p: [26, 27]
   k: $$mdi:mouse-scroll-wheel$$
-  l: [HOME, SNIPE]
+  l: [HOME, GAME, SNIPE]
 - p: [16, 18]
   k: $$mdi:mouse-scroll-wheel$$
   l: [SNIPE]
@@ -405,10 +402,7 @@ combos:
   l: [HOME]
 - p: [31, 32]
   k: {t: HOME, h: toggle}
-  l: [GAME]
-- p: [30, 32]
-  k: {t: SIMPLE, h: '$$mdi:gesture-tap-hold$$'}
-  l: [GAME]
+  l: [SIMPLE, GAME]
 - p: [30, 31]
   k: {t: SIMPLE, h: toggle}
   l: [GAME]
