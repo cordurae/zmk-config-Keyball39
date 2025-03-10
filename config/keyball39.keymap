@@ -902,7 +902,7 @@
 &kp Q           &kp W         &kp E      &kp R       &kp T                            &kp Y            &kp U  &kp I      &kp O    &kp P
 &kp A           &kp S         &kp D      &kp F       &kp G                            &kp H            &kp J  &kp K      &kp L    &kp APOS
 &kp Z           &kp X         &kp C      &kp V       &kp B                            &kp N            &kp M  &kp COMMA  &kp DOT  &kp FSLH
-&kp LEFT_SHIFT  &kp LEFT_GUI  &kp LCTRL  &kp ESCAPE  &kp SPACE  &lt 6 TAB  &lt 5 ENTER  &lt 4 BACKSPACE                             &slt LEFT_SHIFT 0
+&kp LEFT_SHIFT  &kp LEFT_GUI  &kp LCTRL  &kp ESCAPE  &lt 7 SPACE  &lt 6 TAB  &lt 5 ENTER  &lt 4 BACKSPACE                             &slt LEFT_SHIFT 0
             >;
 
             label = "SIMPLE";
