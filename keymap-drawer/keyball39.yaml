@@ -261,7 +261,7 @@ layers:
   - SCROLL
   - $$mdi:mouse-right-click-outline$$
   - '&mkp MB5'
-  - {t: SIMPLE, h: toggle}
+  - {t: GAME, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
