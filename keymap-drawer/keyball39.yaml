@@ -72,8 +72,8 @@ layers:
   - {t: ., s: '>'}
   - {t: /, h: FUNCTION, s: '?'}
   - {t: HOME, h: NUM}
-  - {t: '$$mdi:keyboard-esc$$', h: SIMPLE}
-  - {t: '$$mdi:keyboard-tab$$', h: SIMPLE}
+  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-esc$$', h: NUM}
   - '3'
   - $$mdi:keyboard-space$$
   - '4'
@@ -112,14 +112,14 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:apple-keyboard-shift$$', type: held alternate}
-  - {t: '$$mdi:apple-keyboard-command$$', type: held}
+  - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:apple-keyboard-control$$', type: held alternate}
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:keyboard-space$$', h: SCROLL}
   - {t: '$$mdi:keyboard-tab$$', h: SNIPE}
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
   - {t: '$$mdi:backspace$$', h: NUM}
-  - {t: HOME, h: '$$mdi:apple-keyboard-shift$$', type: held alternate}
+  - {t: HOME, h: '$$mdi:apple-keyboard-shift$$', type: held}
   MEDIA:
   - {t: BT DISC, h: '0'}
   - {t: BT DISC, h: '1'}
@@ -192,7 +192,7 @@ layers:
   - KP 3
   - {t: '-', s: _}
   - {t: '$$mdi:apple-keyboard-option$$', type: held alternate}
-  - {t: /, s: '?', type: held alternate}
+  - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-space$$', type: held alternate}
   - {t: ., s: '>'}
   - '0'
@@ -232,8 +232,8 @@ layers:
   - '&bullet'
   - '&filter'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '&ipad_left', type: held alternate}
-  - {t: '&ipad_right', type: held alternate}
+  - '&ipad_left'
+  - '&ipad_right'
   - (
   - )
   - _
@@ -272,8 +272,8 @@ layers:
   - $$mdi:pan-up$$
   - $$mdi:pan-right$$
   - $$mdi:mouse-right-click-outline$$
-  - {t: '$$mdi:mouse-scroll-wheel$$', type: held alternate}
-  - {t: '$$mdi:mouse-left-click-outline$$', type: held alternate}
+  - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:mouse-left-click-outline$$
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-space$$
   - {type: held}
@@ -313,7 +313,7 @@ layers:
   - END
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:mouse-scroll-wheel$$', type: held alternate}
-  - {t: '$$mdi:mouse-left-click-outline$$', type: held alternate}
+  - $$mdi:mouse-left-click-outline$$
   - $$mdi:keyboard-esc$$
   - {type: held alternate}
   - {t: '$$mdi:keyboard-tab$$', type: held alternate}
