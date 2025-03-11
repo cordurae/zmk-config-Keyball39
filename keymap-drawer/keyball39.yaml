@@ -73,7 +73,7 @@ layers:
   - {t: /, h: FUNCTION, s: '?'}
   - {t: HOME, h: NUM}
   - {t: '$$mdi:keyboard-esc$$', h: SIMPLE}
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', h: SIMPLE}
   - '3'
   - $$mdi:keyboard-space$$
   - '4'
@@ -193,7 +193,7 @@ layers:
   - {t: '-', s: _}
   - {t: '$$mdi:apple-keyboard-option$$', type: held alternate}
   - {t: /, s: '?', type: held alternate}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', type: held alternate}
   - {t: ., s: '>'}
   - '0'
   - {t: '-', s: _}
@@ -233,7 +233,7 @@ layers:
   - '&filter'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '&ipad_left', type: held alternate}
-  - '&ipad_right'
+  - {t: '&ipad_right', type: held alternate}
   - (
   - )
   - _
@@ -273,7 +273,7 @@ layers:
   - $$mdi:pan-right$$
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:mouse-scroll-wheel$$', type: held alternate}
-  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:mouse-left-click-outline$$', type: held alternate}
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-space$$
   - {type: held}
@@ -313,7 +313,7 @@ layers:
   - END
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:mouse-scroll-wheel$$', type: held alternate}
-  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:mouse-left-click-outline$$', type: held alternate}
   - $$mdi:keyboard-esc$$
   - {type: held alternate}
   - {t: '$$mdi:keyboard-tab$$', type: held alternate}
