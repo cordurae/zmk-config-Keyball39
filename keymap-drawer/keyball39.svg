@@ -882,6 +882,24 @@ rect.held, rect.combo.held {
 <text x="56" y="210" class="combo tap layer-activator">SIMPLE</text>
 </a><text x="56" y="221" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-6">
+<path d="M168,151 l-65,-3" class="combo"/>
+<path d="M168,151 l65,3" class="combo"/>
+<rect rx="6" ry="6" x="154" y="138" width="28" height="26" class="combo"/>
+<text x="168" y="151" class="combo tap">M</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="42" y="169" width="28" height="26" class="combo"/>
+<text x="56" y="182" class="combo tap">M</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="70" y="162" width="28" height="26" class="combo"/>
+<text x="84" y="175" class="combo tap">G</text>
+</g>
+<g class="combo combopos-9">
+<rect rx="6" ry="6" x="98" y="159" width="28" height="26" class="combo"/>
+<text x="112" y="172" class="combo tap">B</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 688)" class="layer-SIMPLE">
