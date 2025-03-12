@@ -845,6 +845,30 @@
             layers = <1>;
         };
 
+       game_map {
+            bindings = <&kp M>;
+            key-positions = <21 24>;
+            layers = <1>;
+        };
+
+        game_t {
+            bindings = <&kp M>;
+            key-positions = <21 30>;
+            layers = <1>;
+        };
+
+        game_g {
+            bindings = <&kp G>;
+            key-positions = <21 31>;
+            layers = <1>;
+        };
+
+        game_b {
+            bindings = <&kp B>;
+            key-positions = <21 32>;
+            layers = <1>;
+        };
+
         simple_to_game {
             bindings = <&to 1>;
             key-positions = <30 31>;
