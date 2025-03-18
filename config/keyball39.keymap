@@ -244,6 +244,14 @@
             quick-tap-ms = <180>;
             bindings = <&mo>, <&to>;
         };
+
+        td_keys: tap_dance_keys {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_KEYS";
+            #binding-cells = <0>;
+            tapping-term-ms = <180>;
+            bindings = <&kp M>, <&kp Y>, <&kp T>, <&kp G>, <&kp B>;
+        };
     };
 
     macros {
@@ -332,7 +340,7 @@
         clear: clear {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            tap-ms = <60>;
+            tap-ms = <30>;
             bindings =
                 <&macro_press>,
                 <&kp LGUI>,
@@ -340,14 +348,14 @@
                 <&kp R>,
                 <&macro_release>,
                 <&kp LGUI>,
-                <&macro_wait_time 400>,
+                <&macro_wait_time 300>,
                 <&macro_press>,
                 <&kp LGUI>,
                 <&macro_tap>,
                 <&kp V>,
                 <&macro_release>,
                 <&kp LGUI>,
-                <&macro_wait_time 400>,
+                <&macro_wait_time 300>,
                 <&macro_press>,
                 <&kp LSFT>,
                 <&macro_tap>,
@@ -369,7 +377,7 @@
         clear2: clear2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            tap-ms = <60>;
+            tap-ms = <30>;
             bindings =
                 <&macro_press>,
                 <&kp LGUI>,
@@ -377,14 +385,14 @@
                 <&kp R>,
                 <&macro_release>,
                 <&kp LGUI>,
-                <&macro_wait_time 400>,
+                <&macro_wait_time 300>,
                 <&macro_press>,
                 <&kp LGUI>,
                 <&macro_tap>,
                 <&kp V>,
                 <&macro_release>,
                 <&kp LGUI>,
-                <&macro_wait_time 400>,
+                <&macro_wait_time 300>,
                 <&macro_tap>,
                 <&kp TAB>,
                 <&macro_tap>,
@@ -703,7 +711,7 @@
         sen: sen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp S &kp R &kp O &kp G &kp E &kp N2 &kp N2 &kp LS(B) &kp RET>;
+            bindings = <&kp S &kp R &kp O &kp G &kp E &kp N2 &kp N2 &kp LS(H) &kp RET>;
             label = "SEN";
         };
 
@@ -821,12 +829,6 @@
             layers = <0>;
         };
 
-        extra_MB4 {
-            bindings = <&mkp MB4>;
-            key-positions = <30 31>;
-            layers = <0>;
-        };
-
         game_exit {
             bindings = <&to 0>;
             key-positions = <31 32>;
@@ -842,7 +844,7 @@
         game_to_simple {
             bindings = <&to 2>;
             key-positions = <30 31>;
-            layers = <1>;
+            layers = <0 1>;
         };
 
        game_map {
@@ -897,7 +899,7 @@
 &kp NUMBER_1    &kp Q       &kp W    &kp E         &kp R                                 &kp Y            &kp U  &kp I      &kp O    &kp P
 &kp LEFT_SHIFT  &kp A       &kp S    &kp D         &kp F                                 &kp H            &kp J  &kp K      &kp L    &kp APOS
 &kp NUMBER_2    &kp Z       &kp X    &kp C         &kp V                                 &kp N            &kp M  &kp COMMA  &kp DOT  &xlt 8 SLASH
-&xgame 4 0      &kp TAB     &xlt 4 ESC  &kp NUMBER_3  &kp SPACE  &kp NUMBER_4  &lt 5 ENTER  &lt 4 BACKSPACE                             &xgame 2 0
+&kp TAB         &td_keys    &xlt 4 ESC  &kp NUMBER_3  &kp SPACE  &kp NUMBER_4  &lt 5 ENTER  &lt 4 BACKSPACE                             &xgame 2 0
             >;
 
             label = "GAME";
