@@ -71,8 +71,8 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, h: FUNCTION, s: '?'}
-  - {t: HOME, h: NUM}
   - $$mdi:keyboard-tab$$
+  - '&td_keys'
   - {t: '$$mdi:keyboard-esc$$', h: NUM}
   - '3'
   - $$mdi:keyboard-space$$
@@ -191,7 +191,7 @@ layers:
   - KP 2
   - KP 3
   - {t: '-', s: _}
-  - {t: '$$mdi:apple-keyboard-option$$', type: held alternate}
+  - $$mdi:apple-keyboard-option$$
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-space$$', type: held alternate}
   - {t: ., s: '>'}
@@ -397,9 +397,6 @@ combos:
 - p: [30, 32]
   k: $$mdi:mouse-scroll-wheel$$
   l: [HOME]
-- p: [30, 31]
-  k: '&mkp MB4'
-  l: [HOME]
 - p: [31, 32]
   k: {t: HOME, h: toggle}
   l: [GAME, SIMPLE]
@@ -408,7 +405,7 @@ combos:
   l: [GAME]
 - p: [30, 31]
   k: {t: SIMPLE, h: toggle}
-  l: [GAME]
+  l: [HOME, GAME]
 - p: [21, 24]
   k: M
   l: [GAME]
