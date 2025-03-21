@@ -391,6 +391,9 @@ combos:
 - p: [21, 23]
   k: Alt+$$mdi:keyboard-tab$$
   l: [HOME, SNIPE]
+- p: [26, 29]
+  k: Alt+$$mdi:keyboard-space$$
+  l: [HOME, SNIPE]
 - p: [31, 32]
   k: $$mdi:mouse-right-click-outline$$
   l: [HOME]
