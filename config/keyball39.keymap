@@ -739,7 +739,7 @@
         Estar: Estar {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N8 &kp N3 &kp LS(A) &kp LS(A) &kp AMPS &kp Y &kp STAR &kp P>;
+            bindings = <&kp N8 &kp N3 &kp LS(A) &kp LS(A) &kp AMPS &kp Y &kp STAR &kp F>;
             label = "ESTAR";
         };
     };
@@ -813,6 +813,13 @@
         xv_SWITCH {
             bindings = <&kp LA(TAB)>;
             key-positions = <21 23>;
+            layers = <0 6>;
+            timeout-ms = <70>;
+        };
+
+        mslash_RUN {
+            bindings = <&kp LA(SPACE)>;
+            key-positions = <26 29>;
             layers = <0 6>;
             timeout-ms = <70>;
         };
