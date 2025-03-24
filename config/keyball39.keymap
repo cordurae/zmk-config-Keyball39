@@ -134,7 +134,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <120>;
-            quick-tap-ms = <180>;
+            quick-tap-ms = <120>;
             bindings = <&dquotes>, <&squote>;
         };
 
@@ -144,7 +144,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <120>;
-            quick-tap-ms = <150>;
+            quick-tap-ms = <120>;
             bindings = <&bracket>, <&parenthesis>;
         };
 
