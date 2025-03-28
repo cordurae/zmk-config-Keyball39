@@ -51,7 +51,7 @@ layers:
   - I
   - O
   - P
-  - $$mdi:apple-keyboard-shift$$
+  - '2'
   - A
   - S
   - D
@@ -61,7 +61,7 @@ layers:
   - K
   - L
   - .
-  - $$mdi:keyboard-tab$$
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -71,7 +71,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, h: FUNCTION, s: '?'}
-  - '2'
+  - $$mdi:keyboard-tab$$
   - '&td_keys'
   - {t: '$$mdi:keyboard-esc$$', h: NUM}
   - '3'
