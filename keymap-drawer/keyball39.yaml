@@ -41,7 +41,7 @@ layers:
   - {t: '$$mdi:backspace$$', h: NUM}
   - '&td_nav'
   GAME:
-  - '1'
+  - '&td_game'
   - Q
   - W
   - E
@@ -51,7 +51,7 @@ layers:
   - I
   - O
   - P
-  - '2'
+  - $$mdi:apple-keyboard-shift$$
   - A
   - S
   - D
@@ -61,7 +61,7 @@ layers:
   - K
   - L
   - .
-  - $$mdi:apple-keyboard-shift$$
+  - Y
   - Z
   - X
   - C
@@ -73,7 +73,7 @@ layers:
   - {t: /, h: FUNCTION, s: '?'}
   - $$mdi:keyboard-tab$$
   - '&td_keys'
-  - {t: '$$mdi:keyboard-esc$$', h: NUM}
+  - {t: '2', h: NUM}
   - '3'
   - $$mdi:keyboard-space$$
   - '4'
@@ -405,6 +405,9 @@ combos:
   l: [GAME, SIMPLE]
 - p: [30, 32]
   k: {t: SIMPLE, h: '$$mdi:gesture-tap-hold$$'}
+  l: [GAME]
+- p: [33, 23]
+  k: $$mdi:keyboard-esc$$
   l: [GAME]
 - p: [30, 31]
   k: {t: SIMPLE, h: toggle}
