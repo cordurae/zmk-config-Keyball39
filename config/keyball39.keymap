@@ -884,12 +884,14 @@
             bindings = <&kp NUMBER_2>;
             key-positions = <0 33>;
             layers = <1>;
+            timeout-ms = <80>;
         };
 
        game_second_2 {
             bindings = <&kp NUMBER_2>;
             key-positions = <0 35>;
             layers = <1>;
+            timeout-ms = <80>;
         };
 
         simple_to_game {
