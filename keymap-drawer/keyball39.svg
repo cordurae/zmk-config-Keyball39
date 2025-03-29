@@ -890,8 +890,10 @@ rect.held, rect.combo.held {
 </a><text x="56" y="221" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-7">
-<rect rx="6" ry="6" x="154" y="131" width="28" height="26" class="combo"/>
-<text x="168" y="144" class="combo tap">M</text>
+<path d="M112,154 l-65,5" class="combo"/>
+<path d="M112,154 l65,-5" class="combo"/>
+<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
+<text x="112" y="154" class="combo tap">M</text>
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="42" y="29" width="28" height="26" class="combo"/>
