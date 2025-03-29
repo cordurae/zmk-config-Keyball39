@@ -831,6 +831,13 @@
             timeout-ms = <70>;
         };
 
+        cv_MENU {
+            bindings = <&kp K_CONTEXT_MENU>;
+            key-positions = <22 23>;
+            layers = <0 6>;
+            timeout-ms = <60>;
+        };
+
         extra_RCLK {
             bindings = <&mkp RCLK>;
             key-positions = <31 32>;
@@ -897,13 +904,6 @@
             key-positions = <22 27>;
             layers = <0>;
             timeout-ms = <70>;
-        };
-
-        cv_MENU {
-            bindings = <&kp K_APPLICATION>;
-            key-positions = <22 23>;
-            layers = <0 6>;
-            timeout-ms = <60>;
         };
     };
 
