@@ -814,7 +814,7 @@ rect.held, rect.combo.held {
 <g transform="translate(140, 196)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">2</text>
+<text x="0" y="-4" class="key tap">J</text>
 <a href="#NUM">
 <text x="0" y="24" class="key hold layer-activator">NUM</text>
 </a></g>
@@ -896,6 +896,12 @@ rect.held, rect.combo.held {
 <path d="M112,154 l65,-5" class="combo"/>
 <rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
 <text x="112" y="154" class="combo tap">M</text>
+</g>
+<g class="combo combopos-8">
+<path d="M119,137 l-78,-74" class="combo"/>
+<path d="M119,137 l78,74" class="combo"/>
+<rect rx="6" ry="6" x="105" y="124" width="28" height="26" class="combo"/>
+<text x="119" y="137" class="combo tap">2</text>
 </g>
 </g>
 </g>
