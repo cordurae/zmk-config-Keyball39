@@ -41,7 +41,7 @@ layers:
   - {t: '$$mdi:backspace$$', h: NUM}
   - '&td_nav'
   GAME:
-  - '&td_game'
+  - '1'
   - Q
   - W
   - E
