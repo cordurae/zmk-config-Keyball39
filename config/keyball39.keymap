@@ -245,20 +245,12 @@
             bindings = <&mo>, <&to>;
         };
 
-        td_game: tap_dance_game {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_GAME";
-            #binding-cells = <0>;
-            tapping-term-ms = <180>;
-            bindings = <&kp NUMBER_1>, <&kp NUMBER_2>;
-        };
-
         td_keys: tap_dance_keys {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_KEYS";
             #binding-cells = <0>;
             tapping-term-ms = <180>;
-            bindings = <&kp M>, <&kp T>, <&kp G>, <&kp B>;
+            bindings = <&kp M>, <&kp T>, <&kp G>, <&kp B>, <&kp J>;
         };
     };
 
@@ -877,7 +869,13 @@
 
        game_map {
             bindings = <&kp M>;
-            key-positions = <21 24>;
+            key-positions = <22 23>;
+            layers = <1>;
+        };
+
+       game_second {
+            bindings = <&kp NUMBER_2>;
+            key-positions = <0 1>;
             layers = <1>;
         };
 
@@ -924,7 +922,7 @@
 
         gaming_layer {
             bindings = <
-&td_game        &kp Q       &kp W    &kp E         &kp R                                 &kp Y            &kp U  &kp I      &kp O    &kp P
+&kp NUMBER_1    &kp Q       &kp W    &kp E         &kp R                                 &kp Y            &kp U  &kp I      &kp O    &kp P
 &kp LEFT_SHIFT  &kp A       &kp S    &kp D         &kp F                                 &kp H            &kp J  &kp K      &kp L    &kp APOS
 &kp Y           &kp Z       &kp X    &kp C         &kp V                                 &kp N            &kp M  &kp COMMA  &kp DOT  &xlt 8 SLASH
 &kp TAB         &td_keys    &xlt 4 NUMBER_2  &kp NUMBER_3  &kp SPACE  &kp NUMBER_4  &lt 5 ENTER  &lt 4 BACKSPACE                             &xgame 2 0
