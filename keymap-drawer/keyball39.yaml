@@ -41,7 +41,7 @@ layers:
   - {t: '$$mdi:backspace$$', h: NUM}
   - '&td_nav'
   GAME:
-  - '1'
+  - '&td_game'
   - Q
   - W
   - E
@@ -417,9 +417,6 @@ combos:
   l: [HOME, GAME]
 - p: [20, 23]
   k: M
-  l: [GAME]
-- p: [0, 1]
-  k: '2'
   l: [GAME]
 - p: [30, 31]
   k: {t: GAME, h: toggle}
