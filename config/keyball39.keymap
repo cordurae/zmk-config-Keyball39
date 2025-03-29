@@ -252,14 +252,6 @@
             tapping-term-ms = <180>;
             bindings = <&kp M>, <&kp T>, <&kp G>, <&kp B>;
         };
-
-        td_game: tap_dance_game {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_GAME";
-            #binding-cells = <0>;
-            tapping-term-ms = <180>;
-            bindings = <&kp NUMBER_1>, <&kp NUMBER_2>;
-        };
     };
 
     macros {
@@ -891,6 +883,12 @@
        game_second {
             bindings = <&kp NUMBER_2>;
             key-positions = <0 33>;
+            layers = <1>;
+        };
+
+       game_second_2 {
+            bindings = <&kp NUMBER_2>;
+            key-positions = <0 35>;
             layers = <1>;
         };
 
