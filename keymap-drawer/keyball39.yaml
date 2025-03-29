@@ -394,6 +394,9 @@ combos:
 - p: [26, 29]
   k: Alt+$$mdi:keyboard-space$$
   l: [HOME, SNIPE]
+- p: [22, 23]
+  k: CONTEXT MENU
+  l: [HOME, SNIPE]
 - p: [31, 32]
   k: $$mdi:mouse-right-click-outline$$
   l: [HOME]
@@ -427,6 +430,3 @@ combos:
 - p: [22, 27]
   k: $$mdi:apple-keyboard-caps$$
   l: [HOME]
-- p: [22, 23]
-  k: APPLICATION
-  l: [HOME, SNIPE]
