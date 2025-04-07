@@ -46,6 +46,16 @@
             bindings = <&kp>, <&kp>;
         };
 
+        xmclk: special_middle_click {
+            compatible = "zmk,behavior-hold-tap";
+            label = "XMCLK";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <180>;
+            quick-tap-ms = <180>;
+            bindings = <&mo>, <&mkp>;
+        };
+
         td_globe: tap_dance_globe {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_GLOBE";
@@ -241,6 +251,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <180>;
             bindings = <&kp M>, <&kp T>, <&kp G>, <&kp B>;
+        };
 
         td_game: tap_dance_game {
             compatible = "zmk,behavior-tap-dance";
@@ -841,12 +852,6 @@
             layers = <0>;
         };
 
-        extra_MCLK {
-            bindings = <&mkp MCLK>;
-            key-positions = <30 32>;
-            layers = <0>;
-        };
-
         game_exit {
             bindings = <&to 0>;
             key-positions = <31 32>;
@@ -981,7 +986,7 @@
             label = "SNIPE";
             bindings = <
 &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LC(HOME)                     &trans           &trans          &td_cc          &td_paste     &to 0
-&kp LEFT_GUI    &kp LEFT_ALT  &kp LCTRL       &kp LEFT_SHIFT   &kp LC(END)                      &mkp MB4         &mkp LCLK       &mo 7           &mkp RCLK     &mkp MB5
+&kp LEFT_GUI    &kp LEFT_ALT  &kp LCTRL       &kp LEFT_SHIFT   &kp LC(END)                      &mkp MB4         &mkp LCLK       &xmclk 7 MCLK   &mkp RCLK     &mkp MB5
 &to 1           &to 2         &trans          &trans           &trans                           &trans           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
 &mkp RCLK       &mkp MCLK     &mkp LCLK       &kp ESCAPE       &kp SPACE     &trans  &kp ENTER  &kp PRINTSCREEN                                                &trans
             >;
