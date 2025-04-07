@@ -29,7 +29,7 @@ layers:
   - N
   - M
   - {t: ',', h: SCROLL, s: <}
-  - {t: ., s: '>'}
+  - {t: ., h: SIMPLE, s: '>'}
   - {t: /, h: FUNCTION, s: '?'}
   - '&td_globe'
   - SCROLL
@@ -79,7 +79,7 @@ layers:
   - '4'
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
   - {t: '$$mdi:backspace$$', h: NUM}
-  - {t: HOME, h: SIMPLE}
+  - '&td_game'
   SIMPLE:
   - Q
   - W
@@ -109,17 +109,17 @@ layers:
   - N
   - M
   - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - {t: ., s: '>', type: held}
   - {t: /, s: '?'}
   - {t: '$$mdi:apple-keyboard-shift$$', type: held alternate}
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:apple-keyboard-control$$', type: held alternate}
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-esc$$', h: MEDIA}
   - {t: '$$mdi:keyboard-space$$', h: SCROLL}
   - {t: '$$mdi:keyboard-tab$$', h: SNIPE}
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
   - {t: '$$mdi:backspace$$', h: NUM}
-  - {t: HOME, h: '$$mdi:apple-keyboard-shift$$', type: held}
+  - {t: HOME, h: '$$mdi:apple-keyboard-shift$$'}
   MEDIA:
   - {t: BT DISC, h: '0'}
   - {t: BT DISC, h: '1'}
@@ -149,7 +149,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:progress-download$$
   - '&ipad_slide_over'
@@ -189,7 +189,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - KP 1
   - KP 2
-  - KP 3
+  - {t: KP 3, type: held alternate}
   - {t: '-', s: _}
   - $$mdi:apple-keyboard-option$$
   - {t: /, s: '?'}
@@ -199,7 +199,7 @@ layers:
   - {t: '-', s: _}
   - KP ENTER
   - {type: held}
-  - {t: '$$mdi:progress-download$$', type: held alternate}
+  - $$mdi:progress-download$$
   SYMBOL:
   - '{'
   - '&'
@@ -229,7 +229,7 @@ layers:
   - '&td_clear'
   - '&emdash'
   - '&trademark'
-  - '&bullet'
+  - {t: '&bullet', type: held alternate}
   - '&filter'
   - {t: '$$mdi:transfer$$', type: trans}
   - '&ipad_left'
@@ -239,7 +239,7 @@ layers:
   - _
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '&mapdoc', type: held alternate}
+  - '&mapdoc'
   SNIPE:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
@@ -258,7 +258,7 @@ layers:
   - Ctl+END
   - '&mkp MB4'
   - $$mdi:mouse-left-click-outline$$
-  - SCROLL
+  - {t: '$$mdi:mouse-scroll-wheel$$', h: SCROLL}
   - $$mdi:mouse-right-click-outline$$
   - '&mkp MB5'
   - {t: GAME, h: toggle}
@@ -269,7 +269,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-left$$
   - $$mdi:pan-down$$
-  - $$mdi:pan-up$$
+  - {t: '$$mdi:pan-up$$', type: held alternate}
   - $$mdi:pan-right$$
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
@@ -279,7 +279,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - PRINTSCREEN
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   SCROLL:
   - Alt+$$mdi:keyboard-esc$$
   - '&td_cc'
@@ -309,7 +309,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - HOME
   - {t: PgDn, type: held}
-  - PgUp
+  - {t: PgUp, type: held alternate}
   - END
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:mouse-scroll-wheel$$', type: held alternate}
@@ -319,7 +319,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', type: held alternate}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   FUNCTION:
   - F12
   - F7
@@ -399,9 +399,6 @@ combos:
   l: [HOME, SNIPE]
 - p: [31, 32]
   k: $$mdi:mouse-right-click-outline$$
-  l: [HOME]
-- p: [30, 32]
-  k: $$mdi:mouse-scroll-wheel$$
   l: [HOME]
 - p: [31, 32]
   k: {t: HOME, h: toggle}
