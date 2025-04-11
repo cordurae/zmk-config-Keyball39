@@ -56,11 +56,11 @@ layers:
   - S
   - D
   - F
-  - {t: H, h: MEDIA}
+  - H
   - J
   - K
   - L
-  - .
+  - {t: ., h: MEDIA}
   - Y
   - Z
   - X
@@ -136,15 +136,15 @@ layers:
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
   - {h: '5', s: '$$mdi:bluetooth-connect$$'}
-  - {t: '&key_repeat', type: held alternate}
+  - '&key_repeat'
   - PREVIOUS
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
-  - $$mdi:skip-next$$
+  - {t: '$$mdi:skip-next$$', type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&t_mute'
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -176,7 +176,7 @@ layers:
   - '5'
   - '6'
   - {t: '=', s: +}
-  - KP NUMLOCK
+  - {t: '$$mdi:transfer$$', type: trans}
   - KP 4
   - KP 5
   - KP 6
@@ -325,7 +325,7 @@ layers:
   - F7
   - F8
   - F9
-  - INS
+  - KP NUMLOCK
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -336,7 +336,7 @@ layers:
   - F5
   - F6
   - SCROLLLOCK
-  - {t: '$$mdi:transfer$$', type: trans}
+  - INS
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
