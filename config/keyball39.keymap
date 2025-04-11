@@ -983,8 +983,8 @@
             label = "NUM";
             bindings = <
 &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET                           &trans          &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp STAR
-&kp SEMICOLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                                   &trans          &kp KP_N4        &kp KP_N5  &kp KP_N6  &kp KP_N0
-&kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH                               &lm 3 LA(LG(LCTRL)) &kp KP_NUMBER_1  &kp KP_N2  &kp KP_N3  &kp MINUS
+&kp SEMICOLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                                   &lm 3 LA(LG(LCTRL))  &kp KP_N4   &kp KP_N5  &kp KP_N6  &kp KP_N0
+&kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH                               &trans          &kp KP_N1        &kp KP_N2  &kp KP_N3  &kp MINUS
 &kp LEFT_ALT      &kp FSLH      &kp SPACE     &kp DOT       &kp NUMBER_0       &kp MINUS  &kp KP_ENTER  &trans                                                 &bootloader
             >;
         };
