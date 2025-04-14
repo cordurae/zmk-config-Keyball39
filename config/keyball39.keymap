@@ -893,23 +893,23 @@
             layers = <0 1>;
         };
 
-       game_second {
+        game_second {
             bindings = <&kp NUMBER_2>;
-            key-positions = <10 33>;
+            key-positions = <22 23>;
             layers = <1>;
             timeout-ms = <80>;
         };
 
        game_second_2 {
             bindings = <&kp NUMBER_2>;
-            key-positions = <10 35>;
+            key-positions = <10 33>;
             layers = <1>;
             timeout-ms = <80>;
         };
 
-        game_second_3 {
+       game_second_3 {
             bindings = <&kp NUMBER_2>;
-            key-positions = <22 23>;
+            key-positions = <10 35>;
             layers = <1>;
             timeout-ms = <80>;
         };
