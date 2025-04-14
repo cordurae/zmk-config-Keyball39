@@ -74,9 +74,9 @@ layers:
   - $$mdi:keyboard-tab$$
   - '&td_keys'
   - {t: J, h: NUM}
-  - '2'
+  - '3'
   - $$mdi:keyboard-space$$
-  - '&tgs'
+  - '4'
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
   - {t: '$$mdi:backspace$$', h: NUM}
   - '&td_game'
@@ -412,6 +412,12 @@ combos:
 - p: [30, 31]
   k: {t: SIMPLE, h: toggle}
   l: [HOME, GAME]
+- p: [10, 33]
+  k: '2'
+  l: [GAME]
+- p: [10, 35]
+  k: '2'
+  l: [GAME]
 - p: [30, 31]
   k: {t: GAME, h: toggle}
   l: [SIMPLE]
