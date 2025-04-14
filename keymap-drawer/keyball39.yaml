@@ -57,7 +57,7 @@ layers:
   - D
   - F
   - H
-  - J
+  - {t: J, h: MEDIA}
   - K
   - L
   - {t: ., h: MEDIA}
@@ -74,9 +74,9 @@ layers:
   - $$mdi:keyboard-tab$$
   - '&td_keys'
   - {t: J, h: NUM}
-  - '3'
+  - '2'
   - $$mdi:keyboard-space$$
-  - '4'
+  - '&tgs'
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
   - {t: '$$mdi:backspace$$', h: NUM}
   - '&td_game'
@@ -137,7 +137,7 @@ layers:
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
   - {h: '5', s: '$$mdi:bluetooth-connect$$'}
   - '&key_repeat'
-  - PREVIOUS
+  - {t: PREVIOUS, type: held alternate}
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
   - {t: '$$mdi:skip-next$$', type: held alternate}
@@ -412,15 +412,6 @@ combos:
 - p: [30, 31]
   k: {t: SIMPLE, h: toggle}
   l: [HOME, GAME]
-- p: [20, 23]
-  k: M
-  l: [GAME]
-- p: [0, 33]
-  k: '2'
-  l: [GAME]
-- p: [0, 35]
-  k: '2'
-  l: [GAME]
 - p: [30, 31]
   k: {t: GAME, h: toggle}
   l: [SIMPLE]
