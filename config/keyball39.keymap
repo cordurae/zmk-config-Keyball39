@@ -266,7 +266,7 @@
             label = "TD_GAME_SECOND";
             #binding-cells = <0>;
             tapping-term-ms = <10>;
-            bindings = <&kp NUMBER_4, <&kp NUMBER_3>;
+            bindings = <&kp NUMBER_4>, <&kp NUMBER_3>;
         };
     };
 
