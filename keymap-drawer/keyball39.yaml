@@ -418,6 +418,9 @@ combos:
 - p: [10, 35]
   k: '2'
   l: [GAME]
+- p: [22, 23]
+  k: '2'
+  l: [GAME]
 - p: [30, 31]
   k: {t: GAME, h: toggle}
   l: [SIMPLE]
