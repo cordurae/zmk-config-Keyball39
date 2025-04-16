@@ -990,7 +990,7 @@
             bindings = <
 &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_BRACKET      &kp RIGHT_BRACE                                &user       &sen          &Estar      &heart   &wife
 &kp COLON       &kp DOLLAR     &kp PERCENT   &kp CARET             &kp PLUS                                       &highlight  &td_brackets  &td_quotes  &to 7    &to 6
-&kp TILDE       &kp EXCL       &kp AT        &kp HASH              &kp PIPE                                       &xclear     &emdash       &trademark  &bullet  &filter
+&kp TILDE       &kp EXCL       &kp AT        &kp HASH              &kp PIPE                                       &xclear 0 0 &emdash       &trademark  &bullet  &filter
 &trans          &ipad_left     &ipad_right   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &trans  &trans                                         &mapdoc
             >;
         };
