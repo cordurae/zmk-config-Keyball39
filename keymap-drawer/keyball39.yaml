@@ -421,7 +421,7 @@ combos:
 - p: [30, 31]
   k: {t: GAME, h: toggle}
   l: [SIMPLE]
-- p: [26, 37]
+- p: [25, 37]
   k: $$mdi:backspace-reverse-outline$$
   l: [HOME, SNIPE, SCROLL]
 - p: [21, 28]
