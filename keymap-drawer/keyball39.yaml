@@ -247,7 +247,7 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - Ctl+HOME
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backspace-reverse-outline$$
   - '&td_cc'
   - '&td_paste'
   - {t: HOME, h: toggle}
@@ -266,7 +266,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PRINTSCREEN
   - $$mdi:pan-left$$
   - $$mdi:pan-down$$
   - {t: '$$mdi:pan-up$$', type: held alternate}
@@ -278,7 +278,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {type: held}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - PRINTSCREEN
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   SCROLL:
   - Alt+$$mdi:keyboard-esc$$
@@ -287,7 +287,7 @@ layers:
   - Sft+Alt+$$mdi:keyboard-esc$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backspace-reverse-outline$$
   - '&td_cc'
   - '&td_paste'
   - {t: HOME, h: toggle}
