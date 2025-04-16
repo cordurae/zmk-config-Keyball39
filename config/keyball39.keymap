@@ -915,6 +915,12 @@
             layers = <2>;
         };
 
+        extra_DELETE {
+            bindings = <&kp DELETE>;
+            key-positions = <26 37>;
+            layers = <0 6 7>;
+        };
+
         mm_CAPSWORD {
             bindings = <&caps_word>;
             key-positions = <21 28>;
