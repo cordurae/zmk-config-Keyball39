@@ -917,7 +917,7 @@
 
         extra_DELETE {
             bindings = <&kp DELETE>;
-            key-positions = <26 37>;
+            key-positions = <25 37>;
             layers = <0 6 7>;
         };
 
