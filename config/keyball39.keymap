@@ -174,12 +174,14 @@
             bindings = <&xquotes 0 0>, <&lessgreaterthan>;
         };
 
-        td_clear: tap_dance_clear {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_CLEAR";
-            #binding-cells = <0>;
-            tapping-term-ms = <180>;
-            bindings = <&clear>, <&clear2>;
+        xclear: special_clear {
+            compatible = "zmk,behavior-hold-tap";
+            label = "X_CLEAR";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <100>;
+            quick-tap-ms = <120>;
+            bindings = <&clear2>, <&clear>;
         };
 
         x_ipl: special_ipad_left {
@@ -996,17 +998,17 @@
         snipe_layer {
             label = "SNIPE";
             bindings = <
-&mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LC(HOME)                     &trans           &trans          &td_cc          &td_paste     &to 0
+&mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LC(HOME)                     &trans           &kp DELETE      &td_cc          &td_paste     &to 0
 &kp LEFT_GUI    &kp LEFT_ALT  &kp LCTRL       &kp LEFT_SHIFT   &kp LC(END)                      &mkp MB4         &mkp LCLK       &xmclk 7 MCLK   &mkp RCLK     &mkp MB5
-&to 1           &to 2         &trans          &trans           &trans                           &trans           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
-&mkp RCLK       &mkp MCLK     &mkp LCLK       &kp ESCAPE       &kp SPACE     &trans  &kp ENTER  &kp PRINTSCREEN                                                &trans
+&to 1           &to 2         &trans          &trans           &trans                           &kp PRINTSCREEN  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
+&mkp RCLK       &mkp MCLK     &mkp LCLK       &kp ESCAPE       &kp SPACE     &trans  &kp ENTER  &kp BACKSPACE                                                  &trans
             >;
         };
 
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&kp LA(ESC)   &td_cc     &td_paste  &kp LS(LA(ESC))  &trans                      &trans         &trans          &td_cc          &td_paste     &to 0
+&kp LA(ESC)   &td_cc     &td_paste  &kp LS(LA(ESC))  &trans                      &trans         &kp DELETE      &td_cc          &td_paste     &to 0
 &kp LEFT_GUI  &kp LALT   &kp LCTRL  &kp LSHFT        &trans                      &key_repeat    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
 &kp LEFT      &kp UP     &kp DOWN   &kp RIGHT        &trans                      &trans         &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
 &mkp RCLK     &mkp MCLK  &mkp LCLK  &kp ESC          &trans  &kp TAB  &kp ENTER  &kp BACKSPACE                                                &trans
