@@ -226,7 +226,7 @@ layers:
   - '@'
   - '#'
   - '|'
-  - '&xclear'
+  - {t: '&clear', h: '&clear2'}
   - '&emdash'
   - '&trademark'
   - {t: '&bullet', type: held alternate}
