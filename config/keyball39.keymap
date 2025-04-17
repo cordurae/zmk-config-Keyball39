@@ -957,7 +957,7 @@
 
         quick_ipad_home {
             bindings = <&ipad_home>;
-            key-positions: <32 33>;
+            key-positions = <32 33>;
             layers = <0>;
         };
 
