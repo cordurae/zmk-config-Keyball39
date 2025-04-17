@@ -859,6 +859,12 @@
             timeout-ms = <60>;
         };
 
+        extra_LCLK {
+            bindings = <&mkp LCLK>;
+            key-positions = <14 34>;
+            layers = <0>;
+        };
+
         extra_RCLK {
             bindings = <&mkp RCLK>;
             key-positions = <31 32>;
@@ -913,12 +919,6 @@
             bindings = <&to 1>;
             key-positions = <30 31>;
             layers = <2>;
-        };
-
-        extra_DELETE {
-            bindings = <&kp DELETE>;
-            key-positions = <25 37>;
-            layers = <0 6 7>;
         };
 
         mm_CAPSWORD {
