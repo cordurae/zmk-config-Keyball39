@@ -861,8 +861,9 @@
 
         extra_LCLK {
             bindings = <&mkp LCLK>;
-            key-positions = <14 34>;
-            layers = <0>;
+            key-positions = <3 34>;
+            layers = <0 6>;
+            timeout-ms = <70>;
         };
 
         extra_RCLK {
