@@ -899,6 +899,12 @@
             slow-release;
         };
 
+        extra_MB4 {
+            bindings = <&mkp MB4>;
+            key-positions = <15 35>;
+            layers = <0>;
+        };
+
         extra_COPY {
             bindings = <&td_cc>;
             key-positions = <7 35>;
