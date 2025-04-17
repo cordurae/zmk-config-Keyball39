@@ -955,6 +955,12 @@
             layers = <2>;
         };
 
+        quick_ipad_home {
+            bindings = <&ipad_home>;
+            key-positions: <32 33>;
+            layers = <0>;
+        };
+
         mm_CAPSWORD {
             bindings = <&caps_word>;
             key-positions = <21 28>;
