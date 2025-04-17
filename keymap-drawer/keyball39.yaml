@@ -412,6 +412,9 @@ combos:
 - p: [17, 35]
   k: $$mdi:mouse-scroll-wheel$$
   l: [HOME]
+- p: [15, 35]
+  k: '&mkp MB4'
+  l: [HOME]
 - p: [7, 35]
   k: '&td_cc'
   l: [HOME]
