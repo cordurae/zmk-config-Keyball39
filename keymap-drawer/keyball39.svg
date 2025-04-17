@@ -616,10 +616,10 @@ rect.held, rect.combo.held {
 </text>
 </g>
 <g class="combo combopos-11">
-<path d="M260,164 l-6,-47" class="combo"/>
-<path d="M260,164 l6,47" class="combo"/>
-<rect rx="6" ry="6" x="246" y="151" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-left-click-outline" xlink:href="#mdi:mouse-left-click-outline" x="251" y="155" height="18" width="18.0" class="combo tap glyph mdi:mouse-left-click-outline"/>
+<path d="M232,132 l-30,-80" class="combo"/>
+<path d="M232,132 l30,80" class="combo"/>
+<rect rx="6" ry="6" x="218" y="119" width="28" height="26" class="combo"/>
+<use href="#mdi:mouse-left-click-outline" xlink:href="#mdi:mouse-left-click-outline" x="223" y="123" height="18" width="18.0" class="combo tap glyph mdi:mouse-left-click-outline"/>
 </g>
 <g class="combo combopos-12">
 <rect rx="6" ry="6" x="98" y="187" width="28" height="26" class="combo"/>
@@ -2054,6 +2054,12 @@ rect.held, rect.combo.held {
 <text x="168" y="144" class="combo tap">
 <tspan x="168" dy="-0.6em" style="font-size: 86%">CONTEXT</tspan><tspan x="168" dy="1.2em" style="font-size: 86%">MENU</tspan>
 </text>
+</g>
+<g class="combo combopos-7">
+<path d="M232,132 l-30,-80" class="combo"/>
+<path d="M232,132 l30,80" class="combo"/>
+<rect rx="6" ry="6" x="218" y="119" width="28" height="26" class="combo"/>
+<use href="#mdi:mouse-left-click-outline" xlink:href="#mdi:mouse-left-click-outline" x="223" y="123" height="18" width="18.0" class="combo tap glyph mdi:mouse-left-click-outline"/>
 </g>
 </g>
 </g>
