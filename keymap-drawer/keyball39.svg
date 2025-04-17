@@ -616,24 +616,26 @@ rect.held, rect.combo.held {
 </text>
 </g>
 <g class="combo combopos-11">
+<path d="M260,164 l-6,-47" class="combo"/>
+<path d="M260,164 l6,47" class="combo"/>
+<rect rx="6" ry="6" x="246" y="151" width="28" height="26" class="combo"/>
+<use href="#mdi:mouse-left-click-outline" xlink:href="#mdi:mouse-left-click-outline" x="251" y="155" height="18" width="18.0" class="combo tap glyph mdi:mouse-left-click-outline"/>
+</g>
+<g class="combo combopos-12">
 <rect rx="6" ry="6" x="98" y="187" width="28" height="26" class="combo"/>
 <use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="103" y="191" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
 </g>
-<g class="combo combopos-12">
+<g class="combo combopos-13">
 <path d="M84,207 l-38,7" class="combo"/>
 <path d="M84,207 l38,-7" class="combo"/>
 <rect rx="6" ry="6" x="70" y="194" width="28" height="26" class="combo"/>
 <use href="#mdi:mouse-scroll-wheel" xlink:href="#mdi:mouse-scroll-wheel" x="75" y="198" height="18" width="18.0" class="combo tap glyph mdi:mouse-scroll-wheel"/>
 </g>
-<g class="combo combopos-13">
+<g class="combo combopos-14">
 <rect rx="6" ry="6" x="42" y="197" width="28" height="26" class="combo"/>
 <a href="#SIMPLE">
 <text x="56" y="210" class="combo tap layer-activator">SIMPLE</text>
 </a><text x="56" y="221" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-14">
-<rect rx="6" ry="6" x="498" y="180" width="28" height="26" class="combo"/>
-<use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="503" y="184" height="18" width="18.0" class="combo tap glyph mdi:backspace-reverse-outline"/>
 </g>
 <g class="combo combopos-15">
 <path d="M378,147 l-275,0" class="combo"/>
@@ -2053,10 +2055,6 @@ rect.held, rect.combo.held {
 <tspan x="168" dy="-0.6em" style="font-size: 86%">CONTEXT</tspan><tspan x="168" dy="1.2em" style="font-size: 86%">MENU</tspan>
 </text>
 </g>
-<g class="combo combopos-7">
-<rect rx="6" ry="6" x="498" y="180" width="28" height="26" class="combo"/>
-<use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="503" y="184" height="18" width="18.0" class="combo tap glyph mdi:backspace-reverse-outline"/>
-</g>
 </g>
 </g>
 <g transform="translate(40, 2406)" class="layer-SCROLL">
@@ -2258,10 +2256,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
-</g>
-<g class="combo combopos-0">
-<rect rx="6" ry="6" x="498" y="180" width="28" height="26" class="combo"/>
-<use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="503" y="184" height="18" width="18.0" class="combo tap glyph mdi:backspace-reverse-outline"/>
 </g>
 </g>
 </g>
