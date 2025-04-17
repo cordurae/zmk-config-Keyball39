@@ -397,11 +397,26 @@ combos:
 - p: [14, 35]
   k: $$mdi:mouse-left-click-outline$$
   l: [HOME]
+- p: [16, 35]
+  k: $$mdi:mouse-left-click-outline$$
+  l: [HOME]
 - p: [31, 32]
+  k: $$mdi:mouse-right-click-outline$$
+  l: [HOME]
+- p: [18, 35]
   k: $$mdi:mouse-right-click-outline$$
   l: [HOME]
 - p: [30, 32]
   k: $$mdi:mouse-scroll-wheel$$
+  l: [HOME]
+- p: [17, 35]
+  k: $$mdi:mouse-scroll-wheel$$
+  l: [HOME]
+- p: [7, 35]
+  k: '&td_cc'
+  l: [HOME]
+- p: [8, 35]
+  k: '&td_paste'
   l: [HOME]
 - p: [31, 32]
   k: {t: HOME, h: toggle}
