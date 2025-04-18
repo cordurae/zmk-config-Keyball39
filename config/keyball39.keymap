@@ -1074,10 +1074,10 @@
 
         ultrawide {
             bindings = <
-&trans  &kp LA(LC(LG(N7)))  &kp LA(LC(LG(N8)))  &kp LA(LC(LG(N9)))  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LA(LC(LG(N4)))  &kp LA(LC(LG(N5)))  &kp LA(LC(LG(N6)))  &trans  &sk RSHIFT  &sk RCTRL  &sk RIGHT_ALT  &sk RIGHT_GUI
-&trans  &kp LA(LC(LG(N1)))  &kp LA(LC(LG(N2)))  &kp LA(LC(LG(N3)))  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans                          &trans
+&trans  &kp LA(LC(LG(N7)))  &kp LA(LC(LG(N8)))  &kp LA(LC(LG(N9)))  &trans                                &trans            &trans          &trans             &trans           &trans
+&trans  &kp LA(LC(LG(N4)))  &kp LA(LC(LG(N5)))  &kp LA(LC(LG(N6)))  &trans                                &sk RSHIFT       &sk RCTRL       &sk RIGHT_ALT      &sk RIGHT_GUI    &trans
+&trans  &kp LA(LC(LG(N1)))  &kp LA(LC(LG(N2)))  &kp LA(LC(LG(N3)))  &trans                                &trans           &trans          &trans             &trans           &trans
+&trans  &trans              &trans              &trans              &trans          &trans    &trans      &trans                                                              &trans
             >;
 
             label = "ULTRAWIDE";
