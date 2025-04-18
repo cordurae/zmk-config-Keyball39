@@ -1070,5 +1070,24 @@
 
             label = "FUNCTION";
         };
+
+        ultrawide {
+            label = "ULTRAWIDE";
+            bindings = <
+&trans  &kp LA(LC(LG(N7)))  &kp LA(LC(LG(N8)))  &kp LA(LC(LG(N9)))  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(LC(LG(N4)))  &kp LA(LC(LG(N5)))  &kp LA(LC(LG(N6)))  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(LC(LG(N1)))  &kp LA(LC(LG(N2)))  &kp LA(LC(LG(N3)))  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans                          &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        ultrawide {
+            if-layers = <7 4>;
+            then-layer = <9>;
+        };
     };
 };
