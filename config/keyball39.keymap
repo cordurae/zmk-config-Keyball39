@@ -7,6 +7,7 @@
 #define SNIPE   6
 #define SCROLL  7
 #define FNCT    8
+#define ULTRA   9 
 
 #include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/mouse.h>
@@ -1072,13 +1073,14 @@
         };
 
         ultrawide {
-            label = "ULTRAWIDE";
             bindings = <
 &trans  &kp LA(LC(LG(N7)))  &kp LA(LC(LG(N8)))  &kp LA(LC(LG(N9)))  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LA(LC(LG(N4)))  &kp LA(LC(LG(N5)))  &kp LA(LC(LG(N6)))  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(LC(LG(N4)))  &kp LA(LC(LG(N5)))  &kp LA(LC(LG(N6)))  &trans  &sk LRHIFT  &sk LjrTRL  &sk RIGHT_ALT  &sk RIGHT_GUI
 &trans  &kp LA(LC(LG(N1)))  &kp LA(LC(LG(N2)))  &kp LA(LC(LG(N3)))  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
+
+            label = "ULTRAWIDE";
         };
     };
 
