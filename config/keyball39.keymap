@@ -848,13 +848,16 @@
             bindings = <&mkp LCLK>;
             key-positions = <16 17>;
             layers = <0 1 6>;
+            require-prior-idle-ms = <200>;
             timeout-ms = <70>;
+
         };
 
         ll_RCLK {
             bindings = <&mkp RCLK>;
             key-positions = <19 18>;
             layers = <0 1 6>;
+            require-prior-idle-ms = <200>;
             timeout-ms = <70>;
         };
 
@@ -862,6 +865,7 @@
             bindings = <&mkp MCLK>;
             key-positions = <26 27>;
             layers = <0 1 6>;
+            require-prior-idle-ms = <200>;
             timeout-ms = <60>;
         };
 
@@ -869,6 +873,7 @@
             bindings = <&kp LC(LA(TAB))>;
             key-positions = <20 23>;
             layers = <0 6>;
+            require-prior-idle-ms = <200>;
             timeout-ms = <70>;
         };
 
@@ -876,6 +881,7 @@
             bindings = <&kp LA(TAB)>;
             key-positions = <21 23>;
             layers = <0 6>;
+            require-prior-idle-ms = <200>;
             timeout-ms = <70>;
         };
 
@@ -883,6 +889,7 @@
             bindings = <&kp LA(SPACE)>;
             key-positions = <26 29>;
             layers = <0 6>;
+            require-prior-idle-ms = <200>;
             timeout-ms = <70>;
         };
 
@@ -890,6 +897,7 @@
             bindings = <&kp K_CONTEXT_MENU>;
             key-positions = <22 23>;
             layers = <0 6>;
+            require-prior-idle-ms = <200>;
             timeout-ms = <60>;
         };
 
@@ -913,6 +921,7 @@
             bindings = <&td_globe>;
             key-positions = <30 38>;
             timeout-ms = <70>;
+            require-prior-idle-ms = <200>;
             layers = <0>;
         };
 
@@ -965,6 +974,7 @@
             bindings = <&kp LC(TAB)>;
             key-positions = <17 35>;
             timeout-ms = <70>;
+            require-prior-idle-ms = <200>;
             layers = <0>;
         };
 
