@@ -295,16 +295,16 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:mouse-left-click-outline$$
   - '&key_repeat'
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:arrow-down-bold$$', type: held alternate}
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
+  - '&LC(LG(LA(N1)))'
+  - '&LC(LG(LA(N2)))'
+  - '&LC(LG(LA(3)))'
+  - '&LC(LG(LA(N4)))'
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:backspace-reverse-outline$$
   - HOME
@@ -400,6 +400,9 @@ combos:
 - p: [16, 35]
   k: $$mdi:mouse-left-click-outline$$
   l: [HOME]
+- p: [14, 34]
+  k: $$mdi:mouse-left-click-outline$$
+  l: [HOME]
 - p: [31, 32]
   k: $$mdi:mouse-right-click-outline$$
   l: [HOME]
@@ -412,10 +415,16 @@ combos:
 - p: [15, 35]
   k: '&mkp MB4'
   l: [HOME]
+- p: [19, 35]
+  k: '&mkp MB5'
+  l: [HOME]
 - p: [7, 34]
   k: '&td_cc'
   l: [HOME]
-- p: [8, 34]
+- p: [1, 34]
+  k: '&td_cc'
+  l: [HOME]
+- p: [2, 34]
   k: '&td_paste'
   l: [HOME]
 - p: [31, 32]
