@@ -1093,12 +1093,6 @@
             timeout-ms = <60>;
         };
 
-       game_speak {
-            bindings = <&kp V>;
-            key-positions = <20 21>;
-            layers = <1>;
-        };
-
         simple_to_game {
             bindings = <&to 1>;
             key-positions = <30 31>;
