@@ -301,10 +301,10 @@ layers:
   - {t: '$$mdi:arrow-down-bold$$', type: held alternate}
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - '&LC(LG(LA(N1)))'
-  - '&LC(LG(LA(N2)))'
-  - '&LC(LG(LA(3)))'
-  - '&LC(LG(LA(N4)))'
+  - {t: Ctl+Gui+Alt+1, s: Ctl+Gui+Alt+!}
+  - {t: Ctl+Gui+Alt+2, s: Ctl+Gui+Alt+@}
+  - Ctl+Gui+Alt+3
+  - {t: Ctl+Gui+Alt+4, s: Ctl+Gui+Alt+$}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:backspace-reverse-outline$$
   - HOME
@@ -422,7 +422,7 @@ combos:
   k: $$mdi:mouse-scroll-wheel$$
   l: [HOME]
 - p: [17, 35]
-  k: $$mdi:mouse-scroll-wheel$$
+  k: '&LC(TAB)'
   l: [HOME]
 - p: [15, 35]
   k: '&mkp MB4'

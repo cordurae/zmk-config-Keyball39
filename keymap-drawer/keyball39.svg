@@ -672,7 +672,9 @@ rect.held, rect.combo.held {
 <path d="M472,165 l128,-72" class="combo"/>
 <path d="M472,165 l-128,72" class="combo"/>
 <rect rx="6" ry="6" x="458" y="152" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-scroll-wheel" xlink:href="#mdi:mouse-scroll-wheel" x="463" y="156" height="18" width="18.0" class="combo tap glyph mdi:mouse-scroll-wheel"/>
+<text x="472" y="165" class="combo tap">
+<tspan x="472" dy="-0.6em">&amp;LC(</tspan><tspan x="472" dy="1.2em">TAB)</tspan>
+</text>
 </g>
 <g class="combo combopos-21">
 <path d="M416,172 l74,-62" class="combo"/>
@@ -2243,29 +2245,32 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;LC(LG</tspan><tspan x="0" dy="1.2em">(LA(N1</tspan><tspan x="0" dy="1.2em">)))</tspan>
+<tspan x="0" dy="-1.2em">Ctl+</tspan><tspan x="0" dy="1.2em">Gui+</tspan><tspan x="0" dy="1.2em">Alt+1</tspan>
 </text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 60%">Ctl+Gui+A…</tspan></text>
 </g>
 <g transform="translate(84, 147)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;LC(LG</tspan><tspan x="0" dy="1.2em">(LA(N2</tspan><tspan x="0" dy="1.2em">)))</tspan>
+<tspan x="0" dy="-1.2em">Ctl+</tspan><tspan x="0" dy="1.2em">Gui+</tspan><tspan x="0" dy="1.2em">Alt+2</tspan>
 </text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 60%">Ctl+Gui+A…</tspan></text>
 </g>
 <g transform="translate(140, 140)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;LC(LG</tspan><tspan x="0" dy="1.2em">(LA(3</tspan><tspan x="0" dy="1.2em">)))</tspan>
+<tspan x="0" dy="-1.2em">Ctl+</tspan><tspan x="0" dy="1.2em">Gui+</tspan><tspan x="0" dy="1.2em">Alt+3</tspan>
 </text>
 </g>
 <g transform="translate(196, 147)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;LC(LG</tspan><tspan x="0" dy="1.2em">(LA(N4</tspan><tspan x="0" dy="1.2em">)))</tspan>
+<tspan x="0" dy="-1.2em">Ctl+</tspan><tspan x="0" dy="1.2em">Gui+</tspan><tspan x="0" dy="1.2em">Alt+4</tspan>
 </text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 60%">Ctl+Gui+A…</tspan></text>
 </g>
 <g transform="translate(252, 154)" class="key trans keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
