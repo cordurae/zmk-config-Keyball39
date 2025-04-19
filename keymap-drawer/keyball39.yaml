@@ -446,9 +446,6 @@ combos:
 - p: [15, 34]
   k: '&key_repeat'
   l: [HOME]
-- p: [30, 38]
-  k: '&td_globe'
-  l: [HOME]
 - p: [16, 35]
   k: $$mdi:mouse-left-click-outline$$
   l: [HOME]
@@ -509,6 +506,9 @@ combos:
 - p: [30, 31]
   k: {t: GAME, h: toggle}
   l: [SIMPLE]
+- p: [20, 21]
+  k: '&td_globe'
+  l: [HOME]
 - p: [32, 33]
   k: '&ipad_home'
   l: [HOME]
