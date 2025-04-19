@@ -1098,8 +1098,8 @@
         quick_layers {
             bindings = <&sl 9>;
             key-positions = <15 37>;
-            layers = <0>;
-            require-prior-idle-ms = <200>;
+            layers = <0 1 2 3 4 5 6 7 8 9>;
+            require-prior-idle-ms = <400>;
             timeout-ms = <70>;
         };
     };
@@ -1182,7 +1182,7 @@
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&kp LA(ESC)   &td_cc     &td_paste  &kp LS(LA(ESC))  &trans                      &trans         &trans          &td_cc          &td_paste     &trans
+&kp LA(ESC)   &td_cc     &td_paste  &kp LS(LA(ESC))  &trans                      &trans         &trans          &td_cc          &td_paste     &td_globe
 &kp LEFT_GUI  &kp LALT   &kp LCTRL  &kp LSHFT        &mkp LCLK                   &key_repeat    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
 &tdu1         &tdu2      &tdu3      &tdu4            &tdu5                       &kp DELETE     &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
 &mkp RCLK     &mkp MCLK  &mkp LCLK  &kp ESC          &trans  &kp TAB  &kp ENTER  &kp BACKSPACE                                                &trans
