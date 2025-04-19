@@ -305,7 +305,7 @@ layers:
   - '&tdu2'
   - '&tdu3'
   - '&tdu4'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&tdu5'
   - $$mdi:backspace-reverse-outline$$
   - HOME
   - {t: PgDn, type: held}
