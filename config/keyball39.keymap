@@ -828,6 +828,14 @@
             timeout-ms = <60>;
         };
 
+        sticky_CTRL {
+            bindings = <&sk LCTRL>;
+            key-positions = <21 22 27 28>;
+            layers = <0>;
+            require-prior-idle-ms = <200>;
+            timeout-ms = <60>;
+        };
+
         vm_UNDERSCORE_DASH {
             bindings = <&sdash UNDERSCORE MINUS>;
             key-positions = <23 26>;
