@@ -521,13 +521,6 @@
             label = "t_mute";
         };
 
-        ipad_test: ipad_test {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk GLOBE &kp H>;
-            label = "ipad_test";
-        };
-
         ipad_home: ipad_home {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1106,8 +1099,8 @@
             layers = <0>;
         };
 
-        quick_ipad_home {
-            bindings = <&ipad_home>;
+        quick_ipad_tools {
+            bindings = <&ipad_tools>;
             key-positions = <32 33>;
             layers = <0>;
         };
