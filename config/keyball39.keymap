@@ -41,7 +41,7 @@
             label = "SDASH";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <70>;
+            tapping-term-ms = <100>;
             quick-tap-ms = <180>;
             bindings = <&kp>, <&kp>;
         };
@@ -51,7 +51,7 @@
             label = "XMCLK";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <70>;
+            tapping-term-ms = <50>;
             quick-tap-ms = <180>;
             bindings = <&mo>, <&mkp>;
         };
@@ -126,7 +126,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings =
-                <&mo 2>,
+                <&kp GLOBE>,
                 <&to 2>,
                 <&to 1>,
                 <&to 3>,
@@ -170,12 +170,20 @@
             bindings = <&kp LC(LG(LA(N4)))>;
         };
 
+        tdu5: tap_dance_ultrawide_5 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_ULTRAWIDE_5";
+            #binding-cells = <0>;
+            tapping-term-ms = <180>;
+            bindings = <&kp LC(LG(LA(N5)))>;
+        };
+
         xquotes: special_quotes {
             compatible = "zmk,behavior-hold-tap";
             label = "X_QUOTES";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <70>;
+            tapping-term-ms = <50>;
             quick-tap-ms = <120>;
             bindings = <&dquotes>, <&squote>;
         };
@@ -185,7 +193,7 @@
             label = "X_BRACKETS";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <70>;
+            tapping-term-ms = <50>;
             quick-tap-ms = <120>;
             bindings = <&bracket>, <&parenthesis>;
         };
@@ -211,7 +219,7 @@
             label = "X_CLEAR";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <100>;
+            tapping-term-ms = <70>;
             quick-tap-ms = <120>;
             bindings = <&clear2>, <&clear>;
         };
@@ -221,7 +229,7 @@
             label = "X_HOME";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <180>;
+            tapping-term-ms = <100>;
             quick-tap-ms = <180>;
             bindings = <&kp>, <&kp>;
         };
@@ -231,7 +239,7 @@
             label = "X_END";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <180>;
+            tapping-term-ms = <100>;
             quick-tap-ms = <180>;
             bindings = <&kp>, <&kp>;
         };
@@ -1208,7 +1216,7 @@
             bindings = <
 &kp LA(ESC)   &td_cc     &td_paste  &kp LS(LA(ESC))  &trans                      &trans         &trans          &td_cc          &td_paste     &to 0
 &kp LEFT_GUI  &kp LALT   &kp LCTRL  &kp LSHFT        &mkp LCLK                   &key_repeat    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
-&tdu1         &tdu2      &tdu3      &tdu4            &trans                      &kp DELETE     &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
+&tdu1         &tdu2      &tdu3      &tdu4            &tdu5                       &kp DELETE     &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
 &mkp RCLK     &mkp MCLK  &mkp LCLK  &kp ESC          &trans  &kp TAB  &kp ENTER  &kp BACKSPACE                                                &trans
             >;
         };
