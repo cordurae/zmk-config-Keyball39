@@ -1033,6 +1033,14 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="14" y="176" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="19" y="180" height="18" width="18.0" class="combo tap glyph mdi:keyboard-tab"/>
 </g>
+<g class="combo combopos-9">
+<path d="M512,165 l-6,-48" class="combo"/>
+<path d="M512,165 l6,48" class="combo"/>
+<rect rx="6" ry="6" x="498" y="152" width="28" height="26" class="combo"/>
+<a href="#LAYERS">
+<text x="512" y="165" class="combo tap layer-activator">LAYERS</text>
+</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="505" y="161" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 688)" class="layer-SIMPLE">
@@ -1257,6 +1265,14 @@ rect.held, rect.combo.held {
 <a href="#GAME">
 <text x="56" y="210" class="combo tap layer-activator">GAME</text>
 </a><text x="56" y="221" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-2">
+<path d="M512,165 l-6,-48" class="combo"/>
+<path d="M512,165 l6,48" class="combo"/>
+<rect rx="6" ry="6" x="498" y="152" width="28" height="26" class="combo"/>
+<a href="#LAYERS">
+<text x="512" y="165" class="combo tap layer-activator">LAYERS</text>
+</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="505" y="161" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 </g>
 </g>
@@ -1488,6 +1504,14 @@ rect.held, rect.combo.held {
 <a href="#HOME">
 <text x="112" y="200" class="combo tap layer-activator">HOME</text>
 </a><text x="112" y="211" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-1">
+<path d="M512,165 l-6,-48" class="combo"/>
+<path d="M512,165 l6,48" class="combo"/>
+<rect rx="6" ry="6" x="498" y="152" width="28" height="26" class="combo"/>
+<a href="#LAYERS">
+<text x="512" y="165" class="combo tap layer-activator">LAYERS</text>
+</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="505" y="161" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 </g>
 </g>
@@ -1728,6 +1752,14 @@ rect.held, rect.combo.held {
 <text x="112" y="200" class="combo tap layer-activator">HOME</text>
 </a><text x="112" y="211" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-1">
+<path d="M512,165 l-6,-48" class="combo"/>
+<path d="M512,165 l6,48" class="combo"/>
+<rect rx="6" ry="6" x="498" y="152" width="28" height="26" class="combo"/>
+<a href="#LAYERS">
+<text x="512" y="165" class="combo tap layer-activator">LAYERS</text>
+</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="505" y="161" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1719)" class="layer-SYMBOL">
@@ -1934,6 +1966,14 @@ rect.held, rect.combo.held {
 <a href="#HOME">
 <text x="112" y="200" class="combo tap layer-activator">HOME</text>
 </a><text x="112" y="211" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-1">
+<path d="M512,165 l-6,-48" class="combo"/>
+<path d="M512,165 l6,48" class="combo"/>
+<rect rx="6" ry="6" x="498" y="152" width="28" height="26" class="combo"/>
+<a href="#LAYERS">
+<text x="512" y="165" class="combo tap layer-activator">LAYERS</text>
+</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="505" y="161" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 </g>
 </g>
@@ -2186,6 +2226,14 @@ rect.held, rect.combo.held {
 <text x="112" y="200" class="combo tap layer-activator">HOME</text>
 </a><text x="112" y="211" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-8">
+<path d="M512,165 l-6,-48" class="combo"/>
+<path d="M512,165 l6,48" class="combo"/>
+<rect rx="6" ry="6" x="498" y="152" width="28" height="26" class="combo"/>
+<a href="#LAYERS">
+<text x="512" y="165" class="combo tap layer-activator">LAYERS</text>
+</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="505" y="161" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 2406)" class="layer-SCROLL">
@@ -2236,10 +2284,10 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap"><tspan style="font-size: 67%">&amp;td_paste</tspan></text>
 </g>
-<g transform="translate(728, 49)" class="key trans keypos-9">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(728, 49)" class="key keypos-9">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 67%">&amp;td_globe</tspan></text>
 </g>
 <g transform="translate(28, 105)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -2391,6 +2439,14 @@ rect.held, rect.combo.held {
 <a href="#HOME">
 <text x="112" y="200" class="combo tap layer-activator">HOME</text>
 </a><text x="112" y="211" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-1">
+<path d="M512,165 l-6,-48" class="combo"/>
+<path d="M512,165 l6,48" class="combo"/>
+<rect rx="6" ry="6" x="498" y="152" width="28" height="26" class="combo"/>
+<a href="#LAYERS">
+<text x="512" y="165" class="combo tap layer-activator">LAYERS</text>
+</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="505" y="161" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 </g>
 </g>
@@ -2614,6 +2670,14 @@ rect.held, rect.combo.held {
 <a href="#HOME">
 <text x="112" y="200" class="combo tap layer-activator">HOME</text>
 </a><text x="112" y="211" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-1">
+<path d="M512,165 l-6,-48" class="combo"/>
+<path d="M512,165 l6,48" class="combo"/>
+<rect rx="6" ry="6" x="498" y="152" width="28" height="26" class="combo"/>
+<a href="#LAYERS">
+<text x="512" y="165" class="combo tap layer-activator">LAYERS</text>
+</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="505" y="161" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 </g>
 </g>
@@ -2842,6 +2906,14 @@ rect.held, rect.combo.held {
 <a href="#HOME">
 <text x="112" y="200" class="combo tap layer-activator">HOME</text>
 </a><text x="112" y="211" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-1">
+<path d="M512,165 l-6,-48" class="combo"/>
+<path d="M512,165 l6,48" class="combo"/>
+<rect rx="6" ry="6" x="498" y="152" width="28" height="26" class="combo"/>
+<a href="#LAYERS">
+<text x="512" y="165" class="combo tap layer-activator">LAYERS</text>
+</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="505" y="161" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 </g>
 </g>
