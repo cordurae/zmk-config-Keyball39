@@ -762,6 +762,14 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="364" y="127" width="28" height="26" class="combo"/>
 <use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="369" y="131" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-caps"/>
 </g>
+<g class="combo combopos-34">
+<path d="M512,165 l-6,-48" class="combo"/>
+<path d="M512,165 l6,48" class="combo"/>
+<rect rx="6" ry="6" x="498" y="152" width="28" height="26" class="combo"/>
+<a href="#LAYERS">
+<text x="512" y="165" class="combo tap layer-activator">LAYERS</text>
+</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="505" y="161" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 344)" class="layer-GAME">

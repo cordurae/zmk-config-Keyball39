@@ -518,3 +518,6 @@ combos:
 - p: [22, 27]
   k: $$mdi:apple-keyboard-caps$$
   l: [HOME]
+- p: [15, 37]
+  k: {t: LAYERS, h: '$$mdi:gesture-tap-hold$$'}
+  l: [HOME]
