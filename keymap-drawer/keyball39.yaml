@@ -399,6 +399,7 @@ combos:
   l: [HOME]
 - p: [29, 34]
   k: {t: END, h: Sft+END}
+  l: [HOME]
 - p: [30, 38]
   k: '&td_globe'
   l: [HOME]
