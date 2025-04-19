@@ -915,6 +915,7 @@
             bindings = <&mkp LCLK>;
             key-positions = <16 35>;
             layers = <0>;
+            timeout-ms = <70>;
             slow-release;
         };
 
