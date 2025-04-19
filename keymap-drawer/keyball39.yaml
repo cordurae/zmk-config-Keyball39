@@ -413,6 +413,9 @@ combos:
 - p: [21, 22, 27, 28]
   k: {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [HOME]
+- p: [20, 29]
+  k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
+  l: [HOME]
 - p: [23, 26]
   k: {t: '-', h: _, s: _}
   l: [HOME]
@@ -499,6 +502,12 @@ combos:
   l: [HOME, GAME]
 - p: [20, 23]
   k: Y
+  l: [GAME]
+- p: [20, 22]
+  k: M
+  l: [GAME]
+- p: [20, 21]
+  k: V
   l: [GAME]
 - p: [30, 31]
   k: {t: GAME, h: toggle}
