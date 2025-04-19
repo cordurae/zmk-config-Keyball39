@@ -433,16 +433,16 @@ combos:
 - p: [19, 35]
   k: '&mkp MB5'
   l: [HOME]
-- p: [7, 34]
-  k: '&td_cc'
-  l: [HOME]
 - p: [1, 34]
   k: '&td_cc'
   l: [HOME]
-- p: [8, 34]
-  k: '&td_paste'
+- p: [7, 34]
+  k: '&td_cc'
   l: [HOME]
 - p: [2, 34]
+  k: '&td_paste'
+  l: [HOME]
+- p: [8, 34]
   k: '&td_paste'
   l: [HOME]
 - p: [31, 32]

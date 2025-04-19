@@ -699,28 +699,28 @@ rect.held, rect.combo.held {
 </text>
 </g>
 <g class="combo combopos-24">
-<path d="M442,129 l158,-91" class="combo"/>
-<path d="M442,129 l-158,91" class="combo"/>
-<rect rx="6" ry="6" x="428" y="116" width="28" height="26" class="combo"/>
-<text x="442" y="129" class="combo tap">&amp;td_cc</text>
-</g>
-<g class="combo combopos-25">
 <path d="M176,132 l-79,-84" class="combo"/>
 <path d="M176,132 l79,84" class="combo"/>
 <rect rx="6" ry="6" x="162" y="119" width="28" height="26" class="combo"/>
 <text x="176" y="132" class="combo tap">&amp;td_cc</text>
 </g>
-<g class="combo combopos-26">
-<path d="M470,132 l185,-89" class="combo"/>
-<path d="M470,132 l-185,89" class="combo"/>
-<rect rx="6" ry="6" x="456" y="119" width="28" height="26" class="combo"/>
-<text x="470" y="132" class="combo tap"><tspan style="font-size: 67%">&amp;td_paste</tspan></text>
+<g class="combo combopos-25">
+<path d="M442,129 l158,-91" class="combo"/>
+<path d="M442,129 l-158,91" class="combo"/>
+<rect rx="6" ry="6" x="428" y="116" width="28" height="26" class="combo"/>
+<text x="442" y="129" class="combo tap">&amp;td_cc</text>
 </g>
-<g class="combo combopos-27">
+<g class="combo combopos-26">
 <path d="M204,129 l-54,-85" class="combo"/>
 <path d="M204,129 l54,85" class="combo"/>
 <rect rx="6" ry="6" x="190" y="116" width="28" height="26" class="combo"/>
 <text x="204" y="129" class="combo tap"><tspan style="font-size: 67%">&amp;td_paste</tspan></text>
+</g>
+<g class="combo combopos-27">
+<path d="M470,132 l185,-89" class="combo"/>
+<path d="M470,132 l-185,89" class="combo"/>
+<rect rx="6" ry="6" x="456" y="119" width="28" height="26" class="combo"/>
+<text x="470" y="132" class="combo tap"><tspan style="font-size: 67%">&amp;td_paste</tspan></text>
 </g>
 <g class="combo combopos-28">
 <rect rx="6" ry="6" x="42" y="197" width="28" height="26" class="combo"/>
