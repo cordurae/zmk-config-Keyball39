@@ -914,6 +914,34 @@
             layers = <0>;
         };
 
+        quick_left {
+            bindings = <&kp LEFT>;
+            key-positions = <16 34>;
+            timeout-ms = <70>;
+            layers = <0>;
+        };
+
+        quick_down {
+            bindings = <&kp DOWN>;
+            key-positions = <17 34>;
+            timeout-ms = <70>;
+            layers = <0>;
+        };
+
+        quick_up {
+            bindings = <&kp UP>;
+            key-positions = <18 34>;
+            timeout-ms = <70>;
+            layers = <0>;
+        };
+
+        quick_right {
+            bindings = <&kp RIGHT>;
+            key-positions = <19 34>;
+            timeout-ms = <70>;
+            layers = <0>;
+        };
+
         extra_LCLK {
             bindings = <&mkp LCLK>;
             key-positions = <16 35>;
