@@ -918,8 +918,8 @@
             layers = <0>;
         };
 
-        extra_MCLK_2 {
-            bindings = <&mkp MCLK>;
+        quick_tab {
+            bindings = <&LC(TAB)>;
             key-positions = <17 35>;
             layers = <0>;
         };
@@ -1099,7 +1099,7 @@
             bindings = <
 &kp LA(ESC)   &td_cc     &td_paste  &kp LS(LA(ESC))  &trans                      &trans         &trans          &td_cc          &td_paste     &to 0
 &kp LEFT_GUI  &kp LALT   &kp LCTRL  &kp LSHFT        &mkp LCLK                   &key_repeat    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
-&LC(LG(LA(N1))) &LC(LG(LA(N2))) &LC(LG(LA(3))) &LC(LG(LA(N4))) &trans            &kp DELETE     &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
+&kp LC(LG(LA(N1))) &kp LC(LG(LA(N2))) &kp LC(LG(LA(3))) &kp LC(LG(LA(N4))) &trans &kp DELETE    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
 &mkp RCLK     &mkp MCLK  &mkp LCLK  &kp ESC          &trans  &kp TAB  &kp ENTER  &kp BACKSPACE                                                &trans
             >;
         };
