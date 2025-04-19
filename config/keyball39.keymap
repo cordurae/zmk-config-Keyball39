@@ -919,7 +919,7 @@
         };
 
         quick_tab {
-            bindings = <&LC(TAB)>;
+            bindings = <&kp LC(TAB)>;
             key-positions = <17 35>;
             layers = <0>;
         };
