@@ -399,26 +399,10 @@ combos:
   l: [HOME]
 - p: [29, 34]
   k: {t: END, h: Sft+END}
-  l: [HOME]
 - p: [30, 38]
   k: '&td_globe'
   l: [HOME]
-- p: [16, 34]
-  k: $$mdi:arrow-left-bold$$
-  l: [HOME]
-- p: [17, 34]
-  k: $$mdi:arrow-down-bold$$
-  l: [HOME]
-- p: [18, 34]
-  k: $$mdi:arrow-up-bold$$
-  l: [HOME]
-- p: [19, 34]
-  k: $$mdi:arrow-right-bold$$
-  l: [HOME]
 - p: [16, 35]
-  k: $$mdi:mouse-left-click-outline$$
-  l: [HOME]
-- p: [14, 34]
   k: $$mdi:mouse-left-click-outline$$
   l: [HOME]
 - p: [14, 35]
@@ -445,14 +429,8 @@ combos:
 - p: [19, 35]
   k: '&mkp MB5'
   l: [HOME]
-- p: [1, 34]
-  k: '&td_cc'
-  l: [HOME]
 - p: [7, 34]
   k: '&td_cc'
-  l: [HOME]
-- p: [2, 34]
-  k: '&td_paste'
   l: [HOME]
 - p: [8, 34]
   k: '&td_paste'
