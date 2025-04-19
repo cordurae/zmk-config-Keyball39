@@ -917,6 +917,38 @@
             layers = <0>;
         };
 
+        quick_left {
+             bindings = <&kp LEFT>;
+             key-positions = <16 34>;
+             timeout-ms = <70>;
+             require-prior-idle-ms = <200>;
+             layers = <0>;
+         };
+ 
+         quick_down {
+             bindings = <&kp DOWN>;
+             key-positions = <17 34>;
+             timeout-ms = <70>;
+             require-prior-idle-ms = <200>;
+             layers = <0>;
+         };
+ 
+         quick_up {
+             bindings = <&kp UP>;
+             key-positions = <18 34>;
+             timeout-ms = <70>;
+             require-prior-idle-ms = <200>;
+             layers = <0>;
+         };
+ 
+         quick_right {
+             bindings = <&kp RIGHT>;
+             key-positions = <19 34>;
+             timeout-ms = <70>;
+             require-prior-idle-ms = <200>;
+             layers = <0>;
+         };
+
         quick_globe {
             bindings = <&td_globe>;
             key-positions = <30 38>;
@@ -944,6 +976,13 @@
         extra_LCLK_3 {
             bindings = <&mkp LCLK>;
             key-positions = <13 35>;
+            layers = <0>;
+            slow-release;
+        };
+
+        extra_LCLK_4 {
+            bindings = <&mkp LCLK>;
+            key-positions = <14 34>;
             layers = <0>;
             slow-release;
         };
@@ -1000,9 +1039,25 @@
             layers = <0>;
         };
 
+        extra_COPY_2 {
+            bindings = <&td_cc>;
+            key-positions = <1 34>;
+            timeout-ms = <70>;
+            require-prior-idle-ms = <200>;
+            layers = <0>;
+        };
+
         extra_PASTE {
             bindings = <&td_paste>;
             key-positions = <8 34>;
+            timeout-ms = <70>;
+            require-prior-idle-ms = <200>;
+            layers = <0>;
+        };
+
+        extra_PASTE_2 {
+            bindings = <&td_paste>;
+            key-positions = <2 34>;
             timeout-ms = <70>;
             require-prior-idle-ms = <200>;
             layers = <0>;
