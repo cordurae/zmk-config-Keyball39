@@ -1,23 +1,3 @@
-/*
- * ZMK Keymap Configuration
- * 
- * This file defines the keyboard behavior including layers, key bindings,
- * combos, macros, and special behaviors.
- * 
- * Layer definitions:
- * DEFAULT (0): Main typing layer
- * GAME (1): Optimized for gaming
- * SIMPLE (2): Simplified layout
- * MEDIA (3): Media controls and Bluetooth
- * NUMBER (4): Number pad and navigation
- * SYMBOL (5): Special symbols and characters
- * SNIPE (6): Mouse movement precision controls
- * SCROLL (7): Scrolling and navigation
- * FNCT (8): Function keys
- * LAYERS (9): Layer switching shortcuts
- */
-
-// Layer definitions for easier reference
 #define DEFAULT 0
 #define GAME    1
 #define SIMPLE  2
@@ -29,60 +9,34 @@
 #define FNCT    8
 #define LAYERS  9
 
-// Include necessary behavior definitions
-#include <behaviors/mouse_keys.dtsi>  // Mouse movement functionality
-#include <dt-bindings/zmk/mouse.h>    // Mouse key bindings
-#include <behaviors.dtsi>             // Core behaviors
-#include <dt-bindings/zmk/bt.h>       // Bluetooth controls
-#include <dt-bindings/zmk/keys.h>     // Standard key definitions
-#include <dt-bindings/zmk/outputs.h>  // Output switching (USB/BLE)
+#include <behaviors/mouse_keys.dtsi>
+#include <dt-bindings/zmk/mouse.h>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
-/* 
- * Layer-Tap Configuration
- * Controls how the dual-function layer-tap keys behave
- * tapping-term-ms: time window to decide between tap and hold
- * flavor: how ZMK decides between a tap and hold action
- * quick-tap-ms: enables quick tap behavior
- */
 &lt {
     tapping-term-ms = <100>;
     flavor = "balanced";
     quick-tap-ms = <180>;
 };
 
-/* 
- * Mod-Tap Configuration
- * Controls how the dual-function modifier-tap keys behave
- * tapping-term-ms: time window to decide between tap and hold
- * flavor: how ZMK decides between a tap and hold action
- * quick-tap-ms: enables quick tap behavior
- */
 &mt {
     tapping-term-ms = <200>;
     flavor = "tap-preferred";
     quick-tap-ms = <180>;
 };
 
-/* 
- * Sticky Key Configuration
- * Controls how sticky/one-shot modifiers behave
- * quick-release: releases the sticky key when another key is pressed
- * release-after-ms: automatically releases after this time
- */
 &sk {
     quick-release;
     release-after-ms = <2000>;
 };
 
-// Configure caps_word to continue when typing underscores or dashes
 &caps_word { continue-list = <UNDERSCORE MINUS>; };
 
 / {
     behaviors {
-        /* 
-         * Special dash behavior
-         * Allows for different actions on tap vs hold
-         */
         sdash: special_dash {
             compatible = "zmk,behavior-hold-tap";
             label = "SDASH";
@@ -93,10 +47,6 @@
             bindings = <&kp>, <&kp>;
         };
 
-        /* 
-         * Special middle click behavior
-         * Allows for layer activation on hold, middle click on tap
-         */
         xmclk: special_middle_click {
             compatible = "zmk,behavior-hold-tap";
             label = "XMCLK";
@@ -107,14 +57,6 @@
             bindings = <&mo>, <&mkp>;
         };
 
-        /* 
-         * Globe key tap dance
-         * Multiple actions based on tap count:
-         * 1 tap: Globe key
-         * 2 taps: Cmd+H
-         * 3 taps: Cmd+Tab
-         * 4 taps: Cmd+X
-         */
         td_globe: tap_dance_globe {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_GLOBE";
@@ -123,10 +65,6 @@
             bindings = <&kp GLOBE>, <&kp LG(H)>, <&kp LG(TAB)>, <&kp LG(X)>;
         };
 
-        /* 
-         * Special paste behavior
-         * Allows for different paste actions on tap vs hold
-         */
         xpaste: special_paste {
             compatible = "zmk,behavior-hold-tap";
             label = "X_PASTE";
@@ -137,10 +75,6 @@
             bindings = <&spaste>, <&kp>;
         };
 
-        /* 
-         * Special copy behavior
-         * Allows for different copy actions on tap vs hold
-         */
         xcopy: special_copy {
             compatible = "zmk,behavior-hold-tap";
             label = "X_COPY";
@@ -151,11 +85,6 @@
             bindings = <&kp>, <&kp>;
         };
 
-        /* 
-         * Paste tap dance
-         * 1 tap: Ctrl+V (standard paste)
-         * 2 taps: Cmd+Shift+V (paste without formatting)
-         */
         td_paste: tap_dance_paste {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_PASTE";
@@ -164,12 +93,6 @@
             bindings = <&xpaste 0 LC(V)>, <&kp LG(LS(V))>;
         };
 
-        /* 
-         * Cut/Copy tap dance
-         * Combines cut and copy into a single key
-         * Hold: Cut (Ctrl+X)
-         * Tap: Copy (Ctrl+C)
-         */
         td_cc: tap_dance_cut_copy {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_CUTCOPY";
@@ -178,10 +101,6 @@
             bindings = <&xcopy LC(X) LC(C)>;
         };
 
-        /* 
-         * Enhanced layer-tap behavior
-         * Customized layer-tap for better responsiveness
-         */
         xlt: goto_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "X_LT";
@@ -192,11 +111,6 @@
             bindings = <&mo>, <&kp>;
         };
 
-        /* 
-         * Simple layer behavior
-         * Hold: Send keycode
-         * Tap: Switch to layer (not momentary)
-         */
         slt: simple_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "S_LT";
@@ -207,10 +121,6 @@
             bindings = <&kp>, <&to>;
         };
 
-        /* 
-         * Ultrawide monitor position 1
-         * Custom shortcut for window management
-         */
         tdu1: tap_dance_ultrawide_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_ULTRAWIDE_1";
@@ -219,10 +129,6 @@
             bindings = <&kp LC(LG(LA(N1)))>;
         };
 
-        /* 
-         * Ultrawide monitor position 2
-         * Custom shortcut for window management
-         */
         tdu2: tap_dance_ultrawide_2 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_ULTRAWIDE_2";
@@ -231,10 +137,6 @@
             bindings = <&kp LC(LG(LA(N2)))>;
         };
 
-        /* 
-         * Ultrawide monitor position 3
-         * Custom shortcut for window management
-         */
         tdu3: tap_dance_ultrawide_3 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_ULTRAWIDE_3";
@@ -243,10 +145,6 @@
             bindings = <&kp LC(LG(LA(N3)))>;
         };
 
-        /* 
-         * Ultrawide monitor position 4
-         * Custom shortcut for window management
-         */
         tdu4: tap_dance_ultrawide_4 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_ULTRAWIDE_4";
@@ -255,10 +153,6 @@
             bindings = <&kp LC(LG(LA(N4)))>;
         };
 
-        /* 
-         * Ultrawide monitor position 5
-         * Custom shortcut for window management
-         */
         tdu5: tap_dance_ultrawide_5 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_ULTRAWIDE_5";
@@ -267,11 +161,6 @@
             bindings = <&kp LC(LG(LA(N5)))>;
         };
 
-        /* 
-         * Special quotes behavior
-         * Hold: Double quotes with cursor in middle
-         * Tap: Single quotes with cursor in middle
-         */
         xquotes: special_quotes {
             compatible = "zmk,behavior-hold-tap";
             label = "X_QUOTES";
@@ -282,11 +171,6 @@
             bindings = <&dquotes>, <&squote>;
         };
 
-        /* 
-         * Special brackets behavior
-         * Hold: Square brackets with cursor in middle
-         * Tap: Parentheses with cursor in middle
-         */
         xbrackets: special_brackets {
             compatible = "zmk,behavior-hold-tap";
             label = "X_BRACKETS";
@@ -297,11 +181,6 @@
             bindings = <&bracket>, <&parenthesis>;
         };
 
-        /* 
-         * Brackets tap dance
-         * 1 tap: Brackets behavior
-         * 2 taps: Curly braces with cursor in middle
-         */
         td_brackets: tap_dance_bracket {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_BRACKET";
@@ -310,11 +189,6 @@
             bindings = <&xbrackets 0 0>, <&brace>;
         };
 
-        /* 
-         * Quotes tap dance
-         * 1 tap: Quotes behavior
-         * 2 taps: Angle brackets with cursor in middle
-         */
         td_quotes: tap_dance_quotes {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_QUOTES";
@@ -323,10 +197,6 @@
             bindings = <&xquotes 0 0>, <&lessgreaterthan>;
         };
 
-        /* 
-         * Special clear behavior
-         * Two different clear actions based on hold/tap
-         */
         xclear: special_clear {
             compatible = "zmk,behavior-hold-tap";
             label = "X_CLEAR";
@@ -337,11 +207,6 @@
             bindings = <&clear2>, <&clear>;
         };
 
-        /* 
-         * Special home key behavior
-         * Hold: Shift+Home (select to beginning)
-         * Tap: Home (go to beginning)
-         */
         x_home: special_home {
             compatible = "zmk,behavior-hold-tap";
             label = "X_HOME";
@@ -352,11 +217,6 @@
             bindings = <&kp>, <&kp>;
         };
 
-        /* 
-         * Special end key behavior
-         * Hold: Shift+End (select to end)
-         * Tap: End (go to end)
-         */
         x_end: special_end {
             compatible = "zmk,behavior-hold-tap";
             label = "X_END";
@@ -367,11 +227,6 @@
             bindings = <&kp>, <&kp>;
         };
 
-        /* 
-         * iPad left slide behavior
-         * Hold: Move slide left
-         * Tap: Tile window left
-         */
         x_ipl: special_ipad_left {
             compatible = "zmk,behavior-hold-tap";
             label = "X_IPAD_LEFT";
@@ -382,11 +237,6 @@
             bindings = <&ipad_slidemoveleft>, <&ipad_tileleft>;
         };
 
-        /* 
-         * iPad right slide behavior
-         * Hold: Move slide right
-         * Tap: Tile window right
-         */
         x_ipr: special_ipad_right {
             compatible = "zmk,behavior-hold-tap";
             label = "X_IPAD_RIGHT";
@@ -397,11 +247,6 @@
             bindings = <&ipad_slidemoveright>, <&ipad_tileright>;
         };
 
-        /* 
-         * iPad left navigation tap dance
-         * 1 tap: Previous app
-         * 2 taps: Special iPad left action
-         */
         ipad_left: tap_dance_ipad_left {
             compatible = "zmk,behavior-tap-dance";
             label = "ipad_left";
@@ -409,12 +254,7 @@
             tapping-term-ms = <180>;
             bindings = <&ipad_prevapp>, <&x_ipl 0 0>;
         };
-        
-        /* 
-         * iPad right navigation tap dance
-         * 1 tap: Next app
-         * 2 taps: Special iPad right action
-         */
+
         ipad_right: tap_dance_ipad_right {
             compatible = "zmk,behavior-tap-dance";
             label = "ipad_right";
@@ -423,14 +263,6 @@
             bindings = <&ipad_nextapp>, <&x_ipr 0 0>;
         };
 
-        /* 
-         * iPad slide over tap dance
-         * Multiple actions based on tap count:
-         * 1 tap: Slide over
-         * 2 taps: Next slide window
-         * 3 taps: Full screen
-         * 4 taps: Replace window
-         */
         ipad_slide_over: tap_dance_ipad_slide_over {
             compatible = "zmk,behavior-tap-dance";
             label = "ipad_slide_over";
@@ -443,17 +275,6 @@
                 <&ipad_replace>;
         };
 
-        /* 
-         * iPad tools tap dance
-         * Multiple actions based on tap count for iPad system navigation:
-         * 1 tap: Home
-         * 2 taps: App switcher
-         * 3 taps: Library
-         * 4 taps: Control center
-         * 5 taps: Siri
-         * 6 taps: Dock
-         * 7 taps: Spotlight search
-         */
         ipad_tools: tap_dance_ipad_tools {
             compatible = "zmk,behavior-tap-dance";
             label = "ipad_tools";
@@ -469,10 +290,6 @@
                 <&kp LG(SPACE)>;
         };
 
-        /* 
-         * Key sequence tap dance
-         * Cycles through T, G, B keys
-         */
         td_keys: tap_dance_keys {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_KEYS";
@@ -481,10 +298,6 @@
             bindings = <&kp T>, <&kp G>, <&kp B>;
         };
 
-        /* 
-         * Game-specific tap dance
-         * Multiple game-related shortcuts based on tap count
-         */
         td_game: tap_dance_game {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_GAME";
@@ -495,10 +308,6 @@
     };
 
     macros {
-        /* 
-         * Trademark symbol (™)
-         * Uses Alt code to type the trademark symbol
-         */
         trademark: trademark {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -514,10 +323,6 @@
             label = "trademark";
         };
 
-        /* 
-         * Bullet point (•)
-         * Uses Alt code to type a bullet point
-         */
         bullet: bullet {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -533,10 +338,6 @@
             label = "bullet";
         };
 
-        /* 
-         * Em dash (—)
-         * Uses Alt code to type an em dash
-         */
         emdash: emdash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -552,10 +353,6 @@
             label = "emdash";
         };
 
-        /* 
-         * Heart symbol (♥)
-         * Uses Alt code to type a heart
-         */
         heart: heart {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -571,10 +368,6 @@
             label = "heart";
         };
 
-        /* 
-         * Filter command macro
-         * Activates filter menu in applications
-         */
         filter: filter {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -589,10 +382,6 @@
             label = "filter";
         };
 
-        /* 
-         * Highlight macro
-         * Activates text highlighting in applications
-         */
         highlight: highlight {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -601,10 +390,6 @@
             label = "highlight";
         };
 
-        /* 
-         * Clear macro (method 1)
-         * Complex sequence to clear content
-         */
         clear: clear {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -638,13 +423,10 @@
                 <&kp ESCAPE>,
                 <&macro_tap>,
                 <&kp ESCAPE>;
+
             label = "clear";
         };
 
-        /* 
-         * Clear macro (method 2)
-         * Alternative sequence to clear content
-         */
         clear2: clear2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -682,10 +464,6 @@
             label = "clear2";
         };
 
-        /* 
-         * Special paste macro
-         * Pastes without formatting then selects first item
-         */
         spaste: spaste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -694,10 +472,6 @@
             label = "spaste";
         };
 
-        /* 
-         * Parentheses macro
-         * Types () and places cursor between them
-         */
         parenthesis: parenthesis {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -705,10 +479,6 @@
             label = "parenthesis";
         };
 
-        /* 
-         * Square brackets macro
-         * Types [] and places cursor between them
-         */
         bracket: bracket {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -716,10 +486,6 @@
             label = "bracket";
         };
 
-        /* 
-         * Curly braces macro
-         * Types {} and places cursor between them
-         */
         brace: brace {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -727,10 +493,6 @@
             label = "brace";
         };
 
-        /* 
-         * Angle brackets macro
-         * Types <> and places cursor between them
-         */
         lessgreaterthan: lessgreaterthan {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -738,10 +500,6 @@
             label = "lessgreaterthan";
         };
 
-        /* 
-         * Single quotes macro
-         * Types '' and places cursor between them
-         */
         squote: squote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -749,10 +507,6 @@
             label = "squote";
         };
 
-        /* 
-         * Double quotes macro
-         * Types "" and places cursor between them
-         */
         dquotes: dquotes {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -760,10 +514,6 @@
             label = "dquotes";
         };
 
-        /* 
-         * Teams mute macro
-         * Left click followed by Ctrl+Shift+M (mute in Teams)
-         */
         t_mute: t_mute {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -771,10 +521,6 @@
             label = "t_mute";
         };
 
-        /* 
-         * iPad home macro
-         * Globe+H to go to home screen
-         */
         ipad_home: ipad_home {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -786,13 +532,10 @@
                 <&kp H>,
                 <&macro_release>,
                 <&kp GLOBE>;
+
             label = "ipad_home";
         };
 
-        /* 
-         * iPad dock macro
-         * Globe+A to show dock
-         */
         ipad_dock: ipad_dock {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -808,10 +551,6 @@
             label = "ipad_dock";
         };
 
-        /* 
-         * iPad app library macro
-         * Shift+Globe+A to open app library
-         */
         ipad_library: ipad_library {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -827,10 +566,6 @@
             label = "ipad_library";
         };
 
-        /* 
-         * iPad Siri macro
-         * Globe+S to activate Siri
-         */
         ipad_siri: ipad_siri {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -846,10 +581,6 @@
             label = "ipad_siri";
         };
 
-        /* 
-         * iPad control center macro
-         * Globe+C to open control center
-         */
         ipad_control: ipad_control {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -865,10 +596,6 @@
             label = "ipad_control";
         };
 
-        /* 
-         * iPad app switcher macro
-         * Globe+Up to show app switcher
-         */
         ipad_switcher: ipad_switcher {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -884,10 +611,6 @@
             label = "ipad_switcher";
         };
 
-        /* 
-         * iPad next app macro
-         * Globe+Right to switch to next app
-         */
         ipad_nextapp: ipad_nextapp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -903,10 +626,6 @@
             label = "ipad_nextapp";
         };
 
-        /* 
-         * iPad previous app macro
-         * Globe+Left to switch to previous app
-         */
         ipad_prevapp: ipad_prevapp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -922,10 +641,6 @@
             label = "ipad_prevapp";
         };
 
-        /* 
-         * iPad fullscreen macro
-         * Globe+F to toggle fullscreen
-         */
         ipad_full: ipad_full {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -941,10 +656,6 @@
             label = "ipad_full";
         };
 
-        /* 
-         * iPad tile left macro
-         * Ctrl+Globe+Left to tile window to left side
-         */
         ipad_tileleft: ipad_tileleft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -960,10 +671,6 @@
             label = "ipad_tileleft";
         };
 
-        /* 
-         * iPad tile right macro
-         * Ctrl+Globe+Right to tile window to right side
-         */
         ipad_tileright: ipad_tileright {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -979,10 +686,6 @@
             label = "ipad_tileright";
         };
 
-        /* 
-         * iPad replace window macro
-         * Ctrl+Globe+Down to replace current window
-         */
         ipad_replace: ipad_replace {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -998,10 +701,6 @@
             label = "ipad_replace";
         };
 
-        /* 
-         * iPad slide over macro
-         * Globe+\ to activate slide over
-         */
         ipad_slide: ipad_slide {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1017,10 +716,6 @@
             label = "ipad_slide";
         };
 
-        /* 
-         * iPad slide move left macro
-         * Alt+Globe+Left to move slide over window left
-         */
         ipad_slidemoveleft: ipad_slidemoveleft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1036,10 +731,6 @@
             label = "ipad_slidemoveleft";
         };
 
-        /* 
-         * iPad slide move right macro
-         * Alt+Globe+Right to move slide over window right
-         */
         ipad_slidemoveright: ipad_slidemoveright {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1055,10 +746,6 @@
             label = "ipad_slidemoveright";
         };
 
-        /* 
-         * iPad slide next window macro
-         * Cmd+Globe+\ to cycle to next slide over window
-         */
         ipad_slidenextwindow: ipad_slidenextwindow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1074,10 +761,6 @@
             label = "ipad_slidenextwindow";
         };
 
-        /* 
-         * Password macro (SEN)
-         * Types a specific password sequence
-         */
         sen: sen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1085,10 +768,6 @@
             label = "SEN";
         };
 
-        /* 
-         * Email address macro
-         * Types a specific email address
-         */
         user: user {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1096,10 +775,6 @@
             label = "user";
         };
 
-        /* 
-         * Personal message macro
-         * Types a love message to Victoria
-         */
         wife: wife {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1107,10 +782,6 @@
             label = "wife";
         };
 
-        /* 
-         * Map document macro
-         * Types a specific document URL or path
-         */
         mapdoc: mapdoc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1118,10 +789,6 @@
             label = "MAPDOC";
         };
 
-        /* 
-         * Estar macro
-         * Types a specific sequence for authentication or access
-         */
         Estar: Estar {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1133,21 +800,13 @@
     combos {
         compatible = "zmk,combos";
 
-        /* 
-         * Delete key combo
-         * M + / keys pressed together activate Delete
-         */
         mdot_DEL {
             bindings = <&kp DELETE>;
             key-positions = <26 28>;
             layers = <0>;
             timeout-ms = <60>;
         };
-        
-        /* 
-         * Left shift sticky key combo
-         * . + / keys pressed together activate sticky shift
-         */
+
         punc_LSFT {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <27 28>;
@@ -1155,10 +814,6 @@
             timeout-ms = <60>;
         };
 
-        /* 
-         * Left shift sticky key combo (alternate)
-         * X + C keys pressed together activate sticky shift
-         */
         xc_LSFT {
             bindings = <&sk LSHIFT>;
             key-positions = <21 22>;
@@ -1166,10 +821,6 @@
             timeout-ms = <60>;
         };
 
-        /* 
-         * Sticky control combo
-         * X + C + M + . keys pressed together activate sticky control
-         */
         sticky_CTRL {
             bindings = <&sk LCTRL>;
             key-positions = <21 22 27 28>;
@@ -1178,10 +829,6 @@
             timeout-ms = <60>;
         };
 
-        /* 
-         * Sticky alt combo
-         * Z + / keys pressed together activate sticky alt
-         */
         sticky_ALT {
             bindings = <&sk LEFT_ALT>;
             key-positions = <20 29>;
@@ -1190,10 +837,6 @@
             timeout-ms = <60>;
         };
 
-        /* 
-         * Underscore/dash combo
-         * V + M keys pressed together output underscore on hold, dash on tap
-         */
         vm_UNDERSCORE_DASH {
             bindings = <&sdash UNDERSCORE MINUS>;
             key-positions = <23 26>;
@@ -1201,24 +844,15 @@
             timeout-ms = <60>;
         };
 
-        /* 
-         * Left mouse click combo
-         * J + K keys pressed together trigger left mouse click
-         * Works on layers 0, 1, and 6
-         */
         jk_LCLK {
             bindings = <&mkp LCLK>;
             key-positions = <16 17>;
             layers = <0 1 6>;
             require-prior-idle-ms = <200>;
             timeout-ms = <70>;
+
         };
 
-        /* 
-         * Right mouse click combo
-         * L + ; keys pressed together trigger right mouse click
-         * Works on layers 0, 1, and 6
-         */
         ll_RCLK {
             bindings = <&mkp RCLK>;
             key-positions = <19 18>;
@@ -1227,11 +861,6 @@
             timeout-ms = <70>;
         };
 
-        /* 
-         * Middle mouse click combo
-         * M + , keys pressed together trigger middle mouse click
-         * Works on layers 0, 1, and 6
-         */
         mm_MCLK {
             bindings = <&mkp MCLK>;
             key-positions = <26 27>;
@@ -1240,11 +869,6 @@
             timeout-ms = <60>;
         };
 
-        /* 
-         * Task view combo
-         * Z + V keys pressed together trigger Ctrl+Alt+Tab
-         * Works on layers 0 and 6
-         */
         zv_TASKS {
             bindings = <&kp LC(LA(TAB))>;
             key-positions = <20 23>;
@@ -1253,11 +877,6 @@
             timeout-ms = <70>;
         };
 
-        /* 
-         * Alt+Tab combo
-         * X + V keys pressed together trigger Alt+Tab
-         * Works on layers 0 and 6
-         */
         xv_SWITCH {
             bindings = <&kp LA(TAB)>;
             key-positions = <21 23>;
@@ -1266,11 +885,6 @@
             timeout-ms = <70>;
         };
 
-        /* 
-         * App launcher combo
-         * M + / keys pressed together trigger Alt+Space
-         * Works on layers 0 and 6
-         */
         mslash_LAUNCHER {
             bindings = <&kp LA(SPACE)>;
             key-positions = <26 29>;
@@ -1279,11 +893,6 @@
             timeout-ms = <70>;
         };
 
-        /* 
-         * Context menu combo
-         * C + V keys pressed together trigger context menu key
-         * Works on layers 0 and 6
-         */
         cv_MENU {
             bindings = <&kp K_CONTEXT_MENU>;
             key-positions = <22 23>;
@@ -1292,11 +901,6 @@
             timeout-ms = <60>;
         };
 
-        /* 
-         * Quick clipboard paste combo
-         * ; + V keys pressed together trigger Cmd+V
-         * Works on layer 0
-         */
         quick_clipboard {
             bindings = <&kp LG(V)>;
             key-positions = <19 23>;
@@ -1305,11 +909,6 @@
             timeout-ms = <60>;
         };
 
-        /* 
-         * Quick clipboard paste combo (alternate)
-         * Q + V keys pressed together trigger Cmd+V
-         * Works on layer 0
-         */
         quick_clipboard_2 {
             bindings = <&kp LG(V)>;
             key-positions = <10 23>;
@@ -1318,11 +917,6 @@
             timeout-ms = <60>;
         };
 
-        /* 
-         * Emoji picker combo
-         * Q + / keys pressed together trigger Cmd+.
-         * Works on layer 0
-         */
         quick_emojis {
             bindings = <&kp LG(DOT)>;
             key-positions = <10 28>;
@@ -1331,11 +925,6 @@
             timeout-ms = <60>;
         };
 
-        /* 
-         * Home key combo
-         * M + Thumb key pressed together trigger Home/Shift+Home
-         * Works on layer 0
-         */
         quick_home {
             bindings = <&x_home LS(HOME) HOME>;
             key-positions = <26 34>;
@@ -1344,11 +933,6 @@
             layers = <0>;
         };
 
-        /* 
-         * End key combo
-         * / + Thumb key pressed together trigger End/Shift+End
-         * Works on layer 0
-         */
         quick_end {
             bindings = <&x_end LS(END) END>;
             key-positions = <29 34>;
@@ -1357,11 +941,6 @@
             layers = <0>;
         };
 
-        /* 
-         * Key repeat combo
-         * P + Thumb key pressed together trigger key repeat
-         * Works on layer 0
-         */
         quick_repeat {
              bindings = <&key_repeat>;
              key-positions = <15 34>;
@@ -1370,11 +949,6 @@
              layers = <0>;
          };
 
-        /* 
-         * Left click combo (extra 1)
-         * J + Thumb key pressed together trigger left mouse click
-         * Works on layer 0
-         */
         extra_LCLK {
             bindings = <&mkp LCLK>;
             key-positions = <16 35>;
@@ -1383,11 +957,6 @@
             slow-release;
         };
 
-        /* 
-         * Left click combo (extra 2)
-         * O + Thumb key pressed together trigger left mouse click
-         * Works on layer 0
-         */
         extra_LCLK_2 {
             bindings = <&mkp LCLK>;
             key-positions = <14 35>;
@@ -1396,23 +965,13 @@
             slow-release;
         };
 
-        /* 
-         * Left click combo (extra 3)
-         * I + Thumb key pressed together trigger left mouse click
-         * Works on layer 0
-         */
         extra_LCLK_3 {
             bindings = <&mkp LCLK>;
             key-positions = <13 35>;
             layers = <0>;
             slow-release;
         };
-        
-        /* 
-         * Left click combo (extra 4)
-         * O + Thumb key pressed together trigger left mouse click
-         * Works on layer 0
-         */
+
         extra_LCLK_4 {
             bindings = <&mkp LCLK>;
             key-positions = <14 34>;
@@ -1420,11 +979,6 @@
             slow-release;
         };
 
-        /* 
-         * Right click combo (extra)
-         * ; + Thumb key pressed together trigger right mouse click
-         * Works on layer 0
-         */
         extra_RCLK {
             bindings = <&mkp RCLK>;
             key-positions = <18 35>;
@@ -1433,11 +987,6 @@
             slow-release;
         };
 
-        /* 
-         * Right click combo (extra 2)
-         * Thumb keys pressed together trigger right mouse click
-         * Works on layer 0
-         */
         extra_RCLK_2 {
             bindings = <&mkp RCLK>;
             key-positions = <30 32>;
@@ -1445,11 +994,6 @@
             layers = <0>;
         };
 
-        /* 
-         * Mouse button 4 combo
-         * P + Thumb key pressed together trigger mouse button 4
-         * Works on layer 0
-         */
         extra_MB4 {
             bindings = <&mkp MB4>;
             key-positions = <15 35>;
@@ -1457,11 +1001,6 @@
             layers = <0>;
         };
 
-        /* 
-         * Mouse button 5 combo
-         * ; + Thumb key pressed together trigger mouse button 5
-         * Works on layer 0
-         */
         extra_MB5 {
             bindings = <&mkp MB5>;
             key-positions = <19 35>;
@@ -1469,11 +1008,6 @@
             layers = <0>;
         };
 
-        /* 
-         * Quick tab combo
-         * K + Thumb key pressed together trigger Ctrl+Tab
-         * Works on layer 0
-         */
         quick_tab {
             bindings = <&kp LC(TAB)>;
             key-positions = <17 35>;
@@ -1482,11 +1016,6 @@
             layers = <0>;
         };
 
-        /* 
-         * Copy combo (extra)
-         * E + Thumb key pressed together trigger cut/copy tap dance
-         * Works on layer 0
-         */
         extra_COPY {
             bindings = <&td_cc>;
             key-positions = <7 34>;
@@ -1495,11 +1024,6 @@
             layers = <0>;
         };
 
-        /* 
-         * Copy combo (extra 2)
-         * W + Thumb key pressed together trigger cut/copy tap dance
-         * Works on layer 0
-         */
         extra_COPY_2 {
             bindings = <&td_cc>;
             key-positions = <1 34>;
@@ -1508,11 +1032,6 @@
             layers = <0>;
         };
 
-        /* 
-         * Paste combo (extra)
-         * R + Thumb key pressed together trigger paste tap dance
-         * Works on layer 0
-         */
         extra_PASTE {
             bindings = <&td_paste>;
             key-positions = <8 34>;
@@ -1521,11 +1040,6 @@
             layers = <0>;
         };
 
-        /* 
-         * Paste combo (extra 2)
-         * E + Thumb key pressed together trigger paste tap dance
-         * Works on layer 0
-         */
         extra_PASTE_2 {
             bindings = <&td_paste>;
             key-positions = <2 34>;
@@ -1534,55 +1048,30 @@
             layers = <0>;
         };
 
-        /* 
-         * Easy exit combo
-         * Return to default layer from any layer
-         * Works on all layers
-         */
         easy_exit {
             bindings = <&to 0>;
             key-positions = <31 32>;
             layers = <0 1 2 3 4 5 6 7 8 9>;
         };
 
-        /* 
-         * Game sticky layer combo
-         * Momentarily activate layer 2 from layer 1
-         * Works on layer 1
-         */
         game_sticky {
             bindings = <&sl 2>;
             key-positions = <30 32>;
             layers = <1>;
         };
 
-        /* 
-         * Game escape combo
-         * Trigger escape key in gaming layer
-         * Works on layer 1
-         */
         game_escape {
             bindings = <&kp ESCAPE>;
             key-positions = <33 23>;
             layers = <1>;
         };
 
-        /* 
-         * Game to simple layer combo
-         * Switch to simple layer (2) from default or gaming layer
-         * Works on layers 0 and 1
-         */
         game_to_simple {
             bindings = <&to 2>;
             key-positions = <30 31>;
             layers = <0 1>;
         };
 
-        /* 
-         * Game inspect combo
-         * Press Y key in gaming layer
-         * Works on layer 1
-         */
        game_inspect {
             bindings = <&kp Y>;
             key-positions = <20 23>;
@@ -1590,11 +1079,6 @@
             timeout-ms = <60>;
         };
 
-        /* 
-         * Game map combo
-         * Press M key in gaming layer
-         * Works on layer 1
-         */
        game_map {
             bindings = <&kp M>;
             key-positions = <20 22>;
@@ -1602,22 +1086,12 @@
             timeout-ms = <60>;
         };
 
-        /* 
-         * Simple to game layer combo
-         * Switch to gaming layer (1) from simple layer
-         * Works on layer 2
-         */
         simple_to_game {
             bindings = <&to 1>;
             key-positions = <30 31>;
             layers = <2>;
         };
 
-        /* 
-         * Globe key combo
-         * Z + X keys pressed together trigger globe tap dance
-         * Works on layer 0
-         */
         quick_globe {
             bindings = <&td_globe>;
             key-positions = <20 21>;
@@ -1625,22 +1099,12 @@
             layers = <0>;
         };
 
-        /* 
-         * iPad tools combo
-         * Two thumb keys pressed together trigger iPad tools tap dance
-         * Works on layer 0
-         */
         quick_ipad_tools {
             bindings = <&ipad_tools>;
             key-positions = <32 33>;
             layers = <0>;
         };
 
-        /* 
-         * Caps word combo
-         * X + . keys pressed together activate caps word
-         * Works on layer 0
-         */
         mm_CAPSWORD {
             bindings = <&caps_word>;
             key-positions = <21 28>;
@@ -1648,11 +1112,6 @@
             timeout-ms = <70>;
         };
 
-        /* 
-         * Caps lock combo
-         * C + , keys pressed together toggle caps lock
-         * Works on layer 0
-         */
         mm_CAPS {
             bindings = <&kp CAPSLOCK>;
             key-positions = <22 27>;
@@ -1660,11 +1119,6 @@
             timeout-ms = <70>;
         };
 
-        /* 
-         * Quick layers combo
-         * P + Thumb key pressed together momentarily activate layer 9
-         * Works on all layers
-         */
         quick_layers {
             bindings = <&sl 9>;
             key-positions = <15 37>;
@@ -1676,20 +1130,7 @@
 
     keymap {
         compatible = "zmk,keymap";
-        
-        /* 
-         * Default layer (0)
-         * Main typing layer with home row mods
-         * ,----------------------------------.                ,----------------------------------.
-         * |   Q  |   W  |   E  |   R  |   T  |                |   Y  |   U  |   I  |   O  |   P  |
-         * |------+------+------+------+------|                |------+------+------+------+------|
-         * |GUI/A |ALT/S |CTL/D |SFT/F |   G  |                |   H  |SFT/J |CTL/K |ALT/L |GUI/' |
-         * |------+------+------+------+------|                |------+------+------+------+------|
-         * |   Z  |   X  |   C  |   V  |   B  |                |   N  |   M  |SCR/, |SMP/. |FNC/  |
-         * `----------------------------------'                `----------------------------------'
-         *        |SCR   |SCR   |LCLK  |ESC/3 |SPC/7 |TAB/6|ENT/5|BSPC/4|                  |GLOBE |
-         *        `------------------------------------'  `-------------------------------------'
-         */
+
         default_layer {
             label = "HOME";
             bindings = <
@@ -1700,19 +1141,6 @@
             >;
         };
 
-        /* 
-         * Gaming layer (1)
-         * Optimized for gaming with standard WASD layout
-         * ,----------------------------------.                ,----------------------------------.
-         * |   1  |   Q  |   W  |   E  |   R  |                |   Y  |   U  |   I  |   O  |   P  |
-         * |------+------+------+------+------|                |------+------+------+------+------|
-         * | SHIFT|   A  |   S  |   D  |   F  |                |   H  |MED/J |   K  |   L  |MED/' |
-         * |------+------+------+------+------|                |------+------+------+------+------|
-         * |   Z  |   V  |   X  |   C  |   2  |                |   N  |   M  |   ,  |   .  |FNC/  |
-         * `----------------------------------'                `----------------------------------'
-         *        |TAB   |KEYS  |NUM/J |   3  |SPACE |   4  |ENT/5|BSPC/4|                  |GAME  |
-         *        `------------------------------------'  `-------------------------------------'
-         */
         gaming_layer {
             bindings = <
 &kp N1          &kp Q       &kp W    &kp E         &kp R                                 &kp Y            &kp U  &kp I      &kp O    &kp P
@@ -1724,19 +1152,6 @@
             label = "GAME";
         };
 
-        /* 
-         * Simple layer (2)
-         * Basic layout without complex mod-taps for compatibility
-         * ,----------------------------------.                ,----------------------------------.
-         * |   Q  |   W  |   E  |   R  |   T  |                |   Y  |   U  |   I  |   O  |   P  |
-         * |------+------+------+------+------|                |------+------+------+------+------|
-         * |   A  |   S  |   D  |   F  |   G  |                |   H  |   J  |   K  |   L  |   '  |
-         * |------+------+------+------+------|                |------+------+------+------+------|
-         * |   Z  |   X  |   C  |   V  |   B  |                |   N  |   M  |   ,  |   .  |   /  |
-         * `----------------------------------'                `----------------------------------'
-         *        |SHIFT |GUI   |CTRL  |ESC/3 |SPC/7 |TAB/6|ENT/5|BSPC/4|                  |SHIFT |
-         *        `------------------------------------'  `-------------------------------------'
-         */
         simple_layer {
             bindings = <
 &kp Q           &kp W         &kp E      &kp R       &kp T                            &kp Y            &kp U  &kp I      &kp O    &kp P
@@ -1748,165 +1163,76 @@
             label = "SIMPLE";
         };
 
-/* 
- * Media layer (3)
- * Media controls and Bluetooth management
- * ,----------------------------------.                ,----------------------------------.
- * |BT CLR|BT CLR|BT CLR|BT CLR|BT CLR|                |      |      |BRI DN|BRI UP|      |
- * |------+------+------+------+------|                |------+------+------+------+------|
- * |BT 0  |BT 1  |BT 2  |BT 3  |BT 4  |                |REPEAT|PREV  |VOL DN|VOL UP|NEXT  |
- * |------+------+------+------+------|                |------+------+------+------+------|
- * |      |      |      |T MUTE|      |                |      |      |      |      |      |
- * `----------------------------------'                `----------------------------------'
- *        |BOOT  |SLIDE |TOOLS |ESC   |SPACE |TAB   |MUTE  |PLAY  |                  |HOME  |
- *        `------------------------------------'  `-------------------------------------'
- */
-media_layer {
-    label = "MEDIA";
-    bindings = <
+        media_layer {
+            label = "MEDIA";
+            bindings = <
 &bt BT_DISC 0  &bt BT_DISC 1     &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4                       &trans            &trans          &kp C_BRI_DEC      &kp C_BRI_INC    &trans
 &bt BT_SEL 0   &bt BT_SEL 1      &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                        &key_repeat       &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT
 &trans         &trans            &trans         &t_mute        &trans                              &trans            &trans          &trans             &trans           &trans
 &bootloader    &ipad_slide_over  &ipad_tools    &kp ESCAPE     &kp SPACE      &kp TAB  &kp C_MUTE  &kp C_PLAY_PAUSE                                                      &to 0
-    >;
-};
+            >;
+        };
 
-/* 
- * Number layer (4)
- * Number pad and navigation controls
- * ,----------------------------------.                ,----------------------------------.
- * |  [   |  7   |  8   |  9   |  ]   |                |      |KP 7  |KP 8  |KP 9  |  *   |
- * |------+------+------+------+------|                |------+------+------+------+------|
- * |  ;   |  4   |  5   |  6   |  =   |                |LAYERS|KP 4  |KP 5  |KP 6  |KP 0  |
- * |------+------+------+------+------|                |------+------+------+------+------|
- * |  `   |  1   |  2   |  3   |  \   |                |      |KP 1  |KP 2  |KP 3  |  -   |
- * `----------------------------------'                `----------------------------------'
- *        |ALT   |  /   |SPACE |  .   |  0   |  -   |ENTER|     |                  |BOOT  |
- *        `------------------------------------'  `-------------------------------------'
- */
-number_layer {
-    label = "NUM";
-    bindings = <
+        number_layer {
+            label = "NUM";
+            bindings = <
 &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET                           &trans          &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp STAR
 &kp SEMICOLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                                   &sl 9           &kp KP_N4        &kp KP_N5  &kp KP_N6  &kp KP_N0
 &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH                               &trans          &kp KP_N1        &kp KP_N2  &kp KP_N3  &kp MINUS
 &kp LEFT_ALT      &kp FSLH      &kp SPACE     &kp DOT       &kp NUMBER_0       &kp MINUS  &kp KP_ENTER  &trans                                                 &bootloader
-    >;
-};
+            >;
+        };
 
-/* 
- * Symbol layer (5)
- * Special symbols and characters
- * ,----------------------------------.                ,----------------------------------.
- * |  {   |  &   |  *   |  [   |  }   |                |USER  |SEN   |ESTAR |HEART |WIFE  |
- * |------+------+------+------+------|                |------+------+------+------+------|
- * |  :   |  $   |  %   |  ^   |  +   |                |HLIGHT|BRCKT |QUOTES|      |      |
- * |------+------+------+------+------|                |------+------+------+------+------|
- * |  ~   |  !   |  @   |  #   |  |   |                |CLEAR |EMDASH|TMARK |BULLET|FILTER|
- * `----------------------------------'                `----------------------------------'
- *        |      |IPADL |IPADR |  (   |  )   |  _   |     |     |                  |MAPDOC|
- *        `------------------------------------'  `-------------------------------------'
- */
-symbol_layer {
-    label = "SYMBOL";
-    bindings = <
+        symbol_layer {
+            label = "SYMBOL";
+            bindings = <
 &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_BRACKET      &kp RIGHT_BRACE                                &user       &sen          &Estar      &heart   &wife
 &kp COLON       &kp DOLLAR     &kp PERCENT   &kp CARET             &kp PLUS                                       &highlight  &td_brackets  &td_quotes  &trans   &trans
 &kp TILDE       &kp EXCL       &kp AT        &kp HASH              &kp PIPE                                       &xclear 0 0 &emdash       &trademark  &bullet  &filter
 &trans          &ipad_left     &ipad_right   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &trans  &trans                                         &mapdoc
-    >;
-};
+            >;
+        };
 
-/* 
- * Snipe layer (6)
- * Mouse movement precision controls
- * ,----------------------------------.                ,----------------------------------.
- * |M LEFT|M UP  |M DOWN|M RGHT|      |                |PRTSCR|      |COPY  |PASTE |      |
- * |------+------+------+------+------|                |------+------+------+------+------|
- * |GUI   |ALT   |CTRL  |SHIFT |LCLK  |                |MB4   |LCLK  |MCLK  |RCLK  |MB5   |
- * |------+------+------+------+------|                |------+------+------+------+------|
- * |      |      |      |      |      |                |DEL   |SCRL L|SCRL D|SCRL U|SCRL R|
- * `----------------------------------'                `----------------------------------'
- *        |RCLK  |MCLK  |LCLK  |ESC   |SPACE |     |ENTER|BSPC  |                  |      |
- *        `------------------------------------'  `-------------------------------------'
- */
-snipe_layer {
-    label = "SNIPE";
-    bindings = <
+        snipe_layer {
+            label = "SNIPE";
+            bindings = <
 &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                           &kp PRINTSCREEN  &trans          &td_cc          &td_paste     &trans
 &kp LEFT_GUI    &kp LEFT_ALT  &kp LCTRL       &kp LEFT_SHIFT   &mkp LCLK                        &mkp MB4         &mkp LCLK       &xmclk 7 MCLK   &mkp RCLK     &mkp MB5
 &trans          &trans        &trans          &trans           &trans                           &kp DELETE       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
 &mkp RCLK       &mkp MCLK     &mkp LCLK       &kp ESCAPE       &kp SPACE     &trans  &kp ENTER  &kp BACKSPACE                                                  &trans
-    >;
-};
+            >;
+        };
 
-/* 
- * Scroll layer (7)
- * Scrolling and navigation controls
- * ,----------------------------------.                ,----------------------------------.
- * |ALT+ES|COPY  |PASTE |SH+A+E|      |                |      |      |COPY  |PASTE |GLOBE |
- * |------+------+------+------+------|                |------+------+------+------+------|
- * |GUI   |ALT   |CTRL  |SHIFT |LCLK  |                |REPEAT|LEFT  |DOWN  |UP    |RIGHT |
- * |------+------+------+------+------|                |------+------+------+------+------|
- * |UW 1  |UW 2  |UW 3  |UW 4  |UW 5  |                |DEL   |HOME  |PG DN |PG UP |END   |
- * `----------------------------------'                `----------------------------------'
- *        |RCLK  |MCLK  |LCLK  |ESC   |     |TAB   |ENTER|BSPC  |                  |      |
- *        `------------------------------------'  `-------------------------------------'
- */
-scroll_layer {
-    label = "SCROLL";
-    bindings = <
+        scroll_layer {
+            label = "SCROLL";
+            bindings = <
 &kp LA(ESC)   &td_cc     &td_paste  &kp LS(LA(ESC))  &trans                      &trans         &trans          &td_cc          &td_paste     &td_globe
 &kp LEFT_GUI  &kp LALT   &kp LCTRL  &kp LSHFT        &mkp LCLK                   &key_repeat    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
 &tdu1         &tdu2      &tdu3      &tdu4            &tdu5                       &kp DELETE     &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
 &mkp RCLK     &mkp MCLK  &mkp LCLK  &kp ESC          &trans  &kp TAB  &kp ENTER  &kp BACKSPACE                                                &trans
-    >;
-};
+            >;
+        };
 
-/* 
- * Function layer (8)
- * Function keys and system controls
- * ,----------------------------------.                ,----------------------------------.
- * |F12   |F7    |F8    |F9    |NUMLK |                |      |      |      |      |      |
- * |------+------+------+------+------|                |------+------+------+------+------|
- * |F11   |F4    |F5    |F6    |SCRLK |                |INS   |RSHIFT|RCTRL |RALT  |RGUI  |
- * |------+------+------+------+------|                |------+------+------+------+------|
- * |F10   |F1    |F2    |F3    |PAUSE |                |WWW   |MAIL  |MYCOMP|CALC  |      |
- * `----------------------------------'                `----------------------------------'
- *        |BTCLR |OUTTOG|ALT+F4|ESC   |SPACE |TAB   |CAPS |DEL   |                  |CTRL  |
- *        `------------------------------------'  `-------------------------------------'
- */
-function_layer {
-    bindings = <
+        function_layer {
+            bindings = <
 &kp F12     &kp F7        &kp F8      &kp F9   &kp KP_NUMLOCK                          &trans        &trans           &trans                &trans         &trans
 &kp F11     &kp F4        &kp F5      &kp F6   &kp SCROLLLOCK                          &kp INS       &kp RSHIFT       &kp RCTRL             &kp RIGHT_ALT  &kp RIGHT_GUI
 &kp F10     &kp F1        &kp F2      &kp F3   &kp PAUSE_BREAK                         &kp C_AL_WWW  &kp C_AL_MAIL    &kp C_AL_MY_COMPUTER  &kp C_AL_CALC  &trans
 &bt BT_CLR  &out OUT_TOG  &kp LA(F4)  &kp ESC  &kp SPACE        &kp TAB  &kp CAPSLOCK  &kp DELETE                                                          &kp C_AL_CONTROL_PANEL
-    >;
+            >;
 
-    label = "FUNCTION";
-};
+            label = "FUNCTION";
+        };
 
-/* 
- * Layers layer (9)
- * Layer switching shortcuts
- * ,----------------------------------.                ,----------------------------------.
- * |      |TO 7  |TO 8  |TO 9  |      |                |      |      |      |      |      |
- * |------+------+------+------+------|                |------+------+------+------+------|
- * |      |TO 4  |TO 5  |TO 6  |      |                |      |SK SFT|SK CTL|SK ALT|SK GUI|
- * |------+------+------+------+------|                |------+------+------+------+------|
- * |      |TO 1  |TO 2  |TO 3  |      |                |      |      |      |      |      |
- * `----------------------------------'                `----------------------------------'
- *        |      |      |      |      |TO 0  |     |     |     |                  |      |
- *        `------------------------------------'  `-------------------------------------'
- */
-layers_layer {
-    bindings = <
+        layers_layer {
+            bindings = <
 &trans        &to 7       &to 8    &to 9    &trans                          &trans        &trans           &trans              &trans         &trans
 &trans        &to 4       &to 5    &to 6    &trans                          &trans        &sk RIGHT_SHIFT  &sk RCTRL           &sk RIGHT_ALT  &sk RIGHT_GUI
 &trans        &to 1       &to 2    &to 3    &trans                          &trans        &trans           &trans              &trans         &trans
 &trans        &trans      &trans   &trans   &to 0          &trans  &trans   &trans                                                            &trans
-    >;
+            >;
 
-    label = "LAYERS";
+            label = "LAYERS";
+        };
+    };
 };
