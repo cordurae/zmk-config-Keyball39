@@ -403,6 +403,18 @@ combos:
 - p: [30, 38]
   k: '&td_globe'
   l: [HOME]
+- p: [16, 34]
+  k: $$mdi:arrow-left-bold$$
+  l: [HOME]
+- p: [17, 34]
+  k: $$mdi:arrow-down-bold$$
+  l: [HOME]
+- p: [18, 34]
+  k: $$mdi:arrow-up-bold$$
+  l: [HOME]
+- p: [19, 34]
+  k: $$mdi:arrow-right-bold$$
+  l: [HOME]
 - p: [16, 35]
   k: $$mdi:mouse-left-click-outline$$
   l: [HOME]
