@@ -422,7 +422,7 @@ combos:
   k: $$mdi:mouse-scroll-wheel$$
   l: [HOME]
 - p: [17, 35]
-  k: '&LC(TAB)'
+  k: Ctl+$$mdi:keyboard-tab$$
   l: [HOME]
 - p: [15, 35]
   k: '&mkp MB4'

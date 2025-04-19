@@ -672,9 +672,7 @@ rect.held, rect.combo.held {
 <path d="M472,165 l128,-72" class="combo"/>
 <path d="M472,165 l-128,72" class="combo"/>
 <rect rx="6" ry="6" x="458" y="152" width="28" height="26" class="combo"/>
-<text x="472" y="165" class="combo tap">
-<tspan x="472" dy="-0.6em">&amp;LC(</tspan><tspan x="472" dy="1.2em">TAB)</tspan>
-</text>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="463" y="156" height="18" width="18.0" class="combo tap glyph mdi:keyboard-tab"/>
 </g>
 <g class="combo combopos-21">
 <path d="M416,172 l74,-62" class="combo"/>
