@@ -832,7 +832,7 @@
             bindings = <&sk LCTRL>;
             key-positions = <21 22 27 28>;
             layers = <0>;
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <500>;
             timeout-ms = <60>;
         };
 
@@ -923,14 +923,6 @@
              require-prior-idle-ms = <200>;
              layers = <0>;
          };
-
-        quick_globe {
-            bindings = <&td_globe>;
-            key-positions = <30 38>;
-            timeout-ms = <70>;
-            require-prior-idle-ms = <200>;
-            layers = <0>;
-        };
 
         extra_LCLK {
             bindings = <&mkp LCLK>;
@@ -1073,6 +1065,13 @@
             bindings = <&to 1>;
             key-positions = <30 31>;
             layers = <2>;
+        };
+
+        quick_globe {
+            bindings = <&td_globe>;
+            key-positions = <20 21>;
+            require-prior-idle-ms = <400>;
+            layers = <0>;
         };
 
         quick_ipad_home {
