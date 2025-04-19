@@ -859,6 +859,18 @@
             timeout-ms = <60>;
         };
 
+        quick_home {
+            bindings = <&kp HOME>;
+            key-positions = <26 34>;
+            layers = <0>;
+        };
+
+        quick_end {
+            bindings = <&kp END>;
+            key-positions = <29 34>;
+            layers = <0>;
+        };
+
         extra_LCLK {
             bindings = <&mkp LCLK>;
             key-positions = <13 35>;
