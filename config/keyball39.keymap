@@ -7,6 +7,7 @@
 #define SNIPE   6
 #define SCROLL  7
 #define FNCT    8
+#define LAYERS  9
 
 #include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/mouse.h>
@@ -126,7 +127,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings =
-                <&kp GLOBE>,
+                <&mo 7>,
                 <&to 2>,
                 <&to 1>,
                 <&to 3>,
@@ -925,33 +926,9 @@
             layers = <0>;
         };
 
-        quick_left {
-             bindings = <&kp LEFT>;
-             key-positions = <16 34>;
-             timeout-ms = <70>;
-             require-prior-idle-ms = <200>;
-             layers = <0>;
-         };
- 
-         quick_down {
-             bindings = <&kp DOWN>;
-             key-positions = <17 34>;
-             timeout-ms = <70>;
-             require-prior-idle-ms = <200>;
-             layers = <0>;
-         };
- 
-         quick_up {
-             bindings = <&kp UP>;
-             key-positions = <18 34>;
-             timeout-ms = <70>;
-             require-prior-idle-ms = <200>;
-             layers = <0>;
-         };
- 
-         quick_right {
-             bindings = <&kp RIGHT>;
-             key-positions = <19 34>;
+        quick_repeat {
+             bindings = <&key_repeat>;
+             key-positions = <15 34>;
              timeout-ms = <70>;
              require-prior-idle-ms = <200>;
              layers = <0>;
@@ -1185,7 +1162,7 @@
             label = "NUM";
             bindings = <
 &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET                           &trans          &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp STAR
-&kp SEMICOLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                                   &trans          &kp KP_N4        &kp KP_N5  &kp KP_N6  &kp KP_N0
+&kp SEMICOLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                                   &mo 9           &kp KP_N4        &kp KP_N5  &kp KP_N6  &kp KP_N0
 &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH                               &trans          &kp KP_N1        &kp KP_N2  &kp KP_N3  &kp MINUS
 &kp LEFT_ALT      &kp FSLH      &kp SPACE     &kp DOT       &kp NUMBER_0       &kp MINUS  &kp KP_ENTER  &trans                                                 &bootloader
             >;
@@ -1230,6 +1207,17 @@
             >;
 
             label = "FUNCTION";
+        };
+
+        layers_layer {
+            bindings = <
+&trans        &to 7       &to 8    &to 9    &trans                          &trans        &trans           &trans              &trans         &trans
+&trans        &to 4       &to 5    &to 6    &trans                          &trans        &trans           &trans              &trans         &trans
+&trans        &to 1       &to 2    &to 3    &trans                          &trans        &trans           &trans              &trans         &trans
+&trans        &trans      &trans   &trans   &to 0          &trans  &trans  &trans        &trans                                              &trans
+            >;
+
+            label = "LAYERS";
         };
     };
 };
