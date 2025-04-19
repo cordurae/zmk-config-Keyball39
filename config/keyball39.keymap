@@ -895,8 +895,9 @@
 
         quick_home {
             bindings = <&x_home LS(HOME) HOME>;
-            key-positions = <26 34>
+            key-positions = <26 34>;
             timeout-ms = <70>;
+            require-prior-idle-ms = <60>;
             layers = <0>;
         };
 
@@ -904,6 +905,7 @@
             bindings = <&x_end LS(END) END>;
             key-positions = <29 34>;
             timeout-ms = <70>;
+            require-prior-idle-ms ; <60>;
             layers = <0>;
         };
 
@@ -984,6 +986,7 @@
             bindings = <&td_cc>;
             key-positions = <7 34>;
             timeout-ms = <70>;
+            require-prior-idle-ms = <60>;
             layers = <0>;
         };
 
@@ -991,6 +994,7 @@
             bindings = <&td_paste>;
             key-positions = <8 34>;
             timeout-ms = <70>;
+            require-prior-idle-ms = <60>;
             layers = <0>;
         };
 
