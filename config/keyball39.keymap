@@ -121,24 +121,6 @@
             bindings = <&kp>, <&to>;
         };
 
-        td_nav: tap_dance_navigate {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_NAV";
-            #binding-cells = <0>;
-            tapping-term-ms = <400>;
-            bindings =
-                <&mo 7>,
-                <&to 2>,
-                <&to 1>,
-                <&to 3>,
-                <&to 4>,
-                <&to 5>,
-                <&to 6>,
-                <&to 7>,
-                <&to 8>,
-                <&to 0>;
-        };
-
         tdu1: tap_dance_ultrawide_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_ULTRAWIDE_1";
@@ -974,17 +956,17 @@
 
         extra_RCLK {
             bindings = <&mkp RCLK>;
-            key-positions = <31 32>;
-            timeout-ms = <70>;
-            layers = <0>;
-        };
-
-        extra_RCLK_2 {
-            bindings = <&mkp RCLK>;
             key-positions = <18 35>;
             layers = <0>;
             timeout-ms = <70>;
             slow-release;
+        };
+
+        extra_RCLK_2 {
+            bindings = <&mkp RCLK>;
+            key-positions = <30 32>;
+            timeout-ms = <70>;
+            layers = <0>;
         };
 
         extra_MB4 {
@@ -997,13 +979,6 @@
         extra_MB5 {
             bindings = <&mkp MB5>;
             key-positions = <19 35>;
-            timeout-ms = <70>;
-            layers = <0>;
-        };
-
-        extra_MCLK {
-            bindings = <&mkp MCLK>;
-            key-positions = <30 32>;
             timeout-ms = <70>;
             layers = <0>;
         };
@@ -1051,7 +1026,7 @@
         easy_exit {
             bindings = <&to 0>;
             key-positions = <31 32>;
-            layers = <1 2>;
+            layers = <0 1 2 3 4 5 6 7 8 9>;
         };
 
         game_sticky {
@@ -1122,7 +1097,7 @@
 &kp Q           &kp W           &kp E        &kp R             &kp T                                &kp Y            &kp U        &kp I         &kp O            &kp P
 &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G                                &kp H            &mt RSHFT J  &mt RCTRL K   &mt RIGHT_ALT L  &mt RIGHT_GUI SQT
 &kp Z           &kp X           &kp C        &kp V             &kp B                                &kp N            &kp M        &xlt 7 COMMA  &xlt 2 DOT       &xlt 8 SLASH
-&mo 7           &td_globe       &mkp LCLK    &lt 3 ESCAPE      &lt 7 SPACE  &lt 6 TAB  &lt 5 ENTER  &lt 4 BACKSPACE                                              &td_nav
+&mo 7           &mo 7           &mkp LCLK    &lt 3 ESCAPE      &lt 7 SPACE  &lt 6 TAB  &lt 5 ENTER  &lt 4 BACKSPACE                                              &td_globe
             >;
         };
 
@@ -1162,7 +1137,7 @@
             label = "NUM";
             bindings = <
 &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET                           &trans          &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp STAR
-&kp SEMICOLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                                   &mo 9           &kp KP_N4        &kp KP_N5  &kp KP_N6  &kp KP_N0
+&kp SEMICOLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                                   &sl 9           &kp KP_N4        &kp KP_N5  &kp KP_N6  &kp KP_N0
 &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH                               &trans          &kp KP_N1        &kp KP_N2  &kp KP_N3  &kp MINUS
 &kp LEFT_ALT      &kp FSLH      &kp SPACE     &kp DOT       &kp NUMBER_0       &kp MINUS  &kp KP_ENTER  &trans                                                 &bootloader
             >;
@@ -1172,7 +1147,7 @@
             label = "SYMBOL";
             bindings = <
 &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_BRACKET      &kp RIGHT_BRACE                                &user       &sen          &Estar      &heart   &wife
-&kp COLON       &kp DOLLAR     &kp PERCENT   &kp CARET             &kp PLUS                                       &highlight  &td_brackets  &td_quotes  &to 7    &to 6
+&kp COLON       &kp DOLLAR     &kp PERCENT   &kp CARET             &kp PLUS                                       &highlight  &td_brackets  &td_quotes  &trans   &trans
 &kp TILDE       &kp EXCL       &kp AT        &kp HASH              &kp PIPE                                       &xclear 0 0 &emdash       &trademark  &bullet  &filter
 &trans          &ipad_left     &ipad_right   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &trans  &trans                                         &mapdoc
             >;
@@ -1181,9 +1156,9 @@
         snipe_layer {
             label = "SNIPE";
             bindings = <
-&mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                           &kp PRINTSCREEN  &trans          &td_cc          &td_paste     &to 0
+&mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                           &kp PRINTSCREEN  &trans          &td_cc          &td_paste     &trans
 &kp LEFT_GUI    &kp LEFT_ALT  &kp LCTRL       &kp LEFT_SHIFT   &mkp LCLK                        &mkp MB4         &mkp LCLK       &xmclk 7 MCLK   &mkp RCLK     &mkp MB5
-&to 1           &to 2         &trans          &trans           &trans                           &kp DELETE       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
+&trans          &trans        &trans          &trans           &trans                           &kp DELETE       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
 &mkp RCLK       &mkp MCLK     &mkp LCLK       &kp ESCAPE       &kp SPACE     &trans  &kp ENTER  &kp BACKSPACE                                                  &trans
             >;
         };
@@ -1191,7 +1166,7 @@
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&kp LA(ESC)   &td_cc     &td_paste  &kp LS(LA(ESC))  &trans                      &trans         &trans          &td_cc          &td_paste     &to 0
+&kp LA(ESC)   &td_cc     &td_paste  &kp LS(LA(ESC))  &trans                      &trans         &trans          &td_cc          &td_paste     &trans
 &kp LEFT_GUI  &kp LALT   &kp LCTRL  &kp LSHFT        &mkp LCLK                   &key_repeat    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
 &tdu1         &tdu2      &tdu3      &tdu4            &tdu5                       &kp DELETE     &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
 &mkp RCLK     &mkp MCLK  &mkp LCLK  &kp ESC          &trans  &kp TAB  &kp ENTER  &kp BACKSPACE                                                &trans
@@ -1201,7 +1176,7 @@
         function_layer {
             bindings = <
 &kp F12     &kp F7        &kp F8      &kp F9   &kp KP_NUMLOCK                          &trans        &trans           &trans                &trans         &trans
-&kp F11     &kp F4        &kp F5      &kp F6   &kp SCROLLLOCK                          &kp INS       &kp RIGHT_SHIFT  &kp RCTRL             &kp RIGHT_ALT  &kp RIGHT_GUI
+&kp F11     &kp F4        &kp F5      &kp F6   &kp SCROLLLOCK                          &kp INS       &kp RSHIFT       &kp RCTRL             &kp RIGHT_ALT  &kp RIGHT_GUI
 &kp F10     &kp F1        &kp F2      &kp F3   &kp PAUSE_BREAK                         &kp C_AL_WWW  &kp C_AL_MAIL    &kp C_AL_MY_COMPUTER  &kp C_AL_CALC  &trans
 &bt BT_CLR  &out OUT_TOG  &kp LA(F4)  &kp ESC  &kp SPACE        &kp TAB  &kp CAPSLOCK  &kp DELETE                                                          &kp C_AL_CONTROL_PANEL
             >;
@@ -1212,7 +1187,7 @@
         layers_layer {
             bindings = <
 &trans        &to 7       &to 8    &to 9    &trans                          &trans        &trans           &trans              &trans         &trans
-&trans        &to 4       &to 5    &to 6    &trans                          &trans        &trans           &trans              &trans         &trans
+&trans        &to 4       &to 5    &to 6    &trans                          &trans        &sk RIGHT_SHIFT  &sk RCTRL           &sk RIGHT_ALT  &sk RIGHT_GUI
 &trans        &to 1       &to 2    &to 3    &trans                          &trans        &trans           &trans              &trans         &trans
 &trans        &trans      &trans   &trans   &to 0          &trans  &trans   &trans                                                            &trans
             >;
