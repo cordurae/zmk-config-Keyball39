@@ -1094,6 +1094,14 @@
             layers = <0>;
             timeout-ms = <70>;
         };
+
+        quick_layers {
+            bindings = <&sl 9>;
+            key-positions = <15 37>;
+            layers = <0>;
+            require-prior-idle-ms = <200>;
+            timeout-ms = <70>;
+        };
     };
 
     keymap {
