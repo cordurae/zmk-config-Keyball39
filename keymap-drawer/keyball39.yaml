@@ -394,6 +394,12 @@ combos:
 - p: [22, 23]
   k: CONTEXT MENU
   l: [HOME, SNIPE]
+- p: [26, 34]
+  k: HOME
+  l: [HOME]
+- p: [29, 34]
+  k: END
+  l: [HOME]
 - p: [13, 35]
   k: $$mdi:mouse-left-click-outline$$
   l: [HOME]
