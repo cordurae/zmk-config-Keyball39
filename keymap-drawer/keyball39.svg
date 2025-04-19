@@ -677,46 +677,34 @@ rect.held, rect.combo.held {
 <use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="463" y="156" height="18" width="18.0" class="combo tap glyph mdi:keyboard-tab"/>
 </g>
 <g class="combo combopos-21">
-<path d="M416,172 l74,-62" class="combo"/>
-<path d="M416,172 l-74,62" class="combo"/>
-<rect rx="6" ry="6" x="402" y="159" width="28" height="26" class="combo"/>
-<use href="#mdi:arrow-left-bold" xlink:href="#mdi:arrow-left-bold" x="407" y="163" height="18" width="18.0" class="combo tap glyph mdi:arrow-left-bold"/>
-</g>
-<g class="combo combopos-22">
-<path d="M528,175 l182,-64" class="combo"/>
-<path d="M528,175 l-182,64" class="combo"/>
-<rect rx="6" ry="6" x="514" y="162" width="28" height="26" class="combo"/>
-<use href="#mdi:arrow-right-bold" xlink:href="#mdi:arrow-right-bold" x="519" y="166" height="18" width="18.0" class="combo tap glyph mdi:arrow-right-bold"/>
-</g>
-<g class="combo combopos-23">
 <path d="M442,129 l158,-91" class="combo"/>
 <path d="M442,129 l-158,91" class="combo"/>
 <rect rx="6" ry="6" x="428" y="116" width="28" height="26" class="combo"/>
 <text x="442" y="129" class="combo tap">&amp;td_cc</text>
 </g>
-<g class="combo combopos-24">
+<g class="combo combopos-22">
 <path d="M470,132 l185,-89" class="combo"/>
 <path d="M470,132 l-185,89" class="combo"/>
 <rect rx="6" ry="6" x="456" y="119" width="28" height="26" class="combo"/>
 <text x="470" y="132" class="combo tap"><tspan style="font-size: 67%">&amp;td_paste</tspan></text>
 </g>
-<g class="combo combopos-25">
+<g class="combo combopos-23">
 <rect rx="6" ry="6" x="42" y="197" width="28" height="26" class="combo"/>
 <a href="#SIMPLE">
 <text x="56" y="210" class="combo tap layer-activator">SIMPLE</text>
 </a><text x="56" y="221" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-26">
+<g class="combo combopos-24">
 <rect rx="6" ry="6" x="161" y="197" width="28" height="26" class="combo"/>
 <text x="175" y="210" class="combo tap"><tspan style="font-size: 60%">&amp;ipad_home</tspan></text>
 </g>
-<g class="combo combopos-27">
+<g class="combo combopos-25">
 <path d="M378,147 l-275,0" class="combo"/>
 <path d="M378,147 l275,0" class="combo"/>
 <rect rx="6" ry="6" x="364" y="134" width="28" height="26" class="combo"/>
 <use href="#mdi:alpha-w-box" xlink:href="#mdi:alpha-w-box" x="369" y="138" height="18" width="18.0" class="combo tap glyph mdi:alpha-w-box"/>
 </g>
-<g class="combo combopos-28">
+<g class="combo combopos-26">
 <path d="M378,140 l-219,0" class="combo"/>
 <path d="M378,140 l219,0" class="combo"/>
 <rect rx="6" ry="6" x="364" y="127" width="28" height="26" class="combo"/>
