@@ -61,8 +61,8 @@ layers:
   - K
   - L
   - {t: ., h: MEDIA}
+  - M
   - Z
-  - $$mdi:keyboard-tab$$
   - X
   - C
   - V
@@ -471,6 +471,9 @@ combos:
   l: [HOME, GAME]
 - p: [20, 21]
   k: Y
+  l: [GAME]
+- p: [20, 30]
+  k: $$mdi:keyboard-tab$$
   l: [GAME]
 - p: [30, 31]
   k: {t: GAME, h: toggle}

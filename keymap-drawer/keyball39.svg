@@ -881,12 +881,12 @@ rect.held, rect.combo.held {
 <g transform="translate(28, 161)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">Z</text>
+<text x="0" y="-4" class="key tap">M</text>
 </g>
 <g transform="translate(84, 147)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-tab"/>
+<text x="0" y="-4" class="key tap">Z</text>
 </g>
 <g transform="translate(140, 140)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1026,6 +1026,10 @@ rect.held, rect.combo.held {
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="42" y="141" width="28" height="26" class="combo"/>
 <text x="56" y="154" class="combo tap">Y</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="14" y="176" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="19" y="180" height="18" width="18.0" class="combo tap glyph mdi:keyboard-tab"/>
 </g>
 </g>
 </g>
