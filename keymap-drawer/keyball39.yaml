@@ -400,6 +400,9 @@ combos:
 - p: [29, 34]
   k: END
   l: [HOME]
+- p: [30, 38]
+  k: '&td_globe'
+  l: [HOME]
 - p: [16, 35]
   k: $$mdi:mouse-left-click-outline$$
   l: [HOME]
@@ -435,6 +438,9 @@ combos:
   l: [HOME]
 - p: [1, 34]
   k: '&td_cc'
+  l: [HOME]
+- p: [8, 34]
+  k: '&td_paste'
   l: [HOME]
 - p: [2, 34]
   k: '&td_paste'
