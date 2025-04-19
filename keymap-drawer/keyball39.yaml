@@ -41,7 +41,7 @@ layers:
   - {t: '$$mdi:backspace$$', h: NUM}
   - '&td_nav'
   GAME:
-  - '1'
+  - {t: '1', s: '!'}
   - Q
   - W
   - E
@@ -61,7 +61,7 @@ layers:
   - K
   - L
   - {t: ., h: MEDIA}
-  - Y
+  - {t: '2', s: '@'}
   - Z
   - X
   - C
@@ -74,9 +74,9 @@ layers:
   - $$mdi:keyboard-tab$$
   - '&td_keys'
   - {t: J, h: NUM}
-  - '3'
+  - {t: '3', s: '#'}
   - $$mdi:keyboard-space$$
-  - '4'
+  - {t: '4', s: $}
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
   - {t: '$$mdi:backspace$$', h: NUM}
   - '&td_game'
@@ -418,6 +418,12 @@ combos:
 - p: [18, 35]
   k: $$mdi:mouse-right-click-outline$$
   l: [HOME]
+- p: [15, 35]
+  k: '&mkp MB4'
+  l: [HOME]
+- p: [19, 35]
+  k: '&mkp MB5'
+  l: [HOME]
 - p: [30, 32]
   k: $$mdi:mouse-scroll-wheel$$
   l: [HOME]
@@ -442,11 +448,8 @@ combos:
 - p: [30, 31]
   k: {t: SIMPLE, h: toggle}
   l: [HOME, GAME]
-- p: [10, 33]
-  k: '2'
-  l: [GAME]
-- p: [10, 35]
-  k: '2'
+- p: [20, 21]
+  k: Y
   l: [GAME]
 - p: [30, 31]
   k: {t: GAME, h: toggle}
