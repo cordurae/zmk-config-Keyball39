@@ -968,20 +968,6 @@
             layers = <0>;
         };
 
-        extra_back {
-            bindings = <&kp LA(LEFT)>;
-            key-positions = <15 35>;
-            timeout-ms = <70>;
-            layers = <0>;
-        };
-
-        extra_forward {
-            bindings = <&kp LA(RIGHT)>;
-            key-positions = <19 35>;
-            timeout-ms = <70>;
-            layers = <0>;
-        };
-
         extra_COPY {
             bindings = <&td_cc>;
             key-positions = <7 34>;
