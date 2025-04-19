@@ -680,17 +680,13 @@ rect.held, rect.combo.held {
 <path d="M416,172 l74,-62" class="combo"/>
 <path d="M416,172 l-74,62" class="combo"/>
 <rect rx="6" ry="6" x="402" y="159" width="28" height="26" class="combo"/>
-<text x="416" y="172" class="combo tap">
-<tspan x="416" dy="-0.6em">&amp;mkp</tspan><tspan x="416" dy="1.2em">MB4</tspan>
-</text>
+<use href="#mdi:arrow-left-bold" xlink:href="#mdi:arrow-left-bold" x="407" y="163" height="18" width="18.0" class="combo tap glyph mdi:arrow-left-bold"/>
 </g>
 <g class="combo combopos-22">
 <path d="M528,175 l182,-64" class="combo"/>
 <path d="M528,175 l-182,64" class="combo"/>
 <rect rx="6" ry="6" x="514" y="162" width="28" height="26" class="combo"/>
-<text x="528" y="175" class="combo tap">
-<tspan x="528" dy="-0.6em">&amp;mkp</tspan><tspan x="528" dy="1.2em">MB5</tspan>
-</text>
+<use href="#mdi:arrow-right-bold" xlink:href="#mdi:arrow-right-bold" x="519" y="166" height="18" width="18.0" class="combo tap glyph mdi:arrow-right-bold"/>
 </g>
 <g class="combo combopos-23">
 <path d="M442,129 l158,-91" class="combo"/>

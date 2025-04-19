@@ -425,10 +425,10 @@ combos:
   k: Ctl+$$mdi:keyboard-tab$$
   l: [HOME]
 - p: [15, 35]
-  k: '&mkp MB4'
+  k: Alt+$$mdi:arrow-left-bold$$
   l: [HOME]
 - p: [19, 35]
-  k: '&mkp MB5'
+  k: Alt+$$mdi:arrow-right-bold$$
   l: [HOME]
 - p: [7, 34]
   k: '&td_cc'
