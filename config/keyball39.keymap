@@ -968,15 +968,15 @@
             layers = <0>;
         };
 
-        extra_MB4 {
-            bindings = <&mkp MB4>;
+        extra_back {
+            bindings = <&kp LA(LEFT)>;
             key-positions = <15 35>;
             timeout-ms = <70>;
             layers = <0>;
         };
 
-        extra_MB5 {
-            bindings = <&mkp MB5>;
+        extra_forward {
+            bindings = <&kp LA(RIGHT)>;
             key-positions = <19 35>;
             timeout-ms = <70>;
             layers = <0>;
