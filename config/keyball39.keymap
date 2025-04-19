@@ -873,6 +873,13 @@
             slow-release;
         };
 
+        extra_LCLK_3 {
+            bindings = <&mkp LCLK>;
+            key-positions = <14 34>;
+            layers = <0>;
+            slow-release;
+        };
+
         extra_RCLK {
             bindings = <&mkp RCLK>;
             key-positions = <31 32>;
@@ -898,15 +905,27 @@
             layers = <0>;
         };
 
+        extra_MB5 {
+            bindings = <&mkp MB5>;
+            key-positions = <19 35>;
+            layers = <0>;
+        };
+
         extra_COPY {
             bindings = <&td_cc>;
             key-positions = <7 34>;
             layers = <0>;
         };
 
-        extra_PASTE {
+        extra_COPY_2 {
+            bindings = <&td_cc>;
+            key-positions = <1 34>;
+            layers = <0>;
+        };
+
+        extra_PASTE_2 {
             bindings = <&td_paste>;
-            key-positions = <8 34>;
+            key-positions = <2 34>;
             layers = <0>;
         };
 
@@ -1054,8 +1073,8 @@
             label = "SCROLL";
             bindings = <
 &kp LA(ESC)   &td_cc     &td_paste  &kp LS(LA(ESC))  &trans                      &trans         &trans          &td_cc          &td_paste     &to 0
-&kp LEFT_GUI  &kp LALT   &kp LCTRL  &kp LSHFT        &trans                      &key_repeat    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
-&kp LEFT      &kp UP     &kp DOWN   &kp RIGHT        &trans                      &kp DELETE     &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
+&kp LEFT_GUI  &kp LALT   &kp LCTRL  &kp LSHFT        &mkp LCLK                   &key_repeat    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
+&LC(LG(LA(N1))) &LC(LG(LA(N2))) &LC(LG(LA(3))) &LC(LG(LA(N4))) &trans            &kp DELETE     &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
 &mkp RCLK     &mkp MCLK  &mkp LCLK  &kp ESC          &trans  &kp TAB  &kp ENTER  &kp BACKSPACE                                                &trans
             >;
         };
