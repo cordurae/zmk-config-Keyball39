@@ -216,6 +216,26 @@
             bindings = <&clear2>, <&clear>;
         };
 
+        x_home: special_home {
+            compatible = "zmk,behavior-hold-tap";
+            label = "X_HOME";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <180>;
+            quick-tap-ms = <180>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        x_end: special_end {
+            compatible = "zmk,behavior-hold-tap";
+            label = "X_END";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <180>;
+            quick-tap-ms = <180>;
+            bindings = <&kp>, <&kp>;
+        };
+
         x_ipl: special_ipad_left {
             compatible = "zmk,behavior-hold-tap";
             label = "X_IPAD_LEFT";
@@ -874,13 +894,13 @@
         };
 
         quick_home {
-            bindings = <&kp HOME>;
+            bindings = <&x_home LS(HOME) HOME>;
             key-positions = <26 34>;
             layers = <0>;
         };
 
         quick_end {
-            bindings = <&kp END>;
+            bindings = <&x_end LS(END) END>;
             key-positions = <29 34>;
             layers = <0>;
         };
