@@ -295,7 +295,7 @@
             label = "TD_KEYS";
             #binding-cells = <0>;
             tapping-term-ms = <180>;
-            bindings = <&kp M>, <&kp T>, <&kp G>, <&kp B>;
+            bindings = <&kp T>, <&kp G>, <&kp B>;
         };
 
         td_game: tap_dance_game {
@@ -836,6 +836,14 @@
             timeout-ms = <60>;
         };
 
+        sticky_ALT {
+            bindings = <&sk LEFT_ALT;
+            key-positions = <20 29>;
+            layers = <0>;
+            require-prior-idle-ms = <400>;
+            timeout-ms = <60>;
+        };
+
         vm_UNDERSCORE_DASH {
             bindings = <&sdash UNDERSCORE MINUS>;
             key-positions = <23 26>;
@@ -1052,6 +1060,19 @@
             key-positions = <20 23>;
             layers = <1>;
             timeout-ms = <60>;
+        };
+
+       game_map {
+            bindings = <&kp M>;
+            key-positions = <20 22>;
+            layers = <1>;
+            timeout-ms = <60>;
+        };
+
+       game_speak {
+            bindings = <&kp V>;
+            key-positions = <20 21>;
+            layers = <1>;
         };
 
         simple_to_game {
