@@ -61,8 +61,8 @@ layers:
   - K
   - L
   - {t: ., h: MEDIA}
-  - {t: '2', s: '@'}
   - Z
+  - $$mdi:keyboard-tab$$
   - X
   - C
   - V
@@ -71,7 +71,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, h: FUNCTION, s: '?'}
-  - $$mdi:keyboard-tab$$
+  - {t: '2', s: '@'}
   - '&td_keys'
   - {t: J, h: NUM}
   - {t: '3', s: '#'}
