@@ -176,7 +176,7 @@ layers:
   - '5'
   - '6'
   - {t: '=', s: +}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - LAYERS
   - KP 4
   - KP 5
   - KP 6
@@ -360,6 +360,46 @@ layers:
   - $$mdi:apple-keyboard-caps$$
   - $$mdi:backspace-reverse-outline$$
   - AL CONTROL PANEL
+  LAYERS:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: SCROLL, h: toggle}
+  - {t: FUNCTION, h: toggle}
+  - {t: LAYERS, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: NUM, h: toggle}
+  - {t: SYMBOL, h: toggle}
+  - {t: SNIPE, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: GAME, h: toggle}
+  - {t: SIMPLE, h: toggle}
+  - {t: MEDIA, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: HOME, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [26, 28]
   k: $$mdi:backspace-reverse-outline$$
@@ -400,17 +440,8 @@ combos:
 - p: [29, 34]
   k: {t: END, h: Sft+END}
   l: [HOME]
-- p: [16, 34]
-  k: $$mdi:arrow-left-bold$$
-  l: [HOME]
-- p: [17, 34]
-  k: $$mdi:arrow-down-bold$$
-  l: [HOME]
-- p: [18, 34]
-  k: $$mdi:arrow-up-bold$$
-  l: [HOME]
-- p: [19, 34]
-  k: $$mdi:arrow-right-bold$$
+- p: [15, 34]
+  k: '&key_repeat'
   l: [HOME]
 - p: [30, 38]
   k: '&td_globe'
