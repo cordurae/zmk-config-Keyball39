@@ -395,10 +395,10 @@ combos:
   k: CONTEXT MENU
   l: [HOME, SNIPE]
 - p: [26, 34]
-  k: HOME
+  k: {t: HOME, h: Sft+HOME}
   l: [HOME]
 - p: [29, 34]
-  k: END
+  k: {t: END, h: Sft+END}
   l: [HOME]
 - p: [30, 38]
   k: '&td_globe'

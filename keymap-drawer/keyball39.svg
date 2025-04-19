@@ -621,12 +621,14 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="400" y="175" width="28" height="26" class="combo"/>
 <a href="#HOME">
 <text x="414" y="188" class="combo tap layer-activator">HOME</text>
-</a></g>
+</a><text x="414" y="199" class="combo hold"><tspan style="font-size: 75%">Sft+HOME</tspan></text>
+</g>
 <g class="combo combopos-12">
 <path d="M498,195 l211,-31" class="combo"/>
 <path d="M498,195 l-211,31" class="combo"/>
 <rect rx="6" ry="6" x="484" y="182" width="28" height="26" class="combo"/>
 <text x="498" y="195" class="combo tap">END</text>
+<text x="498" y="206" class="combo hold"><tspan style="font-size: 86%">Sft+END</tspan></text>
 </g>
 <g class="combo combopos-13">
 <path d="M378,217 l-331,0" class="combo"/>
