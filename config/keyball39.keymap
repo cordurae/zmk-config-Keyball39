@@ -896,18 +896,21 @@
         quick_home {
             bindings = <&x_home LS(HOME) HOME>;
             key-positions = <26 34>;
+            timeout-ms = <70>;
             layers = <0>;
         };
 
         quick_end {
             bindings = <&x_end LS(END) END>;
             key-positions = <29 34>;
+            timeout-ms = <70>;
             layers = <0>;
         };
 
         quick_globe {
             bindings = <&td_globe>;
             key-positions = <30 38>;
+            timeout-ms = <70>;
             layers = <0>;
         };
 
@@ -923,6 +926,7 @@
             bindings = <&mkp LCLK>;
             key-positions = <14 34>;
             layers = <0>;
+            timeout-ms = <70>;
             slow-release;
         };
 
@@ -930,6 +934,7 @@
             bindings = <&mkp LCLK>;
             key-positions = <14 35>;
             layers = <0>;
+            timeout-ms = <70>;
             slow-release;
         };
 
@@ -943,6 +948,7 @@
         extra_RCLK {
             bindings = <&mkp RCLK>;
             key-positions = <31 32>;
+            timeout-ms = <70>;
             layers = <0>;
         };
 
@@ -950,54 +956,63 @@
             bindings = <&mkp RCLK>;
             key-positions = <18 35>;
             layers = <0>;
+            timeout-ms = <70>;
             slow-release;
         };
 
         extra_MCLK {
             bindings = <&mkp MCLK>;
             key-positions = <30 32>;
+            timeout-ms = <70>;
             layers = <0>;
         };
 
         quick_tab {
             bindings = <&kp LC(TAB)>;
             key-positions = <17 35>;
+            timeout-ms = <70>;
             layers = <0>;
         };
 
         extra_MB4 {
             bindings = <&mkp MB4>;
             key-positions = <15 35>;
+            timeout-ms = <70>;
             layers = <0>;
         };
 
         extra_MB5 {
             bindings = <&mkp MB5>;
             key-positions = <19 35>;
+            timeout-ms = <70>;
             layers = <0>;
         };
 
         extra_COPY {
             bindings = <&td_cc>;
             key-positions = <1 34>;
+            timeout-ms = <70>;
             layers = <0>;
         };
 
         extra_COPY_2 {
             bindings = <&td_cc>;
             key-positions = <7 34>;
+            timeout-ms = <70>;
             layers = <0>;
         };
 
         extra_PASTE {
             bindings = <&td_paste>;
             key-positions = <2 34>;
+            timeout-ms = <70>;
             layers = <0>;
         };
 
         extra_PASTE_2 {
             bindings = <&td_paste>;
             key-positions = <8 34>;
+            timeout-ms = <70>;
             layers = <0>;
         };
 
