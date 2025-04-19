@@ -301,10 +301,10 @@ layers:
   - {t: '$$mdi:arrow-down-bold$$', type: held alternate}
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: Ctl+Gui+Alt+1, s: Ctl+Gui+Alt+!}
-  - {t: Ctl+Gui+Alt+2, s: Ctl+Gui+Alt+@}
-  - Ctl+Gui+Alt+3
-  - {t: Ctl+Gui+Alt+4, s: Ctl+Gui+Alt+$}
+  - '&tdu1'
+  - '&tdu2'
+  - '&tdu3'
+  - '&tdu4'
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:backspace-reverse-outline$$
   - HOME
