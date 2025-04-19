@@ -522,7 +522,7 @@ combos:
   k: '&td_globe'
   l: [HOME]
 - p: [32, 33]
-  k: '&ipad_home'
+  k: '&ipad_tools'
   l: [HOME]
 - p: [21, 28]
   k: $$mdi:alpha-w-box$$
