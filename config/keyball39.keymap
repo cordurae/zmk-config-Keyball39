@@ -832,7 +832,7 @@
             bindings = <&sk LCTRL>;
             key-positions = <21 22 27 28>;
             layers = <0>;
-            require-prior-idle-ms = <500>;
+            require-prior-idle-ms = <400>;
             timeout-ms = <60>;
         };
 
