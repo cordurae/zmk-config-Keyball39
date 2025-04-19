@@ -32,14 +32,14 @@ layers:
   - {t: ., h: SIMPLE, s: '>'}
   - {t: /, h: FUNCTION, s: '?'}
   - SCROLL
-  - '&td_globe'
+  - SCROLL
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-esc$$', h: MEDIA}
   - {t: '$$mdi:keyboard-space$$', h: SCROLL}
   - {t: '$$mdi:keyboard-tab$$', h: SNIPE}
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
   - {t: '$$mdi:backspace$$', h: NUM}
-  - '&td_nav'
+  - '&td_globe'
   GAME:
   - {t: '1', s: '!'}
   - Q
@@ -176,7 +176,7 @@ layers:
   - '5'
   - '6'
   - {t: '=', s: +}
-  - LAYERS
+  - {t: LAYERS, h: '$$mdi:gesture-tap-hold$$'}
   - KP 4
   - KP 5
   - KP 6
@@ -219,8 +219,8 @@ layers:
   - '&highlight'
   - '&td_brackets'
   - '&td_quotes'
-  - {t: SCROLL, h: toggle}
-  - {t: SNIPE, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '~'
   - '!'
   - '@'
@@ -250,7 +250,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&td_cc'
   - '&td_paste'
-  - {t: HOME, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
@@ -261,8 +261,8 @@ layers:
   - {t: '$$mdi:mouse-scroll-wheel$$', h: SCROLL}
   - $$mdi:mouse-right-click-outline$$
   - '&mkp MB5'
-  - {t: GAME, h: toggle}
-  - {t: SIMPLE, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -290,7 +290,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&td_cc'
   - '&td_paste'
-  - {t: HOME, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
@@ -312,7 +312,7 @@ layers:
   - {t: PgUp, type: held alternate}
   - END
   - {t: '$$mdi:mouse-right-click-outline$$', type: held alternate}
-  - $$mdi:mouse-scroll-wheel$$
+  - {t: '$$mdi:mouse-scroll-wheel$$', type: held alternate}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:keyboard-esc$$
   - {type: held alternate}
@@ -377,10 +377,10 @@ layers:
   - {t: SNIPE, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: RIGHT GUI, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: GAME, h: toggle}
   - {t: SIMPLE, h: toggle}
@@ -458,10 +458,10 @@ combos:
 - p: [14, 34]
   k: $$mdi:mouse-left-click-outline$$
   l: [HOME]
-- p: [31, 32]
+- p: [18, 35]
   k: $$mdi:mouse-right-click-outline$$
   l: [HOME]
-- p: [18, 35]
+- p: [30, 32]
   k: $$mdi:mouse-right-click-outline$$
   l: [HOME]
 - p: [15, 35]
@@ -469,9 +469,6 @@ combos:
   l: [HOME]
 - p: [19, 35]
   k: '&mkp MB5'
-  l: [HOME]
-- p: [30, 32]
-  k: $$mdi:mouse-scroll-wheel$$
   l: [HOME]
 - p: [17, 35]
   k: Ctl+$$mdi:keyboard-tab$$
@@ -490,7 +487,7 @@ combos:
   l: [HOME]
 - p: [31, 32]
   k: {t: HOME, h: toggle}
-  l: [GAME, SIMPLE]
+  l: [HOME, GAME, SIMPLE, MEDIA, NUM, SYMBOL, SNIPE, SCROLL, FUNCTION, LAYERS]
 - p: [30, 32]
   k: {t: SIMPLE, h: '$$mdi:gesture-tap-hold$$'}
   l: [GAME]
