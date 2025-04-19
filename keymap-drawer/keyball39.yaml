@@ -515,9 +515,6 @@ combos:
 - p: [20, 22]
   k: M
   l: [GAME]
-- p: [20, 21]
-  k: V
-  l: [GAME]
 - p: [30, 31]
   k: {t: GAME, h: toggle}
   l: [SIMPLE]

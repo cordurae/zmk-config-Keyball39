@@ -1063,10 +1063,6 @@ rect.held, rect.combo.held {
 <text x="84" y="151" class="combo tap">M</text>
 </g>
 <g class="combo combopos-9">
-<rect rx="6" ry="6" x="42" y="141" width="28" height="26" class="combo"/>
-<text x="56" y="154" class="combo tap">V</text>
-</g>
-<g class="combo combopos-10">
 <path d="M512,165 l-6,-48" class="combo"/>
 <path d="M512,165 l6,48" class="combo"/>
 <rect rx="6" ry="6" x="498" y="152" width="28" height="26" class="combo"/>
