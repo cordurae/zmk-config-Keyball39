@@ -61,17 +61,17 @@ layers:
   - K
   - L
   - {t: ., h: MEDIA}
-  - M
+  - Y
   - Z
   - X
   - C
-  - V
+  - {t: '2', s: '@'}
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, h: FUNCTION, s: '?'}
-  - {t: '2', s: '@'}
+  - $$mdi:keyboard-tab$$
   - '&td_keys'
   - {t: J, h: NUM}
   - {t: '3', s: '#'}
@@ -501,7 +501,7 @@ combos:
   k: {t: SIMPLE, h: toggle}
   l: [HOME, GAME]
 - p: [20, 21]
-  k: Y
+  k: V
   l: [GAME]
 - p: [20, 30]
   k: $$mdi:keyboard-tab$$
