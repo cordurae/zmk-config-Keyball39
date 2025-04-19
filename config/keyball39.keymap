@@ -963,6 +963,20 @@
             slow-release;
         };
 
+        extra_MB4 {
+            bindings = <&mkp MB4>;
+            key-positions = <15 35>;
+            timeout-ms = <70>;
+            layers = <0>;
+        };
+
+        extra_MB5 {
+            bindings = <&mkp MB5>;
+            key-positions = <19 35>;
+            timeout-ms = <70>;
+            layers = <0>;
+        };
+
         extra_MCLK {
             bindings = <&mkp MCLK>;
             key-positions = <30 32>;
@@ -1018,16 +1032,9 @@
             layers = <0 1>;
         };
 
-       game_second {
-            bindings = <&kp NUMBER_2>;
-            key-positions = <10 33>;
-            layers = <1>;
-            timeout-ms = <80>;
-        };
-
-       game_second_2 {
-            bindings = <&kp NUMBER_2>;
-            key-positions = <10 35>;
+       game_inspect {
+            bindings = <&kp Y>;
+            key-positions = <20 21>;
             layers = <1>;
             timeout-ms = <80>;
         };
@@ -1074,10 +1081,10 @@
 
         gaming_layer {
             bindings = <
-&kp NUMBER_1    &kp Q       &kp W    &kp E         &kp R                                 &kp Y            &kp U  &kp I      &kp O    &kp P
+&kp N1          &kp Q       &kp W    &kp E         &kp R                                 &kp Y            &kp U  &kp I      &kp O    &kp P
 &kp LEFT_SHIFT  &kp A       &kp S    &kp D         &kp F                                 &kp H            &lt 3 J &kp K     &kp L    &lt 3 APOS
-&kp Y           &kp Z       &kp X    &kp C         &kp V                                 &kp N            &kp M  &kp COMMA  &kp DOT  &lt 8 SLASH
-&kp TAB         &td_keys    &xlt 4 J &kp NUMBER_3  &kp SPACE  &kp NUMBER_4  &lt 5 ENTER  &lt 4 BACKSPACE                             &td_game
+&kp N2          &kp Z       &kp X    &kp C         &kp V                                 &kp N            &kp M  &kp COMMA  &kp DOT  &lt 8 SLASH
+&kp TAB         &td_keys    &xlt 4 J &kp N3        &kp SPACE  &kp N4  &lt 5 ENTER        &lt 4 BACKSPACE                             &td_game
             >;
 
             label = "GAME";
@@ -1088,7 +1095,7 @@
 &kp Q           &kp W         &kp E      &kp R       &kp T                            &kp Y            &kp U  &kp I      &kp O    &kp P
 &kp A           &kp S         &kp D      &kp F       &kp G                            &kp H            &kp J  &kp K      &kp L    &kp APOS
 &kp Z           &kp X         &kp C      &kp V       &kp B                            &kp N            &kp M  &kp COMMA  &kp DOT  &kp FSLH
-&kp LEFT_SHIFT  &kp LEFT_GUI  &kp LCTRL  &lt 3 ESC   &lt 7 SPACE  &lt 6 TAB  &lt 5 ENTER  &lt 4 BACKSPACE                             &kp LEFT_SHIFT
+&kp LEFT_SHIFT  &kp LEFT_GUI  &kp LCTRL  &lt 3 ESC   &lt 7 SPACE  &lt 6 TAB  &lt 5 ENTER  &lt 4 BACKSPACE                         &kp LEFT_SHIFT
             >;
 
             label = "SIMPLE";
