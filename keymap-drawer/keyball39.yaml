@@ -403,6 +403,9 @@ combos:
 - p: [14, 34]
   k: $$mdi:mouse-left-click-outline$$
   l: [HOME]
+- p: [14, 35]
+  k: $$mdi:mouse-left-click-outline$$
+  l: [HOME]
 - p: [31, 32]
   k: $$mdi:mouse-right-click-outline$$
   l: [HOME]
