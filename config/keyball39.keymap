@@ -138,6 +138,38 @@
                 <&to 0>;
         };
 
+        tdu1: tap_dance_ultrawide_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_ULTRAWIDE_1";
+            #binding-cells = <0>;
+            tapping-term-ms = <180>;
+            bindings = <&kp LC(LG(LA(N1)))>;
+        };
+
+        tdu2: tap_dance_ultrawide_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_ULTRAWIDE_2";
+            #binding-cells = <0>;
+            tapping-term-ms = <180>;
+            bindings = <&kp LC(LG(LA(N2)))>;
+        };
+
+        tdu3: tap_dance_ultrawide_3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_ULTRAWIDE_3";
+            #binding-cells = <0>;
+            tapping-term-ms = <180>;
+            bindings = <&kp LC(LG(LA(N3)))>;
+        };
+
+        tdu4: tap_dance_ultrawide_4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_ULTRAWIDE_4";
+            #binding-cells = <0>;
+            tapping-term-ms = <180>;
+            bindings = <&kp LC(LG(LA(N4)))>;
+        };
+
         xquotes: special_quotes {
             compatible = "zmk,behavior-hold-tap";
             label = "X_QUOTES";
@@ -1092,7 +1124,7 @@
             bindings = <
 &kp LA(ESC)   &td_cc     &td_paste  &kp LS(LA(ESC))  &trans                      &trans         &trans          &td_cc          &td_paste     &to 0
 &kp LEFT_GUI  &kp LALT   &kp LCTRL  &kp LSHFT        &mkp LCLK                   &key_repeat    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
-&kp LC(LG(LA(N1))) &kp LC(LG(LA(N2))) &kp LC(LG(LA(3))) &kp LC(LG(LA(N4))) &trans &kp DELETE    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
+&tdu1         &tdu2      &tdu3      &tdu4            &trans                      &kp DELETE     &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
 &mkp RCLK     &mkp MCLK  &mkp LCLK  &kp ESC          &trans  &kp TAB  &kp ENTER  &kp BACKSPACE                                                &trans
             >;
         };
