@@ -283,7 +283,7 @@
             bindings =
                 <&ipad_home>,
                 <&ipad_switcher>,
-                <&ipad_library>,,
+                <&ipad_library>,
                 <&ipad_siri>,
                 <&ipad_dock>;
         };
@@ -1119,6 +1119,14 @@
             bindings = <&ipad_tools>;
             key-positions = <32 33>;
             timeout-ms = <70>;
+            layers = <0>;
+        };
+
+        quick_ipad_tools_2 {
+            bindings = <&ipad_tools>;
+            key-positions = <28 29>;
+            timeout-ms = <70>;
+            require-prior-idle-ms = <400>;
             layers = <0>;
         };
 
