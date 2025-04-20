@@ -39,7 +39,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: SNIPE}
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
   - {t: '$$mdi:backspace$$', h: NUM}
-  - '&td_globe'
+  - {t: SCROLL, h: toggle}
   GAME:
   - {t: '1', s: '!'}
   - Q
@@ -159,7 +159,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - $$mdi:volume-off$$
   - PLAY PAUSE
-  - {t: HOME, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   NUM:
   - {t: '[', s: '{'}
   - '7'
@@ -231,9 +231,9 @@ layers:
   - '&trademark'
   - {t: '&bullet', type: held alternate}
   - '&filter'
-  - {t: '$$mdi:transfer$$', type: trans}
   - '&ipad_left'
   - '&ipad_right'
+  - '&ipad_tools'
   - (
   - )
   - _
@@ -319,7 +319,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', type: held alternate}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: HOME, h: toggle}
   FUNCTION:
   - F12
   - F7
@@ -488,10 +488,16 @@ combos:
 - p: [7, 34]
   k: '&td_cc'
   l: [HOME]
+- p: [7, 35]
+  k: '&td_cc'
+  l: [HOME]
 - p: [1, 34]
   k: '&td_cc'
   l: [HOME]
 - p: [8, 34]
+  k: '&td_paste'
+  l: [HOME]
+- p: [8, 35]
   k: '&td_paste'
   l: [HOME]
 - p: [2, 34]
