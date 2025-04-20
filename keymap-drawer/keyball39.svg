@@ -790,18 +790,22 @@ rect.held, rect.combo.held {
 <text x="175" y="210" class="combo tap"><tspan style="font-size: 60%">&amp;ipad_too…</tspan></text>
 </g>
 <g class="combo combopos-38">
+<rect rx="6" ry="6" x="686" y="141" width="28" height="26" class="combo"/>
+<text x="700" y="154" class="combo tap"><tspan style="font-size: 60%">&amp;ipad_too…</tspan></text>
+</g>
+<g class="combo combopos-39">
 <path d="M378,147 l-275,0" class="combo"/>
 <path d="M378,147 l275,0" class="combo"/>
 <rect rx="6" ry="6" x="364" y="134" width="28" height="26" class="combo"/>
 <use href="#mdi:alpha-w-box" xlink:href="#mdi:alpha-w-box" x="369" y="138" height="18" width="18.0" class="combo tap glyph mdi:alpha-w-box"/>
 </g>
-<g class="combo combopos-39">
+<g class="combo combopos-40">
 <path d="M378,140 l-219,0" class="combo"/>
 <path d="M378,140 l219,0" class="combo"/>
 <rect rx="6" ry="6" x="364" y="127" width="28" height="26" class="combo"/>
 <use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="369" y="131" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-caps"/>
 </g>
-<g class="combo combopos-40">
+<g class="combo combopos-41">
 <path d="M512,165 l-6,-48" class="combo"/>
 <path d="M512,165 l6,48" class="combo"/>
 <rect rx="6" ry="6" x="498" y="152" width="28" height="26" class="combo"/>
