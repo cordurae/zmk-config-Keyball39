@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: A, h: LGUI}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
@@ -20,7 +20,7 @@ layers:
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '''', h: RIGHT GUI, s: '"'}
+  - {t: '''', h: RGUI, s: '"'}
   - Z
   - X
   - C
@@ -112,7 +112,7 @@ layers:
   - {t: ., s: '>', type: held}
   - {t: /, s: '?'}
   - {t: '$$mdi:apple-keyboard-shift$$', type: held alternate}
-  - $$mdi:apple-keyboard-command$$
+  - LGUI
   - {t: '$$mdi:apple-keyboard-control$$', type: held alternate}
   - {t: '$$mdi:keyboard-esc$$', h: MEDIA}
   - {t: '$$mdi:keyboard-space$$', h: SCROLL}
@@ -152,8 +152,8 @@ layers:
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:progress-download$$
-  - '&ipad_slide_over'
-  - '&ipad_tools'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-esc$$', type: held}
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-tab$$
@@ -231,9 +231,9 @@ layers:
   - '&trademark'
   - {t: '&bullet', type: held alternate}
   - '&filter'
+  - '&ipad_slide_over'
   - '&ipad_left'
   - '&ipad_right'
-  - '&ipad_tools'
   - (
   - )
   - _
@@ -251,7 +251,7 @@ layers:
   - '&td_cc'
   - '&td_paste'
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-command$$
+  - LGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
@@ -266,7 +266,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-left$$
   - $$mdi:pan-down$$
   - {t: '$$mdi:pan-up$$', type: held alternate}
@@ -290,8 +290,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&td_cc'
   - '&td_paste'
-  - '&td_globe'
-  - $$mdi:apple-keyboard-command$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - LGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
@@ -306,7 +306,7 @@ layers:
   - '&tdu3'
   - '&tdu4'
   - '&tdu5'
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - HOME
   - {t: PgDn, type: held}
   - {t: PgUp, type: held alternate}
@@ -340,7 +340,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - RIGHT GUI
+  - RGUI
   - F10
   - F1
   - F2
@@ -380,7 +380,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: RIGHT GUI, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: RGUI, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: GAME, h: toggle}
   - {t: SIMPLE, h: toggle}
@@ -527,11 +527,11 @@ combos:
 - p: [20, 21]
   k: '&td_globe'
   l: [HOME]
-- p: [32, 33]
-  k: '&ipad_tools'
-  l: [HOME]
 - p: [28, 29]
   k: '&ipad_tools'
+  l: [HOME]
+- p: [20, 21, 28, 29]
+  k: '&td_globe_2'
   l: [HOME]
 - p: [21, 28]
   k: $$mdi:alpha-w-box$$
