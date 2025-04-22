@@ -827,7 +827,7 @@
 
         sticky_CTRL {
             bindings = <&sk LCTRL>;
-            key-positions = <21 22 27 28>;
+            key-positions = <0 9>;
             layers = <0>;
             require-prior-idle-ms = <400>;
             timeout-ms = <60>;
@@ -1010,14 +1010,6 @@
             bindings = <&mkp MB5>;
             key-positions = <19 35>;
             timeout-ms = <70>;
-            layers = <0>;
-        };
-
-        quick_tab {
-            bindings = <&kp LC(TAB)>;
-            key-positions = <17 35>;
-            timeout-ms = <70>;
-            require-prior-idle-ms = <200>;
             layers = <0>;
         };
 
