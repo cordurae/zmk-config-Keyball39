@@ -410,7 +410,7 @@ combos:
 - p: [21, 22]
   k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [HOME]
-- p: [21, 22, 27, 28]
+- p: [0, 9]
   k: {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [HOME]
 - p: [20, 29]
@@ -481,9 +481,6 @@ combos:
   l: [HOME]
 - p: [19, 35]
   k: '&mkp MB5'
-  l: [HOME]
-- p: [17, 35]
-  k: Ctl+$$mdi:keyboard-tab$$
   l: [HOME]
 - p: [7, 34]
   k: '&td_cc'
