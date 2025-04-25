@@ -977,13 +977,6 @@
             slow-release;
         };
 
-        extra_LCLK_4 {
-            bindings = <&mkp LCLK>;
-            key-positions = <14 34>;
-            layers = <0>;
-            slow-release;
-        };
-
         extra_RCLK {
             bindings = <&mkp RCLK>;
             key-positions = <18 35>;
