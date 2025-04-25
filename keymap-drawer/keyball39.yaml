@@ -467,9 +467,6 @@ combos:
 - p: [13, 35]
   k: $$mdi:mouse-left-click-outline$$
   l: [HOME]
-- p: [14, 34]
-  k: $$mdi:mouse-left-click-outline$$
-  l: [HOME]
 - p: [18, 35]
   k: $$mdi:mouse-right-click-outline$$
   l: [HOME]
