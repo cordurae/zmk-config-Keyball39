@@ -311,7 +311,7 @@ layers:
   - {t: PgDn, type: held}
   - {t: PgUp, type: held alternate}
   - END
-  - $$mdi:mouse-right-click-outline$$
+  - {t: HOME, h: toggle}
   - {t: '$$mdi:mouse-scroll-wheel$$', type: held alternate}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:keyboard-esc$$
