@@ -1233,7 +1233,7 @@
 &kp LA(ESC)   &td_cc     &td_paste  &kp LS(LA(ESC))  &trans                      &trans         &trans          &td_cc          &td_paste     &trans
 &kp LGUI      &kp LALT   &kp LCTRL  &kp LSHFT        &mkp LCLK                   &key_repeat    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
 &tdu1         &tdu2      &tdu3      &tdu4            &tdu5                       &trans         &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
-&mkp RCLK     &mkp MCLK  &mkp LCLK  &kp ESC          &trans  &kp TAB  &kp ENTER  &kp BACKSPACE                                                &to 0
+&to 0         &mkp MCLK  &mkp LCLK  &kp ESC          &trans  &kp TAB  &kp ENTER  &kp BACKSPACE                                                &to 0
             >;
         };
 
