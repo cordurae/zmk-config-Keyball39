@@ -31,7 +31,7 @@ layers:
   - {t: ',', h: SCROLL, s: <}
   - {t: ., h: SIMPLE, s: '>'}
   - {t: /, h: FUNCTION, s: '?'}
-  - SCROLL
+  - {t: SCROLL, h: toggle}
   - SCROLL
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-esc$$', h: MEDIA}
@@ -144,7 +144,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&t_mute'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -311,7 +311,7 @@ layers:
   - {t: PgDn, type: held}
   - {t: PgUp, type: held alternate}
   - END
-  - {t: '$$mdi:mouse-right-click-outline$$', type: held alternate}
+  - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:mouse-scroll-wheel$$', type: held alternate}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:keyboard-esc$$
@@ -533,6 +533,9 @@ combos:
 - p: [22, 27]
   k: $$mdi:apple-keyboard-caps$$
   l: [HOME]
+- p: [24, 34]
+  k: '&t_mute'
+  l: [HOME, MEDIA]
 - p: [15, 37]
   k: {t: LAYERS, h: '$$mdi:gesture-tap-hold$$'}
   l: [HOME, GAME, SIMPLE, MEDIA, NUM, SYMBOL, SNIPE, SCROLL, FUNCTION, LAYERS]
