@@ -796,7 +796,7 @@
         Estar: Estar {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N8 &kp N3 &kp LS(A) &kp LS(A) &kp AMPS &kp Y &kp STAR &kp F>;
+            bindings = <&kp N8 &kp N3 &kp LS(A) &kp LS(A) &kp AMPS &kp Y &kp STAR &kp U>;
             label = "ESTAR";
         };
     };
@@ -1010,7 +1010,7 @@
             bindings = <&td_cc>;
             key-positions = <7 34>;
             timeout-ms = <70>;
-            require-prior-idle-ms = <500>;
+            require-prior-idle-ms = <300>;
             layers = <0>;
         };
 
@@ -1026,7 +1026,7 @@
             bindings = <&td_cc>;
             key-positions = <1 34>;
             timeout-ms = <70>;
-            require-prior-idle-ms = <500>;
+            require-prior-idle-ms = <300>;
             layers = <0>;
         };
 
@@ -1034,7 +1034,7 @@
             bindings = <&td_paste>;
             key-positions = <8 34>;
             timeout-ms = <70>;
-            require-prior-idle-ms = <500>;
+            require-prior-idle-ms = <300>;
             layers = <0>;
         };
 
@@ -1050,7 +1050,7 @@
             bindings = <&td_paste>;
             key-positions = <2 34>;
             timeout-ms = <70>;
-            require-prior-idle-ms = <500>;
+            require-prior-idle-ms = <300>;
             layers = <0>;
         };
 
@@ -1138,7 +1138,7 @@
 
         quick_mute {
             bindings = <&t_mute>;
-            key-positions = <24 34>;
+            key-positions = <23 33>;
             layers = <0 3>;
             require-prior-idle-ms = <500>;
         };
