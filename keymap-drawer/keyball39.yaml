@@ -533,7 +533,7 @@ combos:
 - p: [22, 27]
   k: $$mdi:apple-keyboard-caps$$
   l: [HOME]
-- p: [24, 34]
+- p: [23, 33]
   k: '&t_mute'
   l: [HOME, MEDIA]
 - p: [15, 37]
