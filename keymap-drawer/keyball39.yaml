@@ -61,11 +61,11 @@ layers:
   - K
   - L
   - {t: ., h: MEDIA}
+  - Y
   - Z
-  - V
   - X
   - C
-  - {t: '2', s: '@'}
+  - V
   - N
   - M
   - {t: ',', s: <}
@@ -73,7 +73,7 @@ layers:
   - {t: /, h: FUNCTION, s: '?'}
   - $$mdi:keyboard-tab$$
   - '&td_keys'
-  - {t: J, h: NUM}
+  - {t: '2', h: NUM, s: '@'}
   - {t: '3', s: '#'}
   - $$mdi:keyboard-space$$
   - {t: '4', s: $}
@@ -446,9 +446,6 @@ combos:
 - p: [10, 23]
   k: {t: V, h: '$$mdi:apple-keyboard-command$$'}
   l: [HOME]
-- p: [10, 28]
-  k: Gui+.
-  l: [HOME]
 - p: [26, 34]
   k: {t: HOME, h: Sft+HOME}
   l: [HOME]
@@ -497,9 +494,6 @@ combos:
 - p: [30, 31]
   k: {t: SIMPLE, h: toggle}
   l: [HOME, GAME]
-- p: [20, 23]
-  k: Y
-  l: [GAME]
 - p: [20, 22]
   k: M
   l: [GAME]
