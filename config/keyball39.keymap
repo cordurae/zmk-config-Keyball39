@@ -299,7 +299,7 @@
             label = "TD_KEYS";
             #binding-cells = <0>;
             tapping-term-ms = <180>;
-            bindings = <&kp T>, <&kp G>, <&kp B>;
+            bindings = <&kp J>, <&kp T>, <&kp G>, <&kp B>;
         };
 
         td_game: tap_dance_game {
@@ -922,14 +922,6 @@
             timeout-ms = <60>;
         };
 
-        quick_emojis {
-            bindings = <&kp LG(DOT)>;
-            key-positions = <10 28>;
-            layers = <0>;
-            require-prior-idle-ms = <400>;
-            timeout-ms = <60>;
-        };
-
         quick_home {
             bindings = <&x_home LS(HOME) HOME>;
             key-positions = <26 34>;
@@ -1044,13 +1036,6 @@
             layers = <0 1>;
         };
 
-       game_inspect {
-            bindings = <&kp Y>;
-            key-positions = <20 23>;
-            layers = <1>;
-            timeout-ms = <60>;
-        };
-
        game_map {
             bindings = <&kp M>;
             key-positions = <20 22>;
@@ -1135,8 +1120,8 @@
             bindings = <
 &kp N1          &kp Q       &kp W    &kp E         &kp R                                 &kp Y            &kp U  &kp I      &kp O    &kp P
 &kp LEFT_SHIFT  &kp A       &kp S    &kp D         &kp F                                 &kp H            &lt 3 J &kp K     &kp L    &lt 3 APOS
-&kp Z           &kp V       &kp X    &kp C         &kp N2                                &kp N            &kp M  &kp COMMA  &kp DOT  &lt 8 SLASH
-&kp TAB         &td_keys    &xlt 4 J &kp N3        &kp SPACE  &kp N4  &lt 5 ENTER        &lt 4 BACKSPACE                             &td_game
+&kp Y           &kp Z       &kp X    &kp C         &kp V                                 &kp N            &kp M  &kp COMMA  &kp DOT  &lt 8 SLASH
+&kp TAB         &td_keys    &xlt 4 N2 &kp N3       &kp SPACE  &kp N4  &lt 5 ENTER        &lt 4 BACKSPACE                             &td_game
             >;
 
             label = "GAME";
