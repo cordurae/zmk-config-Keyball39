@@ -492,11 +492,11 @@ combos:
   k: $$mdi:keyboard-esc$$
   l: [GAME]
 - p: [30, 31]
-  k: {t: SIMPLE, h: toggle}
+  k: {t: GAME, h: toggle}
   l: [HOME]
 - p: [30, 31]
   k: {t: HOME, h: toggle}
-  l: [SIMPLE]
+  l: [GAME]
 - p: [20, 22]
   k: M
   l: [GAME]
