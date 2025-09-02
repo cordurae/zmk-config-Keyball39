@@ -1031,7 +1031,7 @@
         };
 
         home_to_game {
-            bindings = <&to 2>;
+            bindings = <&to 1>;
             key-positions = <30 31>;
             layers = <0>;
         };
@@ -1039,7 +1039,7 @@
         game_to_home {
             bindings = <&to 0>;
             key-positions = <30 31>;
-            layers = <2>;
+            layers = <1>;
         };
 
        game_map {
