@@ -493,13 +493,13 @@ combos:
   l: [GAME]
 - p: [30, 31]
   k: {t: SIMPLE, h: toggle}
-  l: [HOME, GAME]
+  l: [HOME]
+- p: [30, 31]
+  k: {t: HOME, h: toggle}
+  l: [SIMPLE]
 - p: [20, 22]
   k: M
   l: [GAME]
-- p: [30, 31]
-  k: {t: GAME, h: toggle}
-  l: [SIMPLE]
 - p: [20, 21]
   k: '&td_globe'
   l: [HOME]
