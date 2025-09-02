@@ -307,7 +307,7 @@
             label = "TD_GAME";
             #binding-cells = <0>;
             tapping-term-ms = <180>;
-            bindings = <&kp LA(Z)>, <&kp LA(F1)>, <&kp LA(F9)>, <&kp LS(LA(F1))>, <&kp LA(R)>;
+            bindings = <&kp LA(F1)>, <&kp LS(LA(F1))>, <&kp LA(Z)>, <&kp LA(F9)>, <&kp LA(R)>;
         };
     };
 
@@ -1030,10 +1030,16 @@
             layers = <1>;
         };
 
-        game_to_simple {
+        home_to_game {
             bindings = <&to 2>;
             key-positions = <30 31>;
-            layers = <0 1>;
+            layers = <0>;
+        };
+
+        game_to_home {
+            bindings = <&to 0>;
+            key-positions = <30 31>;
+            layers = <2>;
         };
 
        game_map {
@@ -1041,12 +1047,6 @@
             key-positions = <20 22>;
             layers = <1>;
             timeout-ms = <60>;
-        };
-
-        simple_to_game {
-            bindings = <&to 1>;
-            key-positions = <30 31>;
-            layers = <2>;
         };
 
         quick_globe {
