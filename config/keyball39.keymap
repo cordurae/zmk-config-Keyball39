@@ -768,7 +768,7 @@
         sen: sen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp S &kp R &kp O &kp G &kp E &kp N2 &kp N2 &kp LS(C) &kp EXCL &kp RET>;
+            bindings = <&kp S &kp R &kp O &kp G &kp E &kp N2 &kp N2 &kp LS(C) &kp F &kp RET>;
             label = "SEN";
         };
 
