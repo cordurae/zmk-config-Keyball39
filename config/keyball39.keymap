@@ -226,16 +226,6 @@
             bindings = <&clear2>, <&clear>;
         };
 
-        x_home: special_home {
-            compatible = "zmk,behavior-hold-tap";
-            label = "X_HOME";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <100>;
-            quick-tap-ms = <180>;
-            bindings = <&kp>, <&kp>;
-        };
-
         x_end: special_end {
             compatible = "zmk,behavior-hold-tap";
             label = "X_END";
@@ -429,43 +419,6 @@
                 <&kp ESCAPE>;
 
             label = "clear";
-        };
-
-        clear2: clear2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            tap-ms = <30>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_tap>,
-                <&kp R>,
-                <&macro_release>,
-                <&kp LGUI>,
-                <&macro_wait_time 200>,
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_tap>,
-                <&kp V>,
-                <&macro_release>,
-                <&kp LGUI>,
-                <&macro_wait_time 300>,
-                <&macro_tap>,
-                <&kp TAB>,
-                <&macro_tap>,
-                <&kp SPACE>,
-                <&macro_tap>,
-                <&kp DOWN>,
-                <&macro_tap>,
-                <&kp DOWN>,
-                <&macro_tap>,
-                <&kp SPACE>,
-                <&macro_tap>,
-                <&kp ESCAPE>,
-                <&macro_tap>,
-                <&kp ESCAPE>;
-
-            label = "clear2";
         };
 
         spaste: spaste {
@@ -796,7 +749,7 @@
         Estar: Estar {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N8 &kp N3 &kp LS(A) &kp LS(A) &kp AMPS &kp Y &kp STAR &kp Q>;
+            bindings = <&kp N8 &kp N3 &kp LS(A) &kp LS(A) &kp AMPS &kp Y &kp STAR &kp EXCL>;
             label = "ESTAR";
         };
     };
@@ -1163,7 +1116,7 @@
             bindings = <
 &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_BRACKET      &kp RIGHT_BRACE                                &user       &sen          &Estar      &heart   &wife
 &kp COLON       &kp DOLLAR     &kp PERCENT   &kp CARET             &kp PLUS                                       &highlight  &td_brackets  &td_quotes  &trans   &trans
-&kp TILDE       &kp EXCL       &kp AT        &kp HASH              &kp PIPE                                       &xclear 0 0 &emdash       &trademark  &bullet  &filter
+&kp TILDE       &kp EXCL       &kp AT        &kp HASH              &kp PIPE                                       &clear      &emdash       &trademark  &bullet  &filter
 &ipad_slide_over &ipad_left    &ipad_right   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &trans  &trans                                         &mapdoc
             >;
         };
