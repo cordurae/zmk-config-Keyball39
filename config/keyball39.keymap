@@ -216,14 +216,14 @@
             bindings = <&xquotes 0 0>, <&lessgreaterthan>;
         };
 
-        xclear: special_clear {
+        x_home: special_home {
             compatible = "zmk,behavior-hold-tap";
-            label = "X_CLEAR";
+            label = "X_HOME";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <70>;
-            quick-tap-ms = <120>;
-            bindings = <&clear2>, <&clear>;
+            tapping-term-ms = <100>;
+            quick-tap-ms = <180>;
+            bindings = <&kp>, <&kp>;
         };
 
         x_end: special_end {
