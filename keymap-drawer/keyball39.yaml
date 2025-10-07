@@ -447,7 +447,7 @@ combos:
   k: {t: V, h: '$$mdi:apple-keyboard-command$$'}
   l: [HOME]
 - p: [26, 34]
-  k: '&x_home LS(HOME) HOME'
+  k: {t: HOME, h: Sft+HOME}
   l: [HOME]
 - p: [29, 34]
   k: {t: END, h: Sft+END}
