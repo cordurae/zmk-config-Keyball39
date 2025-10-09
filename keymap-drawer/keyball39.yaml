@@ -31,7 +31,7 @@ layers:
   - {t: ',', h: SCROLL, s: <}
   - {t: ., h: SIMPLE, s: '>'}
   - {t: /, h: FUNCTION, s: '?'}
-  - {t: SCROLL, h: toggle}
+  - Alt+$$mdi:keyboard-tab$$
   - SCROLL
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-esc$$', h: MEDIA}
@@ -128,9 +128,9 @@ layers:
   - {t: BT DISC, h: '4'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:brightness-7$$
-  - BRI INC
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Alt+$$mdi:keyboard-tab$$
+  - Ctl+Alt+$$mdi:keyboard-tab$$
+  - Alt+$$mdi:keyboard-space$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
@@ -148,8 +148,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - $$mdi:brightness-7$$
+  - {t: BRI INC, type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -431,10 +431,19 @@ combos:
 - p: [20, 23]
   k: Ctl+Alt+$$mdi:keyboard-tab$$
   l: [HOME, SNIPE]
+- p: [8, 33]
+  k: Ctl+Alt+$$mdi:keyboard-tab$$
+  l: [HOME, SNIPE]
 - p: [21, 23]
   k: Alt+$$mdi:keyboard-tab$$
   l: [HOME, SNIPE]
+- p: [7, 33]
+  k: Alt+$$mdi:keyboard-tab$$
+  l: [HOME, SNIPE]
 - p: [26, 29]
+  k: Alt+$$mdi:keyboard-space$$
+  l: [HOME, SNIPE]
+- p: [9, 33]
   k: Alt+$$mdi:keyboard-space$$
   l: [HOME, SNIPE]
 - p: [22, 23]
