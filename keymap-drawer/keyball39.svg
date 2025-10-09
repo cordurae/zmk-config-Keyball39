@@ -502,14 +502,15 @@ rect.held, rect.combo.held {
 <g transform="translate(28, 217)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-tab"/>
+<a href="#SCROLL">
+<text x="0" y="-4" class="key tap layer-activator">SCROLL</text>
+</a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(84, 203)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#SCROLL">
-<text x="0" y="-4" class="key tap layer-activator">SCROLL</text>
-</a></g>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-tab"/>
+</g>
 <g transform="translate(140, 196)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
@@ -638,10 +639,10 @@ rect.held, rect.combo.held {
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="635" y="145" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
 <g class="combo combopos-14">
-<path d="M469,137 l241,-81" class="combo"/>
-<path d="M469,137 l-241,81" class="combo"/>
-<rect rx="6" ry="6" x="455" y="124" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="460" y="128" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
+<path d="M385,130 l159,-86" class="combo"/>
+<path d="M385,130 l-159,86" class="combo"/>
+<rect rx="6" ry="6" x="371" y="117" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="376" y="121" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
 <g class="combo combopos-15">
 <rect rx="6" ry="6" x="154" y="131" width="28" height="26" class="combo"/>
@@ -2245,10 +2246,10 @@ rect.held, rect.combo.held {
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="635" y="145" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
 <g class="combo combopos-8">
-<path d="M469,137 l241,-81" class="combo"/>
-<path d="M469,137 l-241,81" class="combo"/>
-<rect rx="6" ry="6" x="455" y="124" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="460" y="128" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
+<path d="M385,130 l159,-86" class="combo"/>
+<path d="M385,130 l-159,86" class="combo"/>
+<rect rx="6" ry="6" x="371" y="117" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="376" y="121" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
 <g class="combo combopos-9">
 <rect rx="6" ry="6" x="154" y="131" width="28" height="26" class="combo"/>
@@ -2433,10 +2434,10 @@ rect.held, rect.combo.held {
 <text x="0" y="-4" class="key tap layer-activator">HOME</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
-<g transform="translate(84, 203)" class="key held alternate keypos-31">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held alternate side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held alternate"/>
-<use href="#mdi:mouse-scroll-wheel" xlink:href="#mdi:mouse-scroll-wheel" x="-9" y="-13" height="18" width="18.0" class="key held alternate tap glyph mdi:mouse-scroll-wheel"/>
+<g transform="translate(84, 203)" class="key keypos-31">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<use href="#mdi:mouse-scroll-wheel" xlink:href="#mdi:mouse-scroll-wheel" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:mouse-scroll-wheel"/>
 </g>
 <g transform="translate(140, 196)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>

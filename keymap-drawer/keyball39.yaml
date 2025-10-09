@@ -31,8 +31,8 @@ layers:
   - {t: ',', h: SCROLL, s: <}
   - {t: ., h: SIMPLE, s: '>'}
   - {t: /, h: FUNCTION, s: '?'}
+  - {t: SCROLL, h: toggle}
   - Alt+$$mdi:keyboard-tab$$
-  - SCROLL
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-esc$$', h: MEDIA}
   - {t: '$$mdi:keyboard-space$$', h: SCROLL}
@@ -312,7 +312,7 @@ layers:
   - {t: PgUp, type: held alternate}
   - END
   - {t: HOME, h: toggle}
-  - {t: '$$mdi:mouse-scroll-wheel$$', type: held alternate}
+  - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:keyboard-esc$$
   - {type: held alternate}
@@ -443,7 +443,7 @@ combos:
 - p: [26, 29]
   k: Alt+$$mdi:keyboard-space$$
   l: [HOME, SNIPE]
-- p: [9, 33]
+- p: [6, 33]
   k: Alt+$$mdi:keyboard-space$$
   l: [HOME, SNIPE]
 - p: [22, 23]
