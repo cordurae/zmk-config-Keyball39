@@ -443,7 +443,7 @@ combos:
 - p: [26, 29]
   k: Alt+$$mdi:keyboard-space$$
   l: [HOME, SNIPE]
-- p: [6, 23]
+- p: [6, 26]
   k: Alt+$$mdi:keyboard-space$$
   l: [HOME, SNIPE]
 - p: [22, 23]
