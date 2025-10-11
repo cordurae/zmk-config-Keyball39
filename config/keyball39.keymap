@@ -867,7 +867,7 @@
 
         esc_LAUNCHER {
             bindings = <&kp LA(SPACE)>;
-            key-positions = <6 26>;
+            key-positions = <26 33>;
             layers = <0 6>;
             timeout-ms = <70>;
         };
