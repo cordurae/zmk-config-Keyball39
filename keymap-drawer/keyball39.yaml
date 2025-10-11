@@ -130,7 +130,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Alt+$$mdi:keyboard-tab$$
   - Ctl+Alt+$$mdi:keyboard-tab$$
-  - Alt+$$mdi:keyboard-space$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
@@ -147,7 +147,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Alt+$$mdi:keyboard-space$$
   - $$mdi:brightness-7$$
   - {t: BRI INC, type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -443,7 +443,7 @@ combos:
 - p: [26, 29]
   k: Alt+$$mdi:keyboard-space$$
   l: [HOME, SNIPE]
-- p: [6, 33]
+- p: [6, 23]
   k: Alt+$$mdi:keyboard-space$$
   l: [HOME, SNIPE]
 - p: [22, 23]
