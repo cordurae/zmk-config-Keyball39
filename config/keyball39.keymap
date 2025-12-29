@@ -749,7 +749,7 @@
         Estar: Estar {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N8 &kp N3 &kp LS(A) &kp LS(A) &kp AMPS &kp Y &kp STAR &kp EXCL>;
+            bindings = <&kp N8 &kp N3 &kp LS(A) &kp LS(A) &kp AMPS &kp Y &kp STAR &kp T>;
             label = "ESTAR";
         };
     };
