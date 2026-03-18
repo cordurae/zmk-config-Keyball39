@@ -695,7 +695,7 @@ rect.held, rect.combo.held {
 <path d="M444,168 l100,-67" class="combo"/>
 <path d="M444,168 l-100,67" class="combo"/>
 <rect rx="6" ry="6" x="430" y="155" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-left-click-outline" xlink:href="#mdi:mouse-left-click-outline" x="435" y="159" height="18" width="18.0" class="combo tap glyph mdi:mouse-left-click-outline"/>
+<text x="444" y="168" class="combo tap">&amp;d_clk</text>
 </g>
 <g class="combo combopos-23">
 <path d="M290,172 l-29,-57" class="combo"/>

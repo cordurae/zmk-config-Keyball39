@@ -468,7 +468,7 @@ combos:
   k: '&key_repeat'
   l: [HOME]
 - p: [16, 35]
-  k: $$mdi:mouse-left-click-outline$$
+  k: '&d_clk'
   l: [HOME]
 - p: [14, 35]
   k: $$mdi:mouse-left-click-outline$$
