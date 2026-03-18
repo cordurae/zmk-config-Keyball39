@@ -721,7 +721,7 @@
         sen: sen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp S &kp R &kp O &kp G &kp E &kp N2 &kp N2 &kp LS(C) &kp B &kp RET>;
+            bindings = <&kp S &kp R &kp O &kp G &kp E &kp N2 &kp N2 &kp LS(C) &kp A &kp RET>;
             label = "SEN";
         };
 
@@ -749,8 +749,16 @@
         Estar: Estar {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N8 &kp N3 &kp LS(A) &kp LS(A) &kp AMPS &kp Y &kp STAR &kp T>;
+            bindings = <&kp N8 &kp N3 &kp LS(A) &kp LS(A) &kp AMPS &kp Y &kp STAR &kp APOS>;
             label = "ESTAR";
+        };
+
+        d_clk: double_click_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;  
+            tap-ms = <10>;  
+            bindings = <&mkp LCLK &mkp LCLK>;
         };
     };
 
@@ -927,15 +935,14 @@
              layers = <0>;
          };
 
-        extra_LCLK {
-            bindings = <&mkp LCLK>;
+        double_CLK {
+            bindings = <&d_clk>;
             key-positions = <16 35>;
             layers = <0>;
             timeout-ms = <70>;
-            slow-release;
         };
 
-        extra_LCLK_2 {
+        extra_LCLK {
             bindings = <&mkp LCLK>;
             key-positions = <14 35>;
             layers = <0>;
@@ -943,7 +950,7 @@
             slow-release;
         };
 
-        extra_LCLK_3 {
+        extra_LCLK_2 {
             bindings = <&mkp LCLK>;
             key-positions = <13 35>;
             layers = <0>;
