@@ -760,6 +760,14 @@
             tap-ms = <10>;  
             bindings = <&mkp LCLK &mkp LCLK>;
         };
+
+        t_clk: triple_click_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;  
+            tap-ms = <10>;  
+            bindings = <&mkp LCLK &mkp LCLK &mkp LCLK>;
+        };
     };
 
     combos {
@@ -934,6 +942,20 @@
              require-prior-idle-ms = <500>;
              layers = <0>;
          };
+
+        dbl_CLK {
+            bindings = <&d_clk>;
+            key-positions = <26 35>;
+            layers = <0>;
+            timeout-ms = <70>;
+        };
+
+        trpl_CLK {
+            bindings = <&t_clk>;
+            key-positions = <6 35>;
+            layers = <0>;
+            timeout-ms = <70>;
+        };
 
         extra_LCLK {
             bindings = <&mkp LCLK>;
@@ -1160,7 +1182,7 @@
             label = "SNIPE";
             bindings = <
 &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                           &kp PRINTSCREEN  &trans          &td_cc          &td_paste     &trans
-&kp LGUI        &kp LALT      &kp LCTRL       &kp LSHFT        &mkp LCLK                        &mkp MB4         &d_clk          &xmclk 7 MCLK   &mkp RCLK     &mkp MB5
+&kp LGUI        &kp LALT      &kp LCTRL       &kp LSHFT        &mkp LCLK                        &mkp MB4         &mkp LCLK       &xmclk 7 MCLK   &mkp RCLK     &mkp MB5
 &trans          &trans        &trans          &trans           &trans                           &trans           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
 &mkp RCLK       &mkp MCLK     &mkp LCLK       &kp ESCAPE       &kp SPACE     &trans  &kp ENTER  &kp BACKSPACE                                                  &trans
             >;
