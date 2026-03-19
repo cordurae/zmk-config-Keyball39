@@ -257,7 +257,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:mouse-left-click-outline$$
   - '&mkp MB4'
-  - $$mdi:mouse-left-click-outline$$
+  - '&d_clk'
   - {t: '$$mdi:mouse-scroll-wheel$$', h: SCROLL}
   - $$mdi:mouse-right-click-outline$$
   - '&mkp MB5'
@@ -468,7 +468,7 @@ combos:
   k: '&key_repeat'
   l: [HOME]
 - p: [16, 35]
-  k: '&d_clk'
+  k: $$mdi:mouse-left-click-outline$$
   l: [HOME]
 - p: [14, 35]
   k: $$mdi:mouse-left-click-outline$$
