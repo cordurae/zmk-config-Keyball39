@@ -352,11 +352,11 @@ layers:
   - AL CALC
   - {type: held}
   - $$mdi:bluetooth-off$$
-  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
-  - Alt+F4
+  - OUT BLE
+  - OUT USB
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-tab$$
+  - Alt+F4
   - $$mdi:apple-keyboard-caps$$
   - $$mdi:backspace-reverse-outline$$
   - AL CONTROL PANEL
