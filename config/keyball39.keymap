@@ -721,7 +721,7 @@
         sen: sen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp S &kp R &kp O &kp G &kp E &kp N2 &kp N2 &kp LS(C) &kp A &kp RET>;
+            bindings = <&kp S &kp R &kp O &kp G &kp E &kp N2 &kp N2 &kp LS(C) &kp Z &kp RET>;
             label = "SEN";
         };
 
@@ -1203,7 +1203,7 @@
 &kp F12     &kp F7        &kp F8      &kp F9   &kp KP_NUMLOCK                          &trans        &trans           &trans                &trans         &trans
 &kp F11     &kp F4        &kp F5      &kp F6   &kp SCROLLLOCK                          &kp INS       &kp RSHIFT       &kp RCTRL             &kp RALT       &kp RGUI
 &kp F10     &kp F1        &kp F2      &kp F3   &kp PAUSE_BREAK                         &kp C_AL_WWW  &kp C_AL_MAIL    &kp C_AL_MY_COMPUTER  &kp C_AL_CALC  &trans
-&bt BT_CLR  &out OUT_TOG  &kp LA(F4)  &kp ESC  &kp SPACE        &kp TAB  &kp CAPSLOCK  &kp DELETE                                                          &kp C_AL_CONTROL_PANEL
+&bt BT_CLR  &out OUT_BLE  &out OUT_USB &kp ESC &kp SPACE        &kp LA(F4)  &kp CAPSLOCK  &kp DELETE                                                          &kp C_AL_CONTROL_PANEL
             >;
 
             label = "FUNCTION";
