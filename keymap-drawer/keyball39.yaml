@@ -354,9 +354,9 @@ layers:
   - $$mdi:bluetooth-off$$
   - OUT BLE
   - OUT USB
-  - $$mdi:keyboard-esc$$
-  - $$mdi:keyboard-space$$
   - Alt+F4
+  - $$mdi:keyboard-space$$
+  - $$mdi:keyboard-tab$$
   - $$mdi:apple-keyboard-caps$$
   - $$mdi:backspace-reverse-outline$$
   - AL CONTROL PANEL
