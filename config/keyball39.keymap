@@ -200,6 +200,16 @@
             bindings = <&bracket>, <&parenthesis>;
         };
 
+        xdclk: special_double_click {
+            compatible = "zmk,behavior-hold-tap";
+            label = "X_DCLK";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <50>;
+            quick-tap-ms = <120>;
+            bindings = <&t_clk>, <&d_clk>;
+        };
+
         td_brackets: tap_dance_bracket {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_BRACKET";
@@ -986,15 +996,8 @@
          };
 
         dbl_CLK {
-            bindings = <&d_clk>;
+            bindings = <&xdclk 0 0>;
             key-positions = <26 35>;
-            layers = <0>;
-            timeout-ms = <70>;
-        };
-
-        trpl_CLK {
-            bindings = <&t_clk>;
-            key-positions = <6 35>;
             layers = <0>;
             timeout-ms = <70>;
         };
