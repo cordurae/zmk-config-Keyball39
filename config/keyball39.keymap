@@ -205,7 +205,7 @@
             label = "X_DCLK";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <50>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <120>;
             bindings = <&t_clk>, <&d_clk>;
         };
