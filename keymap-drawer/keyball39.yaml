@@ -468,10 +468,7 @@ combos:
   k: '&key_repeat'
   l: [HOME]
 - p: [26, 35]
-  k: '&d_clk'
-  l: [HOME]
-- p: [6, 35]
-  k: '&t_clk'
+  k: {t: '&d_clk', h: '&t_clk'}
   l: [HOME]
 - p: [16, 35]
   k: $$mdi:mouse-left-click-outline$$
