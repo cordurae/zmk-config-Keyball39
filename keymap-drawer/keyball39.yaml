@@ -254,8 +254,8 @@ layers:
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-shift$$
   - $$mdi:mouse-left-click-outline$$
+  - $$mdi:apple-keyboard-shift$$
   - '&mkp MB4'
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:mouse-scroll-wheel$$', h: SCROLL}
@@ -266,8 +266,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-left$$
+  - '&xdclk'
   - $$mdi:pan-down$$
   - {t: '$$mdi:pan-up$$', type: held alternate}
   - $$mdi:pan-right$$
