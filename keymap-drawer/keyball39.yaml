@@ -31,8 +31,8 @@ layers:
   - {t: ',', h: SCROLL, s: <}
   - {t: ., h: SIMPLE, s: '>'}
   - {t: /, h: FUNCTION, s: '?'}
-  - {t: SCROLL, h: toggle}
   - $$mdi:mouse-left-click-outline$$
+  - {t: SCROLL, h: toggle}
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:keyboard-esc$$', h: MEDIA}
   - {t: '$$mdi:keyboard-space$$', h: SCROLL}
