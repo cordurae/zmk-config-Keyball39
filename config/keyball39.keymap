@@ -1002,6 +1002,13 @@
             timeout-ms = <70>;
         };
 
+        extra_dbl_CLK {
+            bindings = <&xdclk 0 0>;
+            key-positions = <23 35>;
+            layers = <0>;
+            timeout-ms = <70>;
+        };
+
         extra_LCLK {
             bindings = <&mkp LCLK>;
             key-positions = <16 35>;
@@ -1227,8 +1234,8 @@
             label = "SNIPE";
             bindings = <
 &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                           &kp PRINTSCREEN  &trans          &td_cc          &td_paste     &trans
-&kp LGUI        &kp LALT      &kp LCTRL       &mkp LCLK        &kp LSHFT                        &mkp MB4         &mkp LCLK       &xmclk 7 MCLK   &mkp RCLK     &mkp MB5
-&trans          &trans        &trans          &trans           &trans                           &msc SCRL_LEFT   &xdclk          &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
+&kp LGUI        &kp LALT      &kp LCTRL       &kp LSHFT        &mkp LCLK                        &mkp MB4         &mkp LCLK       &xmclk 7 MCLK   &mkp RCLK     &mkp MB5
+&trans          &trans        &trans          &xdclk 0 0       &trans                           &msc SCRL_LEFT   &xdclk 0 0      &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
 &mkp RCLK       &mkp MCLK     &mkp LCLK       &kp ESCAPE       &kp SPACE     &trans  &kp ENTER  &kp BACKSPACE                                                  &trans
             >;
         };
