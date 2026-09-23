@@ -254,8 +254,8 @@ layers:
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:mouse-left-click-outline$$
   - $$mdi:apple-keyboard-shift$$
+  - $$mdi:mouse-left-click-outline$$
   - '&mkp MB4'
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:mouse-scroll-wheel$$', h: SCROLL}
@@ -264,10 +264,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '&d_clk', h: '&t_clk'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-left$$
-  - '&xdclk'
+  - {t: '&d_clk', h: '&t_clk'}
   - $$mdi:pan-down$$
   - {t: '$$mdi:pan-up$$', type: held alternate}
   - $$mdi:pan-right$$
@@ -468,6 +468,9 @@ combos:
   k: '&key_repeat'
   l: [HOME]
 - p: [26, 35]
+  k: {t: '&d_clk', h: '&t_clk'}
+  l: [HOME]
+- p: [23, 35]
   k: {t: '&d_clk', h: '&t_clk'}
   l: [HOME]
 - p: [16, 35]
